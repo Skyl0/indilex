@@ -66,3 +66,115 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 69, ../sass/screen.scss */
+h1 {
+  color: #4fbab3;
+  margin: 20px 0 20px 0;
+}
+
+/* line 74, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  color: #4fbab3;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+/* line 80, ../sass/screen.scss */
+html {
+  box-sizing: border-box;
+  background-color: #aaa;
+}
+
+/* line 84, ../sass/screen.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 88, ../sass/screen.scss */
+#site {
+  width: 1200px;
+  margin: 0 auto 0 auto;
+  background-color: #eee;
+}
+
+/* line 94, ../sass/screen.scss */
+#header {
+  height: 160px;
+  background-color: #eee;
+}
+
+/* line 99, ../sass/screen.scss */
+#slider {
+  height: 500px;
+  background-color: blue;
+}
+
+/* line 104, ../sass/screen.scss */
+#main {
+  min-height: 500px;
+  background-color: #eee;
+}
+
+/* line 109, ../sass/screen.scss */
+#bottom {
+  height: 370px;
+  background-color: blue;
+}
+
+/* line 114, ../sass/screen.scss */
+#btop {
+  height: 120px;
+  background-color: green;
+}
+
+/* line 119, ../sass/screen.scss */
+#bleft {
+  width: 380px;
+  padding-left: 80px;
+  margin: 0 10px 0 10px;
+}
+
+/* line 125, ../sass/screen.scss */
+#bmid {
+  width: 380px;
+  margin: 0 10px 0 10px;
+  padding: 0 60px 0 40px;
+}
+
+/* line 131, ../sass/screen.scss */
+#bright {
+  width: 380px;
+  margin: 0 10px 0 10px;
+}
+
+/* line 136, ../sass/screen.scss */
+#footer {
+  height: 90px;
+  background-color: #eee;
+}
+
+/* line 142, ../sass/screen.scss */
+#logo {
+  width: 540px;
+  padding-left: 60px;
+  margin: 0 10px 0 10px;
+}
+
+/* line 148, ../sass/screen.scss */
+#mainmenu {
+  width: 620px;
+  margin: 0 10px 0 10px;
+}
+
+/* line 154, ../sass/screen.scss */
+#topmenu {
+  width: 1180px;
+  margin: 0 10px 0 10px;
+  height: 40px;
+}
+
+/* line 162, ../sass/screen.scss */
+.floatl {
+  float: left;
+}
