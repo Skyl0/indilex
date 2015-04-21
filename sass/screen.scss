@@ -52,6 +52,16 @@ $sce_colwrap14: nth($sce_colwrap, 14);
 $sce_colwrap15: nth($sce_colwrap, 15);
 //$sce_colwrap16: nth($sce_colwrap, 16);
 
+//Fonts
+
+@font-face {
+font-family: Raleway;
+src: url("/link/indilex/fonts/Raleway-Regular.otf") format("opentype");
+}
+@font-face {
+font-family: RalewaySemiBold;
+src: url("/link/indilex/fonts/Raleway-SemiBold.otf") format("opentype");
+}
 
 @import "compass/reset";
 
@@ -59,11 +69,11 @@ $sce_colwrap15: nth($sce_colwrap, 15);
 $background : #aaa;
 $foreground : #fff;
 $lightgrey : #f6f6f6;
-$pagewidth : 1200px;
-$gutter : 10px;
-$column-size : 60px;
-$columns : 15;
+$cyan : #49bab3;
+$cyanlight: #4fbbb4;
 $special : #4fbab3;
+$bottombg : #144856;
+
 $headerheight : 160px;
 $topmenuheight : 40px;
 $logo_menu_height : $headerheight - $topmenuheight;
@@ -71,20 +81,38 @@ $logo_menu_height : $headerheight - $topmenuheight;
 // Default Styles
 
 h1 {
+  color: $bottombg;
+  font-size: 26px;
+  margin: 20px 0 20px 0;
+}
+
+h6 {
   color: $special;
+  font-size: 24px;
   margin: 20px 0 20px 0;
 }
 
 a {
   text-decoration: none;
-  color: $special;
+  color: $cyanlight;
+}
+
+a:hover {
+  font-family: "RalewaySemiBold", Arial, sans-serif;
+}
+
+p {
+  margin: 20px 0 20px 0;
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
   background-color: $background;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 16px;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -102,7 +130,15 @@ html {
 
 #slider {
   height: 500px;
-  background-color: blue;
+  background-color: $lightgrey;
+  background-image: url('/link/indilex/images/yellowlines.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#shortcodes {
+  min-height: 200px;
 }
 
 #main {
@@ -110,18 +146,51 @@ html {
   background-color: $foreground;
 }
 
+#mainl {
+  width: $sce_colspan6;
+  padding-left: $sce_colspan1;
+  margin: 0 $sce_gap 0 $sce_gap;
+}
+
+#mainl ul {
+  list-style-type: none;
+  width: $sce_colspan4;
+  font-family: "RalewaySemiBold", Arial, sans-serif;
+ 
+  border-right: 2px solid $cyan;
+  
+}
+
+#mainl li {
+  width: $sce_colspan4;
+  padding-right: 30px;
+  height: 40px;
+  text-align: right;
+  color: $bottombg;
+}
+
+#mainr {
+  width: $sce_colspan9;
+  padding-right: $sce_colspan1;
+  margin: 0 $sce_gap 0 $sce_gap;
+}
+
 //Bottom
 
 #bottom {
   height: 370px;
-  background-color: blue;
+  background-color: $bottombg;
 }
 
 // Bottom Elemente
 
 #btop {
   height: 120px;
-  background-color: green;
+  background-color: $lightgrey;
+  background-image: url('/link/indilex/images/handshake.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #bleft {
@@ -146,6 +215,7 @@ html {
 #footer {
   height: 90px;
   background-color: $foreground;
+   line-height: 90px;
 }
 
 // Header Elemente
@@ -179,13 +249,29 @@ html {
   text-align: right;
   padding: 0 $sce_gap 0 $sce_gap;
   height: $topmenuheight;
-  vertical-align: middle;
-  display: table-cell;
+  line-height: $topmenuheight;
   background-color: $lightgrey;
+  font-size: 14px;
 }
 
 // Classes
 
 .floatl {
   float: left;
+}
+
+.more:after {
+  content:" »";
+}
+
+.roundbutton {
+  border: 2px solid $cyanlight;
+  border-radius: 4px;
+  padding: 10px 30px;
+  width: 240px;
+  line-height: 40px;
+}
+
+.eightcolumn {
+   width: $sce_colspan8;
 }

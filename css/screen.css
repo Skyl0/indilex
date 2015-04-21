@@ -1,7 +1,16 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: Raleway;
+  src: url("/link/indilex/fonts/Raleway-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: RalewaySemiBold;
+  src: url("/link/indilex/fonts/Raleway-SemiBold.otf") format("opentype");
+}
 /* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,94 +76,159 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 h1 {
-  color: #4fbab3;
+  color: #144856;
+  font-size: 26px;
   margin: 20px 0 20px 0;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
+h6 {
+  color: #4fbab3;
+  font-size: 24px;
+  margin: 20px 0 20px 0;
+}
+
+/* line 95, ../sass/screen.scss */
 a {
   text-decoration: none;
-  color: #4fbab3;
+  color: #4fbbb4;
+}
+
+/* line 100, ../sass/screen.scss */
+a:hover {
+  font-family: "RalewaySemiBold", Arial, sans-serif;
+}
+
+/* line 104, ../sass/screen.scss */
+p {
+  margin: 20px 0 20px 0;
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
-/* line 84, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 html {
   box-sizing: border-box;
   background-color: #aaa;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 16px;
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 #site {
   width: 1200px;
   margin: 0 auto 0 auto;
   background-color: #fff;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 #header {
   height: 160px;
   background-color: #fff;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 #slider {
   height: 500px;
-  background-color: blue;
+  background-color: #f6f6f6;
+  background-image: url("/link/indilex/images/yellowlines.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
+#shortcodes {
+  min-height: 200px;
+}
+
+/* line 144, ../sass/screen.scss */
 #main {
   min-height: 500px;
   background-color: #fff;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
+#mainl {
+  width: 460px;
+  padding-left: 60px;
+  margin: 0 10px 0 10px;
+}
+
+/* line 155, ../sass/screen.scss */
+#mainl ul {
+  list-style-type: none;
+  width: 300px;
+  font-family: "RalewaySemiBold", Arial, sans-serif;
+  border-right: 2px solid #49bab3;
+}
+
+/* line 164, ../sass/screen.scss */
+#mainl li {
+  width: 300px;
+  padding-right: 30px;
+  height: 40px;
+  text-align: right;
+  color: #144856;
+}
+
+/* line 172, ../sass/screen.scss */
+#mainr {
+  width: 700px;
+  padding-right: 60px;
+  margin: 0 10px 0 10px;
+}
+
+/* line 180, ../sass/screen.scss */
 #bottom {
   height: 370px;
-  background-color: blue;
+  background-color: #144856;
 }
 
-/* line 122, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 #btop {
   height: 120px;
-  background-color: green;
+  background-color: #f6f6f6;
+  background-image: url("/link/indilex/images/handshake.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 #bleft {
   width: 380px;
   padding-left: 80px;
   margin: 0 10px 0 10px;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 #bmid {
   width: 380px;
   margin: 0 10px 0 10px;
   padding: 0 60px 0 40px;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 #bright {
   width: 380px;
   margin: 0 10px 0 10px;
 }
 
-/* line 146, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 #footer {
   height: 90px;
   background-color: #fff;
+  line-height: 90px;
 }
 
-/* line 152, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 #logo {
   width: 540px;
   padding-left: 60px;
@@ -164,14 +238,14 @@ html {
   line-height: 120px;
 }
 
-/* line 161, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 #img_logo {
   vertical-align: middle;
   display: inline-block;
   height: 44px;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 #mainmenu {
   width: 620px;
   margin: 0 10px 0 10px;
@@ -180,18 +254,37 @@ html {
   line-height: 120px;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 #topmenu {
   width: 1200px;
   text-align: right;
   padding: 0 10px 0 10px;
   height: 40px;
-  vertical-align: middle;
-  display: table-cell;
+  line-height: 40px;
   background-color: #f6f6f6;
+  font-size: 14px;
 }
 
-/* line 189, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .floatl {
   float: left;
+}
+
+/* line 263, ../sass/screen.scss */
+.more:after {
+  content: " »";
+}
+
+/* line 267, ../sass/screen.scss */
+.roundbutton {
+  border: 2px solid #4fbbb4;
+  border-radius: 4px;
+  padding: 10px 30px;
+  width: 240px;
+  line-height: 40px;
+}
+
+/* line 275, ../sass/screen.scss */
+.eightcolumn {
+  width: 620px;
 }
