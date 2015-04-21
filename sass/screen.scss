@@ -56,11 +56,11 @@ $sce_colwrap15: nth($sce_colwrap, 15);
 
 @font-face {
 font-family: Raleway;
-src: url("/link/indilex/fonts/Raleway-Regular.otf") format("opentype");
+src: url("file://c:/link/indilex/fonts/Raleway-Regular.otf") format("opentype");
 }
 @font-face {
 font-family: RalewaySemiBold;
-src: url("/link/indilex/fonts/Raleway-SemiBold.otf") format("opentype");
+src: url("file://c:/link/indilex/fonts/Raleway-SemiBold.otf") format("opentype");
 }
 
 @import "compass/reset";
@@ -131,7 +131,7 @@ html {
 #slider {
   height: 500px;
   background-color: $lightgrey;
-  background-image: url('/link/indilex/images/yellowlines.jpg');
+  background-image: url('file://c:/link/indilex/images/yellowlines.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -140,6 +140,16 @@ html {
 #shortcodes {
   min-height: 200px;
 }
+
+#shortcl {
+  
+}
+
+#shortcm {
+  
+}
+
+
 
 #main {
   min-height: 500px;
@@ -156,7 +166,7 @@ html {
   list-style-type: none;
   width: $sce_colspan4;
   font-family: "RalewaySemiBold", Arial, sans-serif;
- 
+  margin: 20px 0 20px 0;
   border-right: 2px solid $cyan;
   
 }
@@ -165,8 +175,15 @@ html {
   width: $sce_colspan4;
   padding-right: 30px;
   height: 40px;
+  //line-height: 40px;
   text-align: right;
+  vertical-align: middle;
   color: $bottombg;
+  border-bottom: 2px solid #aaa;
+}
+
+#mainl li:last-child {
+  border-bottom: 0px solid #fff;
 }
 
 #mainr {
@@ -187,7 +204,7 @@ html {
 #btop {
   height: 120px;
   background-color: $lightgrey;
-  background-image: url('/link/indilex/images/handshake.jpg');
+  background-image: url('file://c:/link/indilex/images/handshake.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -208,6 +225,7 @@ html {
 #bright {
   width: $sce_colspan5;  
   margin: 0 $sce_gap 0 $sce_gap;
+  padding-right: $sce_colwrap1;
 }
 
 //Footer
@@ -218,6 +236,18 @@ html {
    line-height: 90px;
 }
 
+#fleft {
+  padding-left: $sce_colwrap1;
+  width: $sce_colspan8;
+  margin: 0 $sce_gap 0 $sce_gap;
+}
+
+#fright {
+  width: $sce_colspan7;
+  padding-right: $sce_colwrap1;
+  text-align: right;
+  margin: 0 $sce_gap 0 $sce_gap;
+}
 // Header Elemente
 #logo {
   width: $sce_colspan7;
@@ -261,7 +291,7 @@ html {
 }
 
 .more:after {
-  content:" »";
+  content:' >>';
 }
 
 .roundbutton {
