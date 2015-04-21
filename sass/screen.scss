@@ -57,12 +57,16 @@ $sce_colwrap15: nth($sce_colwrap, 15);
 
 
 $background : #aaa;
-$foreground : #eee;
+$foreground : #fff;
+$lightgrey : #f6f6f6;
 $pagewidth : 1200px;
 $gutter : 10px;
 $column-size : 60px;
 $columns : 15;
 $special : #4fbab3;
+$headerheight : 160px;
+$topmenuheight : 40px;
+$logo_menu_height : $headerheight - $topmenuheight;
 
 // Default Styles
 
@@ -92,7 +96,7 @@ html {
 }
 
 #header {
-  height: 160px;
+  height: $headerheight;
   background-color: $foreground;
 }
 
@@ -106,10 +110,14 @@ html {
   background-color: $foreground;
 }
 
+//Bottom
+
 #bottom {
   height: 370px;
   background-color: blue;
 }
+
+// Bottom Elemente
 
 #btop {
   height: 120px;
@@ -133,6 +141,8 @@ html {
   margin: 0 $sce_gap 0 $sce_gap;
 }
 
+//Footer
+
 #footer {
   height: 90px;
   background-color: $foreground;
@@ -143,18 +153,35 @@ html {
   width: $sce_colspan7;
   padding-left: $sce_colspan1;
   margin: 0 $sce_gap 0 $sce_gap;
+  vertical-align: middle;
+  height: $logo_menu_height;
+  line-height: $logo_menu_height;
+}
+
+#img_logo {
+ // margin: 0;
+ vertical-align: middle;
+  display: inline-block;
+  height: 44px;
 }
 
 #mainmenu {
   width: $sce_colspan8;
   margin: 0 $sce_gap 0 $sce_gap;
+  vertical-align: middle;
+  height: $logo_menu_height;
+  line-height: $logo_menu_height;
 }
 
 
 #topmenu {
-  width: $sce_colspan15;
-  margin: 0 $sce_gap 0 $sce_gap;
-  height: 40px;
+  width: $sce_colwrap15;
+  text-align: right;
+  padding: 0 $sce_gap 0 $sce_gap;
+  height: $topmenuheight;
+  vertical-align: middle;
+  display: table-cell;
+  background-color: $lightgrey;
 }
 
 // Classes
