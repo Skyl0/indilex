@@ -56,11 +56,13 @@ $sce_colwrap15: nth($sce_colwrap, 15);
 
 @font-face {
 font-family: Raleway;
-src: url("file://c:/link/indilex/fonts/Raleway-Regular.otf") format("opentype");
+src: url("file://c:/_projects/indilex/fonts/Raleway-Regular.otf") format("opentype");
+src: url("file://c:/_projects/indilex/fonts/Raleway-Regular.ttf") format("ttf");
 }
 @font-face {
 font-family: RalewaySemiBold;
-src: url("file://c:/link/indilex/fonts/Raleway-SemiBold.otf") format("opentype");
+src: url("file://c:/_projects/indilex/fonts/Raleway-SemiBold.otf") format("opentype");
+src: url("file://c:/_projects/indilex/fonts/Raleway-SemiBold.ttf") format("ttf");
 }
 
 @import "compass/reset";
@@ -98,7 +100,8 @@ a {
 }
 
 a:hover {
-  font-family: "RalewaySemiBold", Arial, sans-serif;
+ // font-family: "RalewaySemiBold", Arial, sans-serif;
+ color: $cyan;
 }
 
 p {
@@ -180,6 +183,7 @@ html {
   vertical-align: middle;
   color: $bottombg;
   border-bottom: 2px solid #aaa;
+  padding-left: $sce_colspan1
 }
 
 #mainl li:last-child {
