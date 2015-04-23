@@ -385,3 +385,23 @@ html {
 .cyan {
   color: $cyan;
 }
+
+// MAIN MENU
+
+#mainmenu ul {
+  list-style-type: none;
+  
+  li {
+    display: inline;
+    border-right: 2px solid $cyan;
+    padding: 0 10px;
+  }
+  
+  li:last-child {
+    border-right: 0px;
+  }
+  
+  li a {
+    color: black;
+  }
+}

@@ -401,3 +401,22 @@ html {
 .cyan {
   color: #49bab3;
 }
+
+/* line 391, ../sass/screen.scss */
+#mainmenu ul {
+  list-style-type: none;
+}
+/* line 394, ../sass/screen.scss */
+#mainmenu ul li {
+  display: inline;
+  border-right: 2px solid #49bab3;
+  padding: 0 10px;
+}
+/* line 400, ../sass/screen.scss */
+#mainmenu ul li:last-child {
+  border-right: 0px;
+}
+/* line 404, ../sass/screen.scss */
+#mainmenu ul li a {
+  color: black;
+}
