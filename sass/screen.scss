@@ -72,10 +72,12 @@ $foreground : #fff;
 $lightgrey : #f6f6f6;
 $cyan : #49bab3;
 $cyanlight: #4fbbb4;
-$special : #4fbab3;
+//$special : #4fbab3;
 $bottombg : #144856;
 $defaultfont : "Raleway", Arial, sans-serif;
 $defaultbold : "RalewaySemiBold", Arial, sans-serif;
+
+$margintopbottom : 20px;
 
 $headerheight : 160px;
 $topmenuheight : 40px;
@@ -86,13 +88,13 @@ $logo_menu_height : $headerheight - $topmenuheight;
 h1 {
   color: $bottombg;
   font-size: 26px;
-  margin: 20px 0 20px 0;
+  margin: $margintopbottom 0 $margintopbottom 0;
 }
 
 h6 {
-  color: $special;
+  color: $cyanlight;
   font-size: 24px;
-  margin: 20px 0 20px 0;
+  margin: $margintopbottom 0 $margintopbottom 0;
 }
 
 a {
@@ -106,7 +108,7 @@ a:hover {
 }
 
 p {
-  margin: 20px 0 20px 0;
+  margin: $margintopbottom 0 $margintopbottom 0;
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -143,7 +145,7 @@ html {
 
 #shortcodes {
   min-height: 200px;
-  margin: 20px 0;
+  margin: $margintopbottom 0;
   text-align: center;
 }
 
@@ -172,6 +174,7 @@ html {
 
 #main {
 //  min-height: 500px;
+  margin: $margintopbottom 0 ;
   background-color: $lightgrey;
 }
 
@@ -185,7 +188,7 @@ html {
   list-style-type: none;
   width: $sce_colspan4+ ($sce_colwrap1 / 3) + 20px;
   font-family: $defaultbold;
-  margin: 20px 0 20px 0;
+  margin: $margintopbottom 0 $margintopbottom 0;
   border-right: 2px solid $cyan;
   
 }
@@ -219,6 +222,7 @@ html {
   height: 370px;
   background-color: $bottombg;
   color: white;
+  line-height: 120%;
 }
 
 // Bottom Elemente
@@ -231,8 +235,9 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  padding: 20px 0;
+  padding: $margintopbottom 0;
   background-attachment: fixed;
+  line-height: 150%;
 }
 
 #btopl {
@@ -272,7 +277,7 @@ html {
 #bmid {
   width: $sce_colspan5;
   margin: 0 $sce_gap 0 $sce_gap;
-  padding: 0 60px 0 40px;
+  padding: 0 60px 0 47px;
 }
 
 #bright {
@@ -364,6 +369,8 @@ html {
   
   img {
     width: $sce_colspan8 + ($sce_colwrap1 / 3) + 7px;
+    position: relative;
+    right: 7px;
     padding: 0px !important;
     margin: 0px !important; //TODO Formatierung von Tobi erfragen
   }
@@ -393,12 +400,34 @@ html {
     color: white;
   }
   
-  span a {
-    color: white;
-    padding: 0 5px;
+  span {
+    word-wrap: break-word;
+    word-break: break-all;
+    a {
+      color: white;
+      padding: 0 5px;
+    }
   }
   
 } 
+
+// ScrollUp
+
+#scrollup {
+  position: relative;
+  top: 56px;
+  left: 245px;
+}
+
+#scrollup {
+  a {
+    opacity: 0.5;
+  }
+  
+  a:hover {
+    opacity: 1.0;
+  }
+}
 
 // Classes
 
@@ -440,6 +469,10 @@ html {
   color: $cyan;
 }
 
+.opacity50 {
+  opacity: 0.5;
+}
+
 // MAIN MENU
 
 #mainmenu ul {
@@ -456,7 +489,14 @@ html {
     padding-right: 0px;
   }
   
-  li a {
-    color: black;
+  li {
+    a {
+      color: black;
+    }
+    a:hover {
+      color: $cyan;
+      font-family: $defaultbold;
+   //   font-stretch: expanded;
+    }
   }
 }

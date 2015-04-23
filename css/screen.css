@@ -75,38 +75,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 86, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 h1 {
   color: #144856;
   font-size: 26px;
   margin: 20px 0 20px 0;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 h6 {
-  color: #4fbab3;
+  color: #4fbbb4;
   font-size: 24px;
   margin: 20px 0 20px 0;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 a {
   text-decoration: none;
   color: #4fbbb4;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 a:hover {
   color: #49bab3;
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 p {
   margin: 20px 0 20px 0;
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
-/* line 113, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 html {
   box-sizing: border-box;
   background-color: #aaa;
@@ -114,25 +114,25 @@ html {
   font-size: 16px;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 #site {
   width: 1200px;
   margin: 0 auto 0 auto;
   background-color: #fff;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 #header {
   height: 160px;
   background-color: #fff;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 #slider {
   height: 500px;
   background-color: #f6f6f6;
@@ -142,14 +142,14 @@ html {
   background-position: center;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 #shortcodes {
   min-height: 200px;
   margin: 20px 0;
   text-align: center;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 #shortcodel {
   width: 406.66667px;
   padding-left: 80px;
@@ -158,13 +158,13 @@ html {
   margin: 0 0 0 10px;
 }
 
-/* line 158, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 #shortcodem {
   width: 346.66667px;
   margin: 0 10px 0 10px;
 }
 
-/* line 163, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 #shortcoder {
   width: 406.66667px;
   padding-right: 80px;
@@ -173,19 +173,20 @@ html {
   margin: 0 10px 0 0;
 }
 
-/* line 173, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 #main {
+  margin: 20px 0;
   background-color: #f6f6f6;
 }
 
-/* line 178, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 #mainl {
   width: 426.66667px;
   padding-left: 60px;
   margin: 0 10px 0 10px;
 }
 
-/* line 184, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 #mainl ul {
   list-style-type: none;
   width: 346.66667px;
@@ -194,7 +195,7 @@ html {
   border-right: 2px solid #49bab3;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 #mainl li {
   width: 326.66667px;
   padding: 5px 20px 5px 0;
@@ -206,26 +207,27 @@ html {
   margin-left: 20px;
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 #mainl li:last-child {
   border-bottom: 0px solid #fff;
 }
 
-/* line 210, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 #mainr {
   width: 731.66667px;
   padding-right: 60px;
   margin: 0 10px 0 10px;
 }
 
-/* line 218, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 #bottom {
   height: 370px;
   background-color: #144856;
   color: white;
+  line-height: 120%;
 }
 
-/* line 226, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 #btop {
   height: 120px;
   background-color: #f6f6f6;
@@ -236,9 +238,10 @@ html {
   color: white;
   padding: 20px 0;
   background-attachment: fixed;
+  line-height: 150%;
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 #btopl {
   width: 620px;
   padding-left: 80px;
@@ -246,14 +249,14 @@ html {
   font-size: 26px;
 }
 
-/* line 245, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 #btopr {
   width: 540px;
   padding-right: 80px;
   margin: 0 10px 0 10px;
 }
 
-/* line 251, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 #btop_button {
   width: 240px;
   text-align: center;
@@ -264,34 +267,34 @@ html {
   padding: 10px 30px;
 }
 
-/* line 261, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 #btop_button span {
   position: relative;
   top: -2px;
 }
 
-/* line 266, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 #bleft {
   width: 380px;
   padding-left: 80px;
   margin: 0 10px 0 10px;
 }
 
-/* line 272, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 #bmid {
   width: 380px;
   margin: 0 10px 0 10px;
-  padding: 0 60px 0 40px;
+  padding: 0 60px 0 47px;
 }
 
-/* line 278, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 #bright {
   width: 380px;
   margin: 0 10px 0 10px;
   padding-right: 80px;
 }
 
-/* line 286, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 #footer {
   height: 90px;
   background-color: #fff;
@@ -299,14 +302,14 @@ html {
   font-size: 14px;
 }
 
-/* line 293, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 #fleft {
   padding-left: 80px;
   width: 620px;
   margin: 0 10px 0 10px;
 }
 
-/* line 299, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 #fright {
   width: 540px;
   padding-right: 80px;
@@ -314,7 +317,7 @@ html {
   margin: 0 10px 0 10px;
 }
 
-/* line 306, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 #logo {
   width: 300px;
   padding-left: 80px;
@@ -324,14 +327,14 @@ html {
   line-height: 120px;
 }
 
-/* line 315, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 #img_logo {
   vertical-align: middle;
   display: inline-block;
   height: 44px;
 }
 
-/* line 322, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 #mainmenu {
   width: 860px;
   margin: 0 10px 0 10px;
@@ -342,7 +345,7 @@ html {
   padding-right: 80px;
 }
 
-/* line 333, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 #topmenu {
   width: 1200px;
   text-align: right;
@@ -354,13 +357,13 @@ html {
   font-family: "Raleway", Arial, sans-serif;
 }
 
-/* line 344, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 #topmenu span {
   color: #49bab3;
   margin: 0 5px 0 20px;
 }
 
-/* line 352, ../sass/screen.scss */
+/* line 357, ../sass/screen.scss */
 #mainr a {
   border: 2px solid #4fbbb4;
   border-radius: 4px;
@@ -368,19 +371,21 @@ html {
   width: 240px;
   line-height: 40px;
 }
-/* line 360, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 #mainr a:hover {
   background-color: #4fbbb4;
   color: #f6f6f6;
 }
-/* line 365, ../sass/screen.scss */
+/* line 370, ../sass/screen.scss */
 #mainr img {
   width: 653.66667px;
+  position: relative;
+  right: 7px;
   padding: 0px !important;
   margin: 0px !important;
 }
 
-/* line 376, ../sass/screen.scss */
+/* line 383, ../sass/screen.scss */
 #shortcodes a {
   border: 2px solid #4fbbb4;
   border-radius: 4px;
@@ -388,33 +393,54 @@ html {
   width: 240px;
   line-height: 40px;
 }
-/* line 384, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 #shortcodes a:hover {
   background-color: #4fbbb4;
   color: #f6f6f6;
 }
 
-/* line 392, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 #bottom h1 {
   color: white;
 }
-/* line 396, ../sass/screen.scss */
+/* line 403, ../sass/screen.scss */
+#bottom span {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+/* line 406, ../sass/screen.scss */
 #bottom span a {
   color: white;
   padding: 0 5px;
 }
 
-/* line 405, ../sass/screen.scss */
+/* line 416, ../sass/screen.scss */
+#scrollup {
+  position: relative;
+  top: 56px;
+  left: 245px;
+}
+
+/* line 423, ../sass/screen.scss */
+#scrollup a {
+  opacity: 0.5;
+}
+/* line 427, ../sass/screen.scss */
+#scrollup a:hover {
+  opacity: 1.0;
+}
+
+/* line 434, ../sass/screen.scss */
 .floatl {
   float: left;
 }
 
-/* line 409, ../sass/screen.scss */
+/* line 438, ../sass/screen.scss */
 .more:after {
   content: ' >>';
 }
 
-/* line 413, ../sass/screen.scss */
+/* line 442, ../sass/screen.scss */
 .roundbutton {
   border: 2px solid #4fbbb4;
   border-radius: 4px;
@@ -423,13 +449,13 @@ html {
   line-height: 40px;
 }
 
-/* line 422, ../sass/screen.scss */
+/* line 451, ../sass/screen.scss */
 .roundbutton:hover {
   background-color: #4fbbb4;
   color: #f6f6f6;
 }
 
-/* line 431, ../sass/screen.scss */
+/* line 460, ../sass/screen.scss */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -438,27 +464,37 @@ html {
   height: 0;
 }
 
-/* line 439, ../sass/screen.scss */
+/* line 468, ../sass/screen.scss */
 .cyan {
   color: #49bab3;
 }
 
-/* line 445, ../sass/screen.scss */
+/* line 472, ../sass/screen.scss */
+.opacity50 {
+  opacity: 0.5;
+}
+
+/* line 478, ../sass/screen.scss */
 #mainmenu ul {
   list-style-type: none;
 }
-/* line 448, ../sass/screen.scss */
+/* line 481, ../sass/screen.scss */
 #mainmenu ul li {
   display: inline;
   border-right: 2px solid #49bab3;
   padding: 0 30px;
 }
-/* line 454, ../sass/screen.scss */
+/* line 487, ../sass/screen.scss */
 #mainmenu ul li:last-child {
   border-right: 0px;
   padding-right: 0px;
 }
-/* line 459, ../sass/screen.scss */
+/* line 493, ../sass/screen.scss */
 #mainmenu ul li a {
   color: black;
+}
+/* line 496, ../sass/screen.scss */
+#mainmenu ul li a:hover {
+  color: #49bab3;
+  font-family: "RalewaySemiBold", Arial, sans-serif;
 }
