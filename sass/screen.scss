@@ -74,6 +74,8 @@ $cyan : #49bab3;
 $cyanlight: #4fbbb4;
 $special : #4fbab3;
 $bottombg : #144856;
+$defaultfont : "Raleway", Arial, sans-serif;
+$defaultbold : "RalewaySemiBold", Arial, sans-serif;
 
 $headerheight : 160px;
 $topmenuheight : 40px;
@@ -99,7 +101,7 @@ a {
 }
 
 a:hover {
- // font-family: "RalewaySemiBold", Arial, sans-serif;
+ // font-family: $defaultbold;
  color: $cyan;
 }
 
@@ -111,7 +113,7 @@ p {
 html {
   box-sizing: border-box;
   background-color: $background;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: $defaultfont;
   font-size: 16px;
 }
 
@@ -182,7 +184,7 @@ html {
 #mainl ul {
   list-style-type: none;
   width: $sce_colspan4+ ($sce_colwrap1 / 3) + 20px;
-  font-family: "RalewaySemiBold", Arial, sans-serif;
+  font-family: $defaultbold;
   margin: 20px 0 20px 0;
   border-right: 2px solid $cyan;
   
@@ -246,13 +248,18 @@ html {
 }
 
 #btop_button {
-  width: 200px;
+  width: 240px;
   text-align: center;
   position: relative;
-  left: $sce_colspan6 - 200px;
+  left: $sce_colspan6 - 240px;
   border-radius: 4px;
   border: 2px solid white;
   padding: 10px 30px;
+}
+
+#btop_button span {
+  position: relative;
+  top: -2px;
 }
 
 #bleft {
@@ -279,6 +286,7 @@ html {
   height: 90px;
   background-color: $foreground;
    line-height: 90px;
+   font-size: 14px;
 }
 
 #fleft {
@@ -320,14 +328,19 @@ html {
 
 
 #topmenu {
-  width: $sce_colspan15;
+  width: $sce_colwrap15;
   text-align: right;
-  margin: 0 $sce_gap 0 $sce_gap;
-  padding-right: $sce_colspan1 + 20px;
+  padding: 0 ($sce_colspan1 + 30px) 0 $sce_gap;
   height: $topmenuheight;
   line-height: $topmenuheight;
   background-color: $lightgrey;
   font-size: 14px;
+  font-family: $defaultfont;
+}
+
+#topmenu span {
+  color: $cyan;
+  margin: 0 5px 0 20px;
 }
 
 // Classes
@@ -358,4 +371,8 @@ html {
     content: "";
     clear: both;
     height: 0;
+}
+
+.cyan {
+  color: $cyan;
 }
