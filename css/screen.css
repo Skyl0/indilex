@@ -316,7 +316,7 @@ html {
 
 /* line 306, ../sass/screen.scss */
 #logo {
-  width: 540px;
+  width: 300px;
   padding-left: 80px;
   margin: 0 10px 0 10px;
   vertical-align: middle;
@@ -333,14 +333,16 @@ html {
 
 /* line 322, ../sass/screen.scss */
 #mainmenu {
-  width: 620px;
+  width: 860px;
   margin: 0 10px 0 10px;
   vertical-align: middle;
   height: 120px;
   line-height: 120px;
+  text-align: right;
+  padding-right: 80px;
 }
 
-/* line 331, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 #topmenu {
   width: 1200px;
   text-align: right;
@@ -352,23 +354,23 @@ html {
   font-family: "Raleway", Arial, sans-serif;
 }
 
-/* line 342, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 #topmenu span {
   color: #49bab3;
   margin: 0 5px 0 20px;
 }
 
-/* line 349, ../sass/screen.scss */
+/* line 351, ../sass/screen.scss */
 .floatl {
   float: left;
 }
 
-/* line 353, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 .more:after {
   content: ' >>';
 }
 
-/* line 357, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 .roundbutton {
   border: 2px solid #4fbbb4;
   border-radius: 4px;
@@ -377,18 +379,18 @@ html {
   line-height: 40px;
 }
 
-/* line 366, ../sass/screen.scss */
+/* line 368, ../sass/screen.scss */
 .roundbutton:hover {
   background-color: #4fbbb4;
   color: #f6f6f6;
 }
 
-/* line 373, ../sass/screen.scss */
+/* line 375, ../sass/screen.scss */
 .eightcolumn {
   width: 653.66667px;
 }
 
-/* line 377, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -397,26 +399,27 @@ html {
   height: 0;
 }
 
-/* line 385, ../sass/screen.scss */
+/* line 387, ../sass/screen.scss */
 .cyan {
   color: #49bab3;
 }
 
-/* line 391, ../sass/screen.scss */
+/* line 393, ../sass/screen.scss */
 #mainmenu ul {
   list-style-type: none;
 }
-/* line 394, ../sass/screen.scss */
+/* line 396, ../sass/screen.scss */
 #mainmenu ul li {
   display: inline;
   border-right: 2px solid #49bab3;
-  padding: 0 10px;
+  padding: 0 30px;
 }
-/* line 400, ../sass/screen.scss */
+/* line 402, ../sass/screen.scss */
 #mainmenu ul li:last-child {
   border-right: 0px;
+  padding-right: 0px;
 }
-/* line 404, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
 #mainmenu ul li a {
   color: black;
 }

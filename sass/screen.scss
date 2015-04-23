@@ -304,7 +304,7 @@ html {
 }
 // Header Elemente
 #logo {
-  width: $sce_colspan7;
+  width: $sce_colspan4;
   padding-left: $sce_colspan1 + 20px;
   margin: 0 $sce_gap 0 $sce_gap;
   vertical-align: middle;
@@ -320,11 +320,13 @@ html {
 }
 
 #mainmenu {
-  width: $sce_colspan8;
+  width: $sce_colspan11;
   margin: 0 $sce_gap 0 $sce_gap;
   vertical-align: middle;
   height: $logo_menu_height;
   line-height: $logo_menu_height;
+  text-align: right;
+  padding-right: $sce_colwrap1;
 }
 
 
@@ -394,11 +396,12 @@ html {
   li {
     display: inline;
     border-right: 2px solid $cyan;
-    padding: 0 10px;
+    padding: 0 30px;
   }
   
   li:last-child {
     border-right: 0px;
+    padding-right: 0px;
   }
   
   li a {
