@@ -56,12 +56,12 @@ $sce_colwrap15: nth($sce_colwrap, 15);
 
 @font-face {
 font-family: Raleway;
-src: url("/link/indilex/fonts/Raleway-Regular.otf") format("opentype");
+src: url("../fonts/Raleway-Regular.otf") format("opentype");
 
 }
 @font-face {
 font-family: RalewaySemiBold;
-src: url("/link/indilex/fonts/Raleway-SemiBold.otf") format("opentype");
+src: url("../fonts/Raleway-SemiBold.otf") format("opentype");
 }
 
 @import "compass/reset";
@@ -135,7 +135,7 @@ html {
 #slider {
   height: 500px;
   background-color: $lightgrey;
-  background-image: url('file://c:/link/indilex/images/yellowlines.jpg');
+  background-image: url('../images/yellowlines.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -226,12 +226,13 @@ html {
 #btop {
   height: 120px;
   background-color: $lightgrey;
-  background-image: url('file://c:/link/indilex/images/handshake.jpg');
+  background-image: url('../images/handshake.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
   padding: 20px 0;
+  background-attachment: fixed;
 }
 
 #btopl {
@@ -359,7 +360,15 @@ html {
   padding: 10px 30px;
   width: 240px;
   line-height: 40px;
+  
 }
+
+.roundbutton:hover {
+    background-color: $cyanlight;
+    color: $lightgrey;
+}
+
+
 
 .eightcolumn {
    width: $sce_colspan8 + ($sce_colwrap1 / 3) + 7px;
