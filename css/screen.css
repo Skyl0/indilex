@@ -360,17 +360,61 @@ html {
   margin: 0 5px 0 20px;
 }
 
-/* line 351, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
+#mainr a {
+  border: 2px solid #4fbbb4;
+  border-radius: 4px;
+  padding: 10px 30px;
+  width: 240px;
+  line-height: 40px;
+}
+/* line 360, ../sass/screen.scss */
+#mainr a:hover {
+  background-color: #4fbbb4;
+  color: #f6f6f6;
+}
+/* line 365, ../sass/screen.scss */
+#mainr img {
+  width: 653.66667px;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+/* line 376, ../sass/screen.scss */
+#shortcodes a {
+  border: 2px solid #4fbbb4;
+  border-radius: 4px;
+  padding: 10px 30px;
+  width: 240px;
+  line-height: 40px;
+}
+/* line 384, ../sass/screen.scss */
+#shortcodes a:hover {
+  background-color: #4fbbb4;
+  color: #f6f6f6;
+}
+
+/* line 392, ../sass/screen.scss */
+#bottom h1 {
+  color: white;
+}
+/* line 396, ../sass/screen.scss */
+#bottom span a {
+  color: white;
+  padding: 0 5px;
+}
+
+/* line 405, ../sass/screen.scss */
 .floatl {
   float: left;
 }
 
-/* line 355, ../sass/screen.scss */
+/* line 409, ../sass/screen.scss */
 .more:after {
   content: ' >>';
 }
 
-/* line 359, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 .roundbutton {
   border: 2px solid #4fbbb4;
   border-radius: 4px;
@@ -379,18 +423,13 @@ html {
   line-height: 40px;
 }
 
-/* line 368, ../sass/screen.scss */
+/* line 422, ../sass/screen.scss */
 .roundbutton:hover {
   background-color: #4fbbb4;
   color: #f6f6f6;
 }
 
-/* line 375, ../sass/screen.scss */
-.eightcolumn {
-  width: 653.66667px;
-}
-
-/* line 379, ../sass/screen.scss */
+/* line 431, ../sass/screen.scss */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -399,27 +438,27 @@ html {
   height: 0;
 }
 
-/* line 387, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 .cyan {
   color: #49bab3;
 }
 
-/* line 393, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 #mainmenu ul {
   list-style-type: none;
 }
-/* line 396, ../sass/screen.scss */
+/* line 448, ../sass/screen.scss */
 #mainmenu ul li {
   display: inline;
   border-right: 2px solid #49bab3;
   padding: 0 30px;
 }
-/* line 402, ../sass/screen.scss */
+/* line 454, ../sass/screen.scss */
 #mainmenu ul li:last-child {
   border-right: 0px;
   padding-right: 0px;
 }
-/* line 407, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
 #mainmenu ul li a {
   color: black;
 }

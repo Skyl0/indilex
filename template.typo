@@ -1,0 +1,145 @@
+
+# (c) Marc Ernst - Y7 group 2015
+page = PAGE
+
+page.10 = TEMPLATE
+page.10.template = FILE
+page.10.template.file = fileadmin/indilex/index.html
+
+## JQuery
+page.includeJSFooter.jquery.external = 1
+page.includeJSFooter.jquery = https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
+
+[browser = msie] && [version =< 9]
+page.includeCSS.file1 = fileadmin/indilex/css/font-awesome.css
+page.includeCSS.file2 = fileadmin/indilex/css/ie.css
+
+[else]
+page.includeCSS.file1 = fileadmin/indilex/css/font-awesome.css
+page.includeCSS.file2 = fileadmin/indilex/css/screen.css
+#page.includeCSS.file3 = //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
+[global]
+
+
+# Navigation
+
+temp.navi = COA
+temp.navi {
+  
+  20 = TEXT
+  20.value = <ul>
+  90 = TEXT
+  90.value = </ul>
+  
+  30 = HMENU
+  30.special = list
+  30.special.value = 2,3,4,5,6
+  30.1 = TMENU
+  30.1 {
+    NO = 1
+    NO {
+      allWrap = <li>|</li>
+    }
+
+    ACT = 1
+    ACT {
+      allWrap = <li id="current">|</li>
+    }
+  }
+}
+
+temp.sitemap = COA
+temp.sitemap {
+  
+ # 20 = TEXT
+ # 20.value = <div>
+#  90 = TEXT
+ # 90.value = </div>
+  
+  30 = HMENU
+  30.special = list
+  30.special.value = 2,3,4,5,6,7
+  30.1 = TMENU
+  30.1 {
+    NO = 1
+    NO {
+      allWrap = |<span class="cyan">&#124;</span>
+    }
+
+    ACT = 1
+    ACT {
+      allWrap = |><span class="cyan">&#124;</span>
+    }
+  }
+}
+
+######################################################
+#
+# Configuration of SUBPARTS
+#
+######################################################
+ 
+page.10.workOnSubpart = DOCUMENT
+# Define the subparts, which are inside the subpart DOCUMENT
+page.10.subparts {
+
+ MAINMENU < temp.navi
+
+ SLIDER = CONTENT
+
+ SHORTCODELEFT = CONTENT
+ SHORTCODEMIDDLE = CONTENT
+ SHORTCODERIGHT = CONTENT
+
+ MAIN_LEFT = CONTENT
+ MAIN_RIGHT = CONTENT
+
+ BOTTOM_TOP = CONTENT
+ BOTTOMLEFT = CONTENT
+ BOTTOMMIDDLE = CONTENT
+ BOTTOMRIGHT < temp.sitemap
+
+ MAIN_RIGHT < styles.content.get
+ MAIN_RIGHT.select.where = colpos = 1
+
+ MAIN_LEFT < styles.content.get
+ MAIN_LEFT.select.where = colpos = 2
+
+ SLIDER < styles.content.get
+ SLIDER.select.where = colpos = 10
+
+ SHORTCODELEFT < styles.content.get
+ SHORTCODELEFT.select.where = colpos = 20
+
+ SHORTCODEMIDDLE< styles.content.get
+ SHORTCODEMIDDLE.select.where = colpos = 21
+
+ SHORTCODERIGHT < styles.content.get
+ SHORTCODERIGHT.select.where = colpos = 22
+
+ BOTTOM_TOP < styles.content.get
+ BOTTOM_TOP.select.where = colpos = 30
+
+ BOTTOMLEFT < styles.content.get
+ BOTTOMLEFT.select.where = colpos = 40
+
+ BOTTOMMIDDLE < styles.content.get
+ BOTTOMMIDDLE.select.where = colpos = 41
+
+ #BOTTOMRIGHT < styles.content.get
+ #BOTTOMRIGHT.select.where = colpos = 42
+
+ LOGO = TEXT
+ LOGO.value = <a href="http://www.google.de"><img src="../../../../fileadmin/indilex/images/logo.jpg" id="img_logo" /></a>
+}
+ 
+######################################################
+#
+# Configuration of MARKERS
+#
+######################################################
+ 
+# Define the markers inside the subpart DOCUMENT
+page.10.marks {
+ 
+}

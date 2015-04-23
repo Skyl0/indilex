@@ -346,6 +346,60 @@ html {
   margin: 0 5px 0 20px;
 }
 
+// Content Main Button
+#mainr{
+  
+  a {
+    border: 2px solid $cyanlight;
+    border-radius: 4px;
+    padding: 10px 30px;
+    width: 240px;
+    line-height: 40px; 
+  }
+
+  a:hover {
+    background-color: $cyanlight;
+    color: $lightgrey;
+  }
+  
+  img {
+    width: $sce_colspan8 + ($sce_colwrap1 / 3) + 7px;
+    padding: 0px !important;
+    margin: 0px !important; //TODO Formatierung von Tobi erfragen
+  }
+}
+
+// Shortcodes Link Buttons
+
+#shortcodes {
+  
+  a {
+    border: 2px solid $cyanlight;
+    border-radius: 4px;
+    padding: 10px 30px;
+    width: 240px;
+    line-height: 40px; 
+  }
+
+  a:hover {
+    background-color: $cyanlight;
+    color: $lightgrey;
+  }
+}
+
+#bottom {
+  
+  h1 {
+    color: white;
+  }
+  
+  span a {
+    color: white;
+    padding: 0 5px;
+  }
+  
+} 
+
 // Classes
 
 .floatl {
@@ -370,11 +424,9 @@ html {
     color: $lightgrey;
 }
 
-
-
-.eightcolumn {
-   width: $sce_colspan8 + ($sce_colwrap1 / 3) + 7px;
-}
+//.eightcolumn {
+  // width: $sce_colspan8 + ($sce_colwrap1 / 3) + 7px;
+//}
 
 .clearfix:after {
     visibility: hidden;
