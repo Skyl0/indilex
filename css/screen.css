@@ -4,15 +4,13 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @font-face {
   font-family: Raleway;
-  src: url("file://c:/_projects/indilex/fonts/Raleway-Regular.otf") format("opentype");
-  src: url("file://c:/_projects/indilex/fonts/Raleway-Regular.ttf") format("ttf");
+  src: url("/link/indilex/fonts/Raleway-Regular.otf") format("opentype");
 }
 @font-face {
   font-family: RalewaySemiBold;
-  src: url("file://c:/_projects/indilex/fonts/Raleway-SemiBold.otf") format("opentype");
-  src: url("file://c:/_projects/indilex/fonts/Raleway-SemiBold.ttf") format("ttf");
+  src: url("/link/indilex/fonts/Raleway-SemiBold.otf") format("opentype");
 }
-/* line 5, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -34,81 +32,81 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 h1 {
   color: #144856;
   font-size: 26px;
   margin: 20px 0 20px 0;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 h6 {
   color: #4fbab3;
   font-size: 24px;
   margin: 20px 0 20px 0;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 a {
   text-decoration: none;
   color: #4fbbb4;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 a:hover {
   color: #49bab3;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 p {
   margin: 20px 0 20px 0;
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
-/* line 112, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 html {
   box-sizing: border-box;
   background-color: #aaa;
@@ -116,25 +114,25 @@ html {
   font-size: 16px;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 #site {
   width: 1200px;
   margin: 0 auto 0 auto;
   background-color: #fff;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 #header {
   height: 160px;
   background-color: #fff;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 #slider {
   height: 500px;
   background-color: #f6f6f6;
@@ -144,64 +142,90 @@ html {
   background-position: center;
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 #shortcodes {
   min-height: 200px;
+  margin: 20px 0;
+  text-align: center;
 }
 
-/* line 157, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
+#shortcodel {
+  width: 406.66667px;
+  padding-left: 80px;
+  padding-right: 10px;
+  border-right: 2px solid #49bab3;
+  margin: 0 0 0 10px;
+}
+
+/* line 156, ../sass/screen.scss */
+#shortcodem {
+  width: 346.66667px;
+  margin: 0 10px 0 10px;
+}
+
+/* line 161, ../sass/screen.scss */
+#shortcoder {
+  width: 406.66667px;
+  padding-right: 80px;
+  padding-left: 10px;
+  border-left: 2px solid #49bab3;
+  margin: 0 10px 0 0;
+}
+
+/* line 171, ../sass/screen.scss */
 #main {
-  min-height: 500px;
-  background-color: #fff;
+  background-color: #f6f6f6;
 }
 
-/* line 162, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 #mainl {
-  width: 460px;
+  width: 426.66667px;
   padding-left: 60px;
   margin: 0 10px 0 10px;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 #mainl ul {
   list-style-type: none;
-  width: 300px;
+  width: 346.66667px;
   font-family: "RalewaySemiBold", Arial, sans-serif;
   margin: 20px 0 20px 0;
   border-right: 2px solid #49bab3;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 #mainl li {
-  width: 300px;
-  padding-right: 30px;
+  width: 326.66667px;
+  padding: 5px 20px 5px 0;
   height: 40px;
   text-align: right;
   vertical-align: middle;
   color: #144856;
   border-bottom: 2px solid #aaa;
-  padding-left: 60px;
+  margin-left: 20px;
 }
 
-/* line 189, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 #mainl li:last-child {
   border-bottom: 0px solid #fff;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 #mainr {
-  width: 700px;
+  width: 731.66667px;
   padding-right: 60px;
   margin: 0 10px 0 10px;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 #bottom {
   height: 370px;
   background-color: #144856;
+  color: white;
 }
 
-/* line 208, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 #btop {
   height: 120px;
   background-color: #f6f6f6;
@@ -209,44 +233,72 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  color: white;
+  padding: 20px 0;
 }
 
-/* line 217, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
+#btopl {
+  width: 620px;
+  padding-left: 80px;
+  margin: 0 10px 0 10px;
+  font-size: 26px;
+}
+
+/* line 242, ../sass/screen.scss */
+#btopr {
+  width: 540px;
+  padding-right: 80px;
+  margin: 0 10px 0 10px;
+}
+
+/* line 248, ../sass/screen.scss */
+#btop_button {
+  width: 200px;
+  text-align: center;
+  position: relative;
+  left: 260px;
+  border-radius: 4px;
+  border: 2px solid white;
+  padding: 10px 30px;
+}
+
+/* line 258, ../sass/screen.scss */
 #bleft {
   width: 380px;
   padding-left: 80px;
   margin: 0 10px 0 10px;
 }
 
-/* line 223, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 #bmid {
   width: 380px;
   margin: 0 10px 0 10px;
   padding: 0 60px 0 40px;
 }
 
-/* line 229, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 #bright {
   width: 380px;
   margin: 0 10px 0 10px;
   padding-right: 80px;
 }
 
-/* line 237, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 #footer {
   height: 90px;
   background-color: #fff;
   line-height: 90px;
 }
 
-/* line 243, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 #fleft {
   padding-left: 80px;
   width: 620px;
   margin: 0 10px 0 10px;
 }
 
-/* line 249, ../sass/screen.scss */
+/* line 290, ../sass/screen.scss */
 #fright {
   width: 540px;
   padding-right: 80px;
@@ -254,7 +306,7 @@ html {
   margin: 0 10px 0 10px;
 }
 
-/* line 256, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 #logo {
   width: 540px;
   padding-left: 60px;
@@ -264,14 +316,14 @@ html {
   line-height: 120px;
 }
 
-/* line 265, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 #img_logo {
   vertical-align: middle;
   display: inline-block;
   height: 44px;
 }
 
-/* line 272, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 #mainmenu {
   width: 620px;
   margin: 0 10px 0 10px;
@@ -280,7 +332,7 @@ html {
   line-height: 120px;
 }
 
-/* line 281, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 #topmenu {
   width: 1200px;
   text-align: right;
@@ -291,17 +343,17 @@ html {
   font-size: 14px;
 }
 
-/* line 293, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 .floatl {
   float: left;
 }
 
-/* line 297, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 .more:after {
   content: ' >>';
 }
 
-/* line 301, ../sass/screen.scss */
+/* line 342, ../sass/screen.scss */
 .roundbutton {
   border: 2px solid #4fbbb4;
   border-radius: 4px;
@@ -310,7 +362,16 @@ html {
   line-height: 40px;
 }
 
-/* line 309, ../sass/screen.scss */
+/* line 350, ../sass/screen.scss */
 .eightcolumn {
-  width: 620px;
+  width: 653.66667px;
+}
+
+/* line 354, ../sass/screen.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
 }

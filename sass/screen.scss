@@ -56,13 +56,12 @@ $sce_colwrap15: nth($sce_colwrap, 15);
 
 @font-face {
 font-family: Raleway;
-src: url("file://c:/_projects/indilex/fonts/Raleway-Regular.otf") format("opentype");
-src: url("file://c:/_projects/indilex/fonts/Raleway-Regular.ttf") format("ttf");
+src: url("/link/indilex/fonts/Raleway-Regular.otf") format("opentype");
+
 }
 @font-face {
 font-family: RalewaySemiBold;
-src: url("file://c:/_projects/indilex/fonts/Raleway-SemiBold.otf") format("opentype");
-src: url("file://c:/_projects/indilex/fonts/Raleway-SemiBold.ttf") format("ttf");
+src: url("/link/indilex/fonts/Raleway-SemiBold.otf") format("opentype");
 }
 
 @import "compass/reset";
@@ -142,32 +141,47 @@ html {
 
 #shortcodes {
   min-height: 200px;
+  margin: 20px 0;
+  text-align: center;
 }
 
-#shortcl {
-  
+#shortcodel {
+  width: $sce_colspan5 + ($sce_colwrap1 / 3);
+  padding-left: $sce_colwrap1;
+  padding-right: $sce_gap;
+  border-right: 2px solid $cyan;
+  margin: 0 0 0 $sce_gap;
 }
 
-#shortcm {
-  
+#shortcodem {
+  width: $sce_colspan4 + ($sce_colwrap1 / 3) + 20px;
+  margin: 0 $sce_gap 0 $sce_gap;
+}
+
+#shortcoder {
+  width: $sce_colspan5 + ($sce_colwrap1 / 3);
+  padding-right: $sce_colwrap1;
+  padding-left: $sce_gap;
+  border-left: 2px solid $cyan;
+  margin: 0 $sce_gap 0 0;
 }
 
 
 
 #main {
-  min-height: 500px;
-  background-color: $foreground;
+//  min-height: 500px;
+  background-color: $lightgrey;
 }
 
 #mainl {
-  width: $sce_colspan6;
+  width: $sce_colspan5+ ($sce_colwrap1 / 3) + 20px;
   padding-left: $sce_colspan1;
   margin: 0 $sce_gap 0 $sce_gap;
 }
 
 #mainl ul {
   list-style-type: none;
-  width: $sce_colspan4;
+  width: $sce_colspan4+ ($sce_colwrap1 / 3) + 20px;
   font-family: "RalewaySemiBold", Arial, sans-serif;
   margin: 20px 0 20px 0;
   border-right: 2px solid $cyan;
@@ -175,15 +189,16 @@ html {
 }
 
 #mainl li {
-  width: $sce_colspan4;
-  padding-right: 30px;
+  width: $sce_colspan4+ ($sce_colwrap1 / 3);
+  padding: 5px 20px 5px 0;
   height: 40px;
   //line-height: 40px;
   text-align: right;
   vertical-align: middle;
   color: $bottombg;
   border-bottom: 2px solid #aaa;
-  padding-left: $sce_colspan1
+  margin-left: 20px;
+ // padding-left: $sce_colspan1
 }
 
 #mainl li:last-child {
@@ -191,7 +206,7 @@ html {
 }
 
 #mainr {
-  width: $sce_colspan9;
+  width: $sce_colspan9 + ($sce_colwrap1 / 3) + 5px;
   padding-right: $sce_colspan1;
   margin: 0 $sce_gap 0 $sce_gap;
 }
@@ -201,6 +216,7 @@ html {
 #bottom {
   height: 370px;
   background-color: $bottombg;
+  color: white;
 }
 
 // Bottom Elemente
@@ -212,6 +228,31 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  color: white;
+  padding: 20px 0;
+}
+
+#btopl {
+  width: $sce_colspan8;
+  padding-left: $sce_colwrap1;
+  margin: 0 $sce_gap 0 $sce_gap;
+  font-size: 26px;
+}
+
+#btopr {
+  width: $sce_colspan7;
+  padding-right: $sce_colwrap1;
+  margin: 0 $sce_gap 0 $sce_gap;
+}
+
+#btop_button {
+  width: 200px;
+  text-align: center;
+  position: relative;
+  left: $sce_colspan6 - 200px;
+  border-radius: 4px;
+  border: 2px solid white;
+  padding: 10px 30px;
 }
 
 #bleft {
@@ -307,5 +348,13 @@ html {
 }
 
 .eightcolumn {
-   width: $sce_colspan8;
+   width: $sce_colspan8 + ($sce_colwrap1 / 3) + 7px;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
 }
