@@ -296,7 +296,7 @@ html {
 // Header Elemente
 #logo {
   width: $sce_colspan7;
-  padding-left: $sce_colspan1;
+  padding-left: $sce_colspan1 + 20px;
   margin: 0 $sce_gap 0 $sce_gap;
   vertical-align: middle;
   height: $logo_menu_height;
@@ -320,9 +320,10 @@ html {
 
 
 #topmenu {
-  width: $sce_colwrap15;
+  width: $sce_colspan15;
   text-align: right;
-  padding: 0 $sce_gap 0 $sce_gap;
+  margin: 0 $sce_gap 0 $sce_gap;
+  padding-right: $sce_colspan1 + 20px;
   height: $topmenuheight;
   line-height: $topmenuheight;
   background-color: $lightgrey;

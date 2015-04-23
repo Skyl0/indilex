@@ -309,7 +309,7 @@ html {
 /* line 297, ../sass/screen.scss */
 #logo {
   width: 540px;
-  padding-left: 60px;
+  padding-left: 80px;
   margin: 0 10px 0 10px;
   vertical-align: middle;
   height: 120px;
@@ -334,26 +334,27 @@ html {
 
 /* line 322, ../sass/screen.scss */
 #topmenu {
-  width: 1200px;
+  width: 1180px;
   text-align: right;
-  padding: 0 10px 0 10px;
+  margin: 0 10px 0 10px;
+  padding-right: 80px;
   height: 40px;
   line-height: 40px;
   background-color: #f6f6f6;
   font-size: 14px;
 }
 
-/* line 334, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 .floatl {
   float: left;
 }
 
-/* line 338, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 .more:after {
   content: ' >>';
 }
 
-/* line 342, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 .roundbutton {
   border: 2px solid #4fbbb4;
   border-radius: 4px;
@@ -362,12 +363,12 @@ html {
   line-height: 40px;
 }
 
-/* line 350, ../sass/screen.scss */
+/* line 351, ../sass/screen.scss */
 .eightcolumn {
   width: 653.66667px;
 }
 
-/* line 354, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 .clearfix:after {
   visibility: hidden;
   display: block;
