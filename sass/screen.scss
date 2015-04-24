@@ -293,6 +293,7 @@ html {
   background-color: $foreground;
    line-height: 90px;
    font-size: 14px;
+   font-family: $defaultbold;
 }
 
 #fleft {
@@ -499,4 +500,29 @@ html {
    //   font-stretch: expanded;
     }
   }
+}
+
+// Slider
+
+.flexslider { 
+  
+  strong {
+    font-size: 36px;
+    font-family: $defaultbold;
+    text-shadow: 4px 4px 5px #000;
+  }
+  span {
+    font-size: 24px;
+    font-family: $defaultbold;
+    text-shadow: 2px 2px 3px #000;
+    
+  }
+
+  p {
+    position: relative;
+    top: -400px;
+    padding: 0 ($sce_colspan1 + 30px);
+    color: white;
+  }
+
 }

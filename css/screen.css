@@ -300,16 +300,17 @@ html {
   background-color: #fff;
   line-height: 90px;
   font-size: 14px;
+  font-family: "RalewaySemiBold", Arial, sans-serif;
 }
 
-/* line 298, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 #fleft {
   padding-left: 80px;
   width: 620px;
   margin: 0 10px 0 10px;
 }
 
-/* line 304, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 #fright {
   width: 540px;
   padding-right: 80px;
@@ -317,7 +318,7 @@ html {
   margin: 0 10px 0 10px;
 }
 
-/* line 311, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 #logo {
   width: 300px;
   padding-left: 80px;
@@ -327,14 +328,14 @@ html {
   line-height: 120px;
 }
 
-/* line 320, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 #img_logo {
   vertical-align: middle;
   display: inline-block;
   height: 44px;
 }
 
-/* line 327, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 #mainmenu {
   width: 860px;
   margin: 0 10px 0 10px;
@@ -345,7 +346,7 @@ html {
   padding-right: 80px;
 }
 
-/* line 338, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 #topmenu {
   width: 1200px;
   text-align: right;
@@ -357,13 +358,13 @@ html {
   font-family: "Raleway", Arial, sans-serif;
 }
 
-/* line 349, ../sass/screen.scss */
+/* line 350, ../sass/screen.scss */
 #topmenu span {
   color: #49bab3;
   margin: 0 5px 0 20px;
 }
 
-/* line 357, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 #mainr a {
   border: 2px solid #4fbbb4;
   border-radius: 4px;
@@ -371,12 +372,12 @@ html {
   width: 240px;
   line-height: 40px;
 }
-/* line 365, ../sass/screen.scss */
+/* line 366, ../sass/screen.scss */
 #mainr a:hover {
   background-color: #4fbbb4;
   color: #f6f6f6;
 }
-/* line 370, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 #mainr img {
   width: 653.66667px;
   position: relative;
@@ -385,7 +386,7 @@ html {
   margin: 0px !important;
 }
 
-/* line 383, ../sass/screen.scss */
+/* line 384, ../sass/screen.scss */
 #shortcodes a {
   border: 2px solid #4fbbb4;
   border-radius: 4px;
@@ -393,54 +394,54 @@ html {
   width: 240px;
   line-height: 40px;
 }
-/* line 391, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 #shortcodes a:hover {
   background-color: #4fbbb4;
   color: #f6f6f6;
 }
 
-/* line 399, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 #bottom h1 {
   color: white;
 }
-/* line 403, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 #bottom span {
   word-wrap: break-word;
   word-break: break-all;
 }
-/* line 406, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
 #bottom span a {
   color: white;
   padding: 0 5px;
 }
 
-/* line 416, ../sass/screen.scss */
+/* line 417, ../sass/screen.scss */
 #scrollup {
   position: relative;
   top: 56px;
   left: 245px;
 }
 
-/* line 423, ../sass/screen.scss */
+/* line 424, ../sass/screen.scss */
 #scrollup a {
   opacity: 0.5;
 }
-/* line 427, ../sass/screen.scss */
+/* line 428, ../sass/screen.scss */
 #scrollup a:hover {
   opacity: 1.0;
 }
 
-/* line 434, ../sass/screen.scss */
+/* line 435, ../sass/screen.scss */
 .floatl {
   float: left;
 }
 
-/* line 438, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 .more:after {
   content: ' >>';
 }
 
-/* line 442, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 .roundbutton {
   border: 2px solid #4fbbb4;
   border-radius: 4px;
@@ -449,13 +450,13 @@ html {
   line-height: 40px;
 }
 
-/* line 451, ../sass/screen.scss */
+/* line 452, ../sass/screen.scss */
 .roundbutton:hover {
   background-color: #4fbbb4;
   color: #f6f6f6;
 }
 
-/* line 460, ../sass/screen.scss */
+/* line 461, ../sass/screen.scss */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -464,37 +465,57 @@ html {
   height: 0;
 }
 
-/* line 468, ../sass/screen.scss */
+/* line 469, ../sass/screen.scss */
 .cyan {
   color: #49bab3;
 }
 
-/* line 472, ../sass/screen.scss */
+/* line 473, ../sass/screen.scss */
 .opacity50 {
   opacity: 0.5;
 }
 
-/* line 478, ../sass/screen.scss */
+/* line 479, ../sass/screen.scss */
 #mainmenu ul {
   list-style-type: none;
 }
-/* line 481, ../sass/screen.scss */
+/* line 482, ../sass/screen.scss */
 #mainmenu ul li {
   display: inline;
   border-right: 2px solid #49bab3;
   padding: 0 30px;
 }
-/* line 487, ../sass/screen.scss */
+/* line 488, ../sass/screen.scss */
 #mainmenu ul li:last-child {
   border-right: 0px;
   padding-right: 0px;
 }
-/* line 493, ../sass/screen.scss */
+/* line 494, ../sass/screen.scss */
 #mainmenu ul li a {
   color: black;
 }
-/* line 496, ../sass/screen.scss */
+/* line 497, ../sass/screen.scss */
 #mainmenu ul li a:hover {
   color: #49bab3;
   font-family: "RalewaySemiBold", Arial, sans-serif;
+}
+
+/* line 509, ../sass/screen.scss */
+.flexslider strong {
+  font-size: 36px;
+  font-family: "RalewaySemiBold", Arial, sans-serif;
+  text-shadow: 4px 4px 5px #000;
+}
+/* line 514, ../sass/screen.scss */
+.flexslider span {
+  font-size: 24px;
+  font-family: "RalewaySemiBold", Arial, sans-serif;
+  text-shadow: 2px 2px 3px #000;
+}
+/* line 521, ../sass/screen.scss */
+.flexslider p {
+  position: relative;
+  top: -400px;
+  padding: 0 90px;
+  color: white;
 }

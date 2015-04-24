@@ -2,14 +2,15 @@
 
 
 jQuery(document).ready(function($)  {
-
+  
+ 
 	// Opacity Effekt
 	$("#scrollup i").hover(
 		function() {
-			$('#scrollup i').removeClass("opacity50");
+			$('#scrollup i').fadeIn().removeClass("opacity50");
 		 },
 		function() {		
-			$('#scrollup i').addClass("opacity50");
+			$('#scrollup i').fadeIn().addClass("opacity50");
 		}
 		
 	);
@@ -32,4 +33,4 @@ jQuery(document).ready(function($)  {
 	});
 
 
-}
+});
