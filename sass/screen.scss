@@ -77,7 +77,7 @@ $bottombg : #144856;
 $defaultfont : "Raleway", Arial, sans-serif;
 $defaultbold : "RalewaySemiBold", Arial, sans-serif;
 
-$margintopbottom : 20px;
+$margintopbottom : 40px;
 
 $headerheight : 160px;
 $topmenuheight : 40px;
@@ -143,6 +143,22 @@ html {
   background-position: center;
 }
 
+#titlebar {
+  height: 100px;
+  background-color: $lightgrey;
+  background-image: url('../images/yellowlines.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  div {
+    line-height: 100px;
+    padding-left: $sce_colwrap1 +10px;
+    font-size: 24px;
+    font-family: $defaultbold;
+    color: white;
+  }
+}
+
 #shortcodes {
   min-height: 200px;
   margin: $margintopbottom 0;
@@ -153,7 +169,7 @@ html {
   width: $sce_colspan5 + ($sce_colwrap1 / 3);
   padding-left: $sce_colwrap1;
   padding-right: $sce_gap;
-  border-right: 2px solid $cyan;
+  border-right: 2px solid ($bottombg * 1.333);
   margin: 0 0 0 $sce_gap;
 }
 
@@ -166,7 +182,7 @@ html {
   width: $sce_colspan5 + ($sce_colwrap1 / 3);
   padding-right: $sce_colwrap1;
   padding-left: $sce_gap;
-  border-left: 2px solid $cyan;
+  border-left: 2px solid ($bottombg * 1.333);
   margin: 0 $sce_gap 0 0;
 }
 
@@ -189,24 +205,29 @@ html {
   width: $sce_colspan4+ ($sce_colwrap1 / 3) + 20px;
   font-family: $defaultbold;
   margin: $margintopbottom 0 $margintopbottom 0;
-  border-right: 2px solid $cyan;
+  border-right: 2px solid $bottombg;
   
 }
-
-#mainl li {
-  width: $sce_colspan4+ ($sce_colwrap1 / 3);
-  padding: 5px 20px 5px 0;
-  height: 40px;
+#mainl li a {
+  display: block;
+  width: $sce_colspan4+ ($sce_colwrap1 / 3) - 2px;
+  padding: 1em 20px 1em 0;
+  height: 50px;
+  line-height: 1em;
   //line-height: 40px;
   text-align: right;
-  vertical-align: middle;
+  vertical-align: 1em;
   color: $bottombg;
-  border-bottom: 2px solid #aaa;
+  border-bottom: 2px solid ($cyan * 0.75);
   margin-left: 20px;
  // padding-left: $sce_colspan1
 }
+ a:hover {
+   background-color: $bottombg;
+   color: #fff !important;
+ }
 
-#mainl li:last-child {
+#mainl li:last-child a {
   border-bottom: 0px solid #fff;
 }
 
@@ -219,11 +240,28 @@ html {
 //Bottom
 
 #bottom {
-  height: 370px;
+  //height: 370px;
   background-color: $bottombg;
   color: white;
   line-height: 120%;
 }
+
+#bottom {
+  
+  h1 {
+    color: $cyan;
+  }
+  
+  span {
+    word-wrap: break-word;
+    word-break: break-all;
+    a {
+      color: white;
+      padding: 0 5px;
+    }
+  }
+  
+} 
 
 // Bottom Elemente
 
@@ -254,13 +292,29 @@ html {
 }
 
 #btop_button {
+  
   width: 240px;
   text-align: center;
   position: relative;
   left: $sce_colspan6 - 240px;
-  border-radius: 4px;
-  border: 2px solid white;
-  padding: 10px 30px;
+}
+
+#btop_button {
+  a {
+    color: white;
+    width: 244px;  
+    border-radius: 4px;
+    border: 2px solid white;
+    padding: 10px 30px;
+  }
+  a:hover {
+   
+    background-color: white;
+    color: $bottombg;
+    border-radius: 4px;
+    border: 2px solid $bottombg;
+
+  }
 }
 
 #btop_button span {
@@ -284,6 +338,14 @@ html {
   width: $sce_colspan5;  
   margin: 0 $sce_gap 0 $sce_gap;
   padding-right: $sce_colwrap1;
+  position: relative;
+}
+
+#cyanbar {
+  line-height: 0px;
+  height: 10px;
+  background-color: $cyan;
+  width: 100%;
 }
 
 //Footer
@@ -369,7 +431,7 @@ html {
   }
   
   img {
-    width: $sce_colspan8 + ($sce_colwrap1 / 3) + 7px;
+    width: $sce_colspan8 + ($sce_colwrap1 / 3) + 5px;
     position: relative;
     right: 7px;
     padding: 0px !important;
@@ -395,29 +457,14 @@ html {
   }
 }
 
-#bottom {
-  
-  h1 {
-    color: white;
-  }
-  
-  span {
-    word-wrap: break-word;
-    word-break: break-all;
-    a {
-      color: white;
-      padding: 0 5px;
-    }
-  }
-  
-} 
+
 
 // ScrollUp
 
 #scrollup {
-  position: relative;
-  top: 56px;
-  left: 245px;
+  position: absolute;
+  top: 255px + (2 * $margintopbottom) - (1.5 * 48px); // containerheight * 1.5
+  left: 258px; // found out by trying  
 }
 
 #scrollup {
@@ -493,10 +540,11 @@ html {
   li {
     a {
       color: black;
+      font-size: 1.05em;
     }
     a:hover {
       color: $cyan;
-      font-family: $defaultbold;
+      
    //   font-stretch: expanded;
     }
   }
