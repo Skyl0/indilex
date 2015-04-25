@@ -40,7 +40,7 @@ a { text-decoration: none; color: #4fbbb4; }
 a:hover { color: #49bab3; }
 
 /* line 111, ../sass/screen.scss */
-p { margin: 40px 0 40px 0; }
+p { margin: 0 0 20px 0; }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 /* line 116, ../sass/screen.scss */
