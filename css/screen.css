@@ -76,7 +76,7 @@ html { box-sizing: border-box; background-color: #aaa; font-family: "Raleway", A
 #shortcoder { width: 406.66667px; padding-right: 80px; padding-left: 10px; border-left: 2px solid #368b86; margin: 0 10px 0 0; }
 
 /* line 192, ../sass/screen.scss */
-#main { background-color: #f6f6f6; }
+#main { margin: 40px 0; background-color: #f6f6f6; }
 
 /* line 198, ../sass/screen.scss */
 #mainl { width: 426.66667px; padding-left: 60px; margin: 0 10px 0 10px; }
@@ -99,41 +99,41 @@ html { box-sizing: border-box; background-color: #aaa; font-family: "Raleway", A
 /* line 243, ../sass/screen.scss */
 #bottom { background-color: #144856; color: white; line-height: 120%; }
 
-/* line 252, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 #bottom h1 { color: #49bab3; }
-/* line 256, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #bottom span { word-wrap: break-word; word-break: break-all; }
-/* line 259, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 #bottom span a { color: white; padding: 0 5px; }
 
-/* line 269, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 #btop { height: 120px; background-color: #f6f6f6; background-image: url("../images/handshake.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; color: white; padding: 40px 0; background-attachment: fixed; line-height: 150%; }
 
-/* line 282, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 #btopl { width: 620px; padding-left: 80px; margin: 0 10px 0 10px; font-size: 26px; }
 
-/* line 289, ../sass/screen.scss */
+/* line 290, ../sass/screen.scss */
 #btopr { width: 540px; padding-right: 80px; margin: 0 10px 0 10px; }
 
-/* line 295, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 #btop_button { text-align: center; position: relative; left: 220px; margin-right: 190px; top: 12px; }
 
-/* line 306, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 #btop_button a { color: white; width: 240px; border-radius: 4px; border: 2px solid white; padding: 12px 30px; }
-/* line 315, ../sass/screen.scss */
-#btop_button a:hover { background-color: white; color: #144856 !important; border-radius: 4px; border: 2px solid #144856; }
+/* line 316, ../sass/screen.scss */
+#btop_button a:hover { background: rgba(255, 255, 255, 0.5) !important; color: #144856 !important; border-radius: 4px; border: 2px solid #144856; }
 
 /* line 325, ../sass/screen.scss */
 #btop_button span { position: relative; top: -2px; }
 
 /* line 330, ../sass/screen.scss */
-#bleft { width: 380px; padding-left: 80px; margin: 0 10px 0 10px; }
+#bleft { width: 380px; padding-left: 80px; margin: 0 10px 40px 10px; }
 
 /* line 336, ../sass/screen.scss */
-#bmid { width: 380px; margin: 0 10px 0 10px; padding: 0 60px 0 47px; }
+#bmid { width: 380px; margin: 0 10px 40px 10px; padding: 0 60px 0 47px; }
 
 /* line 342, ../sass/screen.scss */
-#bright { width: 380px; margin: 0 10px 0 10px; padding-right: 80px; position: relative; }
+#bright { width: 380px; margin: 0 10px 40px 10px; padding-right: 80px; position: relative; }
 
 /* line 349, ../sass/screen.scss */
 #cyanbar { line-height: 0px; height: 10px; background-color: #49bab3; width: 100%; }
@@ -172,10 +172,10 @@ html { box-sizing: border-box; background-color: #aaa; font-family: "Raleway", A
 /* line 451, ../sass/screen.scss */
 #shortcodes a { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; }
 /* line 459, ../sass/screen.scss */
-#shortcodes a:hover { background-color: #4fbbb4; color: #f6f6f6; }
+#shortcodes a:hover { background: rgba(79, 187, 180, 0.9); color: #f6f6f6; }
 
 /* line 469, ../sass/screen.scss */
-#scrollup { position: absolute; top: 263px; left: 258px; }
+#scrollup { position: absolute; top: 228px; left: 258px; }
 
 /* line 476, ../sass/screen.scss */
 #scrollup a { opacity: 0.5; }
@@ -192,7 +192,7 @@ html { box-sizing: border-box; background-color: #aaa; font-family: "Raleway", A
 .roundbutton { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; }
 
 /* line 504, ../sass/screen.scss */
-.roundbutton:hover { background-color: #4fbbb4; color: #f6f6f6; }
+.roundbutton:hover { background: rgba(79, 187, 180, 0.75); color: #f6f6f6; }
 
 /* line 513, ../sass/screen.scss */
 .clearfix:after { visibility: hidden; display: block; content: ""; clear: both; height: 0; }

@@ -191,7 +191,7 @@ html {
 
 #main {
 //  min-height: 500px;
-  //margin: $margintopbottom 0 ;
+  margin: $margintopbottom 0 ;
   background-color: $lightgrey;
 }
 
@@ -205,7 +205,7 @@ html {
   list-style-type: none;
   width: $sce_colspan4+ ($sce_colwrap1 / 3) + 20px;
   font-family: $defaultbold;
-  margin: $margintopbottom 0 $margintopbottom 0;
+  margin: $margintopbottom 0 $margintopbottom 0; 
   border-right: 2px solid ($cyan*0.75);
   
 }
@@ -243,6 +243,7 @@ html {
 #bottom {
   //height: 370px;
   background-color: $bottombg;
+ // margin: 0 0 $margintopbottom 0;
   color: white;
   line-height: 120%;
 }
@@ -313,8 +314,7 @@ html {
    
   }
   a:hover {
-   
-    background-color: white;
+    background: rgba(255,255,255,0.5) !important; 
     color: $bottombg !important;
     border-radius: 4px;
     border: 2px solid $bottombg;
@@ -330,18 +330,18 @@ html {
 #bleft {
   width: $sce_colspan5;
   padding-left: $sce_colwrap1;
-  margin: 0 $sce_gap 0 $sce_gap;
+  margin: 0 $sce_gap $margintopbottom $sce_gap;
 }
 
 #bmid {
   width: $sce_colspan5;
-  margin: 0 $sce_gap 0 $sce_gap;
+  margin: 0 $sce_gap $margintopbottom $sce_gap;
   padding: 0 60px 0 47px;
 }
 
 #bright {
   width: $sce_colspan5;  
-  margin: 0 $sce_gap 0 $sce_gap;
+  margin: 0 $sce_gap $margintopbottom $sce_gap;
   padding-right: $sce_colwrap1;
   position: relative;
 }
@@ -457,7 +457,7 @@ html {
   }
 
   a:hover {
-    background-color: $cyanlight;
+    background: rgba(79,187,180,0.9);
     color: $lightgrey;
   }
 }
@@ -468,7 +468,7 @@ html {
 
 #scrollup {
   position: absolute;
-  top: 255px + (2 * $margintopbottom) - (1.5 * 48px); // containerheight * 1.5
+  top: 220px + (2 * $margintopbottom) - (1.5 * 48px); // containerheight * 1.5
   left: 258px; // found out by trying  
 }
 
@@ -502,7 +502,7 @@ html {
 }
 
 .roundbutton:hover {
-    background-color: $cyanlight;
+    background: rgba(79,187,180,0.75);
     color: $lightgrey;
 }
 
