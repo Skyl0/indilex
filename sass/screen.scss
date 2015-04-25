@@ -116,6 +116,7 @@ p {
 html {
   box-sizing: border-box;
   background-color: $background;
+  background: url('../images/concrete_seamless_darker.png') repeat;
   font-family: $defaultfont;
   font-size: 16px;
 }
@@ -125,9 +126,13 @@ html {
 }
 
 #site {
-  width: $sce_colwrap15;
+  width: $sce_colwrap15 + 4px;
   margin: 0 auto 0 auto;
   background-color: $foreground;
+  //border-position: outside;
+  //border-left: 2px solid #aaa;
+  //border-right: 2px solid #aaa;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.333);
 }
 
 #header {
@@ -190,8 +195,8 @@ html {
 
 
 #main {
-//  min-height: 500px;
-  margin: $margintopbottom 0 ;
+  min-height: 300px;
+  padding: $margintopbottom 0 ;
   background-color: $lightgrey;
 }
 
@@ -520,6 +525,7 @@ html {
 
 .cyan {
   color: $cyan;
+  //font-family: $defaultbold;
 }
 
 .opacity50 {
