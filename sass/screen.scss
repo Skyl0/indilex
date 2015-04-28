@@ -125,6 +125,16 @@ html {
   box-sizing: inherit;
 }
 
+#sitemap {
+  
+  color: $cyan;
+
+  a {
+    display: inline-block;
+    color: white;
+  }
+}
+
 #site {
   width: $sce_colwrap15 + 4px;
   margin: 0 auto 0 auto;
