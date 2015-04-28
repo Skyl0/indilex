@@ -63,7 +63,7 @@ html { box-sizing: border-box; background-color: #aaa; background: url("../image
 
 #mainl ul ul { padding: 0; margin: 0; }
 
-#mainl li a { display: block !important; width: 324.66667px; padding: 5px 20px 5px 10px; height: 50px; line-height: 20px; text-align: right; vertical-align: 20px; color: #144856; border-bottom: 2px solid #245d59; margin-left: 20px; }
+#mainl li a { display: block !important; width: 324.66667px; padding: 5px 20px 5px 10px; height: 50px; line-height: 20px; text-align: right; vertical-align: 20px; color: #144856; border-bottom: 2px solid #245d59; margin-left: 20px; -webkit-transition: all 0.5s; transition: all 0.5s; }
 
 #sidecurrent a { background-color: #103944 !important; color: #fff !important; }
 
@@ -76,7 +76,10 @@ html { box-sizing: border-box; background-color: #aaa; background: url("../image
 #bottom { background-color: #144856; color: white; line-height: 120%; }
 
 #bottom h1 { color: #49bab3; }
-#bottom a { display: inline-block; }
+
+#bmid a { display: inline-block; }
+
+#bright a { display: inline-block; }
 
 #btop { height: 120px; background-color: #f6f6f6; background-image: url("../images/handshake.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; color: white; padding: 40px 0; background-attachment: fixed; line-height: 150%; }
 
@@ -86,7 +89,7 @@ html { box-sizing: border-box; background-color: #aaa; background: url("../image
 
 #btop_button { text-align: center; position: relative; left: 220px; margin-right: 190px; top: 12px; }
 
-#btop_button a { color: white; width: 240px; border-radius: 4px; border: 2px solid white; padding: 12px 30px; -webkit-transition: all 0.5s; /* Safari */ transition: all 0.5s; }
+#btop_button a { color: white; width: 240px; border-radius: 4px; border: 2px solid white; padding: 12px 30px; -webkit-transition: all 0.5s; transition: all 0.5s; }
 #btop_button a:hover { background: rgba(255, 255, 255, 0.5) !important; color: #144856 !important; border-radius: 4px; border: 2px solid #144856; }
 
 #btop_button span { position: relative; top: -2px; }

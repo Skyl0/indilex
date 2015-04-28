@@ -12,7 +12,6 @@ $sce_gap: ($sce_gutter / 2);
 
 $sce_colspan: ();
 $sce_colwrap: ();
-
 @for $i from 1 through 15 {
   $w: (($sce_column + $sce_gutter) * $i - $sce_gutter);
   $sce_colspan: append($sce_colspan, $w);
@@ -247,6 +246,9 @@ html {
   color: $bottombg;
   border-bottom: 2px solid ($cyan * 0.5);
   margin-left: 20px;
+  -webkit-transition: all 0.5s; //Safari
+  transition: all 0.5s;
+   
  // padding-left: $sce_colspan1
  
 
@@ -288,13 +290,21 @@ html {
   h1 {
     color: $cyan;
   }
-  
-  a {
-    display: inline-block;
-  }
+
   
 } 
 
+#bmid a {
+
+    display: inline-block;
+  
+}
+
+#bright a {
+
+    display: inline-block;
+  
+}
 // Bottom Elemente
 
 #btop {
@@ -341,7 +351,7 @@ html {
     border-radius: 4px;
     border: 2px solid white;
     padding: 12px 30px;
-        -webkit-transition: all 0.5s; /* Safari */
+    -webkit-transition: all 0.5s; //Safari
     transition: all 0.5s;
    
   }
