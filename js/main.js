@@ -15,6 +15,18 @@ jQuery(document).ready(function($)  {
 		
 	);
 	
+	// Alle Link Boxen mit Animationen
+	
+	/*$('#mainr a').hover(
+		function() {
+			this.
+		},
+		function() {
+			this.fadeOut();
+		}
+		
+	);*/
+	
 	// Scroll Up TODO Tobi wegen Funktion fragen
 	
 	$(function() {

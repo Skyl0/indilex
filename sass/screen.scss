@@ -326,6 +326,8 @@ html {
     border-radius: 4px;
     border: 2px solid white;
     padding: 12px 30px;
+        -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
    
   }
   a:hover {
@@ -443,6 +445,8 @@ html {
     padding: 10px 30px;
     width: 240px;
     line-height: 40px; 
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
   }
 
   a:hover {
@@ -469,6 +473,8 @@ html {
     padding: 10px 30px;
     width: 240px;
     line-height: 40px; 
+     -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
   }
 
   a:hover {
@@ -490,6 +496,8 @@ html {
 #scrollup {
   a {
     opacity: 0.5;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
   }
   
   a:hover {
@@ -547,15 +555,18 @@ html {
 #mainmenu ul {
   list-style-type: none;
   
+  
   li {
     display: inline;
-    border-right: 2px solid $cyan;
+    border-left: 2px solid $cyan;
     padding: 0 30px;
+    position: relative;
+    left: 30px;
   }
   
-  li:last-child {
-    border-right: 0px;
-    padding-right: 0px;
+  li:first-child {
+    border-left: 0px;
+    padding-left: 0px;
   }
   
   li {

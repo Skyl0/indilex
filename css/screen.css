@@ -81,7 +81,7 @@ html { box-sizing: border-box; background-color: #aaa; background: url("../image
 
 #btop_button { text-align: center; position: relative; left: 220px; margin-right: 190px; top: 12px; }
 
-#btop_button a { color: white; width: 240px; border-radius: 4px; border: 2px solid white; padding: 12px 30px; }
+#btop_button a { color: white; width: 240px; border-radius: 4px; border: 2px solid white; padding: 12px 30px; -webkit-transition: all 0.5s; /* Safari */ transition: all 0.5s; }
 #btop_button a:hover { background: rgba(255, 255, 255, 0.5) !important; color: #144856 !important; border-radius: 4px; border: 2px solid #144856; }
 
 #btop_button span { position: relative; top: -2px; }
@@ -110,16 +110,16 @@ html { box-sizing: border-box; background-color: #aaa; background: url("../image
 
 #topmenu span { color: #49bab3; margin: 0 5px 0 20px; }
 
-#mainr a { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; }
+#mainr a { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; -webkit-transition: all 0.5s; /* Safari */ transition: all 0.5s; }
 #mainr a:hover { background-color: #4fbbb4; color: #f6f6f6; }
 #mainr img { width: 651.66667px; position: relative; right: 7px; padding: 0px !important; margin: 0px !important; }
 
-#shortcodes a { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; }
+#shortcodes a { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; -webkit-transition: all 0.5s; /* Safari */ transition: all 0.5s; }
 #shortcodes a:hover { background: rgba(79, 187, 180, 0.9); color: #f6f6f6; }
 
 #scrollup { position: absolute; top: 228px; left: 258px; }
 
-#scrollup a { opacity: 0.5; }
+#scrollup a { opacity: 0.5; -webkit-transition: all 0.5s; /* Safari */ transition: all 0.5s; }
 #scrollup a:hover { opacity: 1.0; }
 
 .floatl { float: left; }
@@ -137,8 +137,8 @@ html { box-sizing: border-box; background-color: #aaa; background: url("../image
 .opacity50 { opacity: 0.5; }
 
 #mainmenu ul { list-style-type: none; }
-#mainmenu ul li { display: inline; border-right: 2px solid #49bab3; padding: 0 30px; }
-#mainmenu ul li:last-child { border-right: 0px; padding-right: 0px; }
+#mainmenu ul li { display: inline; border-left: 2px solid #49bab3; padding: 0 30px; position: relative; left: 30px; }
+#mainmenu ul li:first-child { border-left: 0px; padding-left: 0px; }
 #mainmenu ul li a { color: black; font-size: 1.05em; }
 #mainmenu ul li a:hover { color: #49bab3; }
 
