@@ -74,7 +74,7 @@ temp.navi {
 
     ACT = 1
     ACT {
-      allWrap = <li id="current">|</li>
+      allWrap = <li id="navicurrent">|</li>
     }
   }
 }
@@ -109,6 +109,78 @@ temp.sitemap {
   }
 }
 
+temp.leistungen = COA
+temp.leistungen {
+  #scrollup Link
+
+
+  20 = TEXT
+  20.value = <h1>Leistungen</h1><div id="leistungen">
+  90 = TEXT
+  90.value = </div>
+  
+  
+  30 = HMENU
+  30.special = directory
+  30.special.value = 4
+  30.1 = TMENU
+  30.1 {
+    NO = 1
+    NO {
+      allWrap = ||*|&nbsp;&#124;&nbsp;|*|
+      #allWrap = |&nbsp;&#124;&nbsp; || |&nbsp;&#124;&nbsp; || | <br/>  || &nbsp;&#124;&nbsp; || &nbsp;&#124;&nbsp; |
+    }
+
+ #   ACT = 1
+   # ACT {
+  #    allWrap = <span>|</span><span class="cyan">&#124;</span>
+ #   }
+  }
+}
+
+
+temp.sidenavi = COA
+temp.sidenavi {
+  
+  20 = TEXT
+  20.value = <ul>
+  90 = TEXT
+  90.value = </ul>
+  
+  30 = HMENU
+  30.expAll=0
+  30.special = list
+  30.special.value = 2,3,4,5,6
+  30.1 = TMENU
+  30.1 {
+    NO = 1
+    NO {
+      allWrap = <li class="hidden">|</li>
+    }
+
+    ACT = 1
+    ACT {
+      allWrap = <li class="hidden">|</li>
+    }
+  }
+
+  30.2 = TMENU
+  30.2 {
+    NO = 1
+    NO {
+      allWrap = <li>|</li>
+    }
+
+    ACT = 1
+    ACT {
+      allWrap = <li id="sidecurrent">|</li>
+    }
+
+  }
+
+  30.2.wrap = <ul>|</ul>
+}
+
 ######################################################
 #
 # Configuration of SUBPARTS
@@ -127,7 +199,7 @@ page.10.subparts {
  SHORTCODEMIDDLE = CONTENT
  SHORTCODERIGHT = CONTENT
 
- MAIN_LEFT = CONTENT
+# MAIN_LEFT = CONTENT
  MAIN_RIGHT = CONTENT
 
  BOTTOM_TOP = CONTENT
@@ -139,8 +211,9 @@ page.10.subparts {
  MAIN_RIGHT.select.where = colpos = 1
 
  #MAIN_LEFT < temp.naviebene2
- MAIN_LEFT < styles.content.get
- MAIN_LEFT.select.where = colpos = 2
+# MAIN_LEFT < styles.content.get
+ #MAIN_LEFT.select.where = colpos = 2
+ MAIN_LEFT < temp.sidenavi
 
  SLIDER < styles.content.get
  SLIDER.select.where = colpos = 10
@@ -177,16 +250,7 @@ E-Mail: <a href="mailto:info@indilex.de">info@indilex.de</a>
  #BOTTOMMIDDLE < styles.content.get
  #BOTTOMMIDDLE.select.where = colpos = 41
 
-BOTTOMMIDDLE = TEXT
-BOTTOMMIDDLE.value (
-<h1>Unsere Leistungen</h1>
-        <p>Reinigung und Instandhaltung von
-Maschinen, Anlagen und Produktionshallen  <span class="cyan">|</span>  Wassserhochdruckreinigung
-Trockeneisreinigung  <span class="cyan">|</span>  Industriemontage
-Bodensanierung  <span class="cyan">|</span>  Industriemarkierung
-In- und Outsourcing  <span class="cyan">|</span>  Professionelle
-Personaldienstleistung  <span class="cyan">|</span>  Transport</p>
-)
+BOTTOMMIDDLE < temp.leistungen
 
  #BOTTOMRIGHT < styles.content.get
  #BOTTOMRIGHT.select.where = colpos = 42

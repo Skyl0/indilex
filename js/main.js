@@ -1,6 +1,8 @@
-// TODO implement
-
-
+/* Y7 group 2015
+ * Im Auftrag von Indilex
+ * (c) Alle Rechte vorbehalten
+ * - ME 
+ */
 jQuery(document).ready(function($)  {
   
  

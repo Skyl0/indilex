@@ -224,8 +224,19 @@ html {
   border-right: 2px solid ($cyan*0.75);
   
 }
+
+.hidden {
+  display: none;
+  
+}
+
+#mainl ul ul {
+  padding: 0;
+  margin: 0;  
+}
+
 #mainl li a {
-  display: block;
+  display: block !important;
   width: $sce_colspan4+ ($sce_colwrap1 / 3) - 2px;
   padding: 5px 20px 5px 10px;
   height: 50px;
@@ -237,7 +248,16 @@ html {
   border-bottom: 2px solid ($cyan * 0.5);
   margin-left: 20px;
  // padding-left: $sce_colspan1
+ 
+
 }
+
+#sidecurrent a {
+   background-color:($bottombg * 0.8) !important;
+   color: #fff !important;
+}
+
+
 #mainl li a:hover {
    background-color: $bottombg;
    color: #fff !important;
@@ -269,13 +289,8 @@ html {
     color: $cyan;
   }
   
-  span {
-    word-wrap: break-word;
-    word-break: break-all;
-    a {
-      color: white;
-      padding: 0 5px;
-    }
+  a {
+    display: inline-block;
   }
   
 } 
@@ -350,10 +365,23 @@ html {
   margin: 0 $sce_gap $margintopbottom $sce_gap;
 }
 
+
 #bmid {
   width: $sce_colspan5;
   margin: 0 $sce_gap $margintopbottom $sce_gap;
-  padding: 0 60px 0 47px;
+  padding: 0 0px 0 47px; // 10 px was 60px
+}
+
+#bmid div {
+  //font-size: 0.95em;
+}
+
+#bmid {
+  color: $cyan;
+  
+  a {
+    color: white;
+  }
 }
 
 #bright {
