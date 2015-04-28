@@ -46,6 +46,16 @@ jQuery(document).ready(function($)  {
 	    	}
 	  	});
 	});
+	
+	$('input').iCheck({
+		  // base class added to customized checkboxes
+  checkboxClass: 'icheckbox_flat-aero',
+
+  // base class added to customized radio buttons
+  radioClass: 'iradio_flat-aero',
+  labelHover: false,
+  cursor: true
+	});
 
 
 });
