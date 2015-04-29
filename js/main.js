@@ -5,12 +5,12 @@ jQuery(document).ready(function($)  {
   
  
 	// Opacity Effekt
-	$("#scrollup i").hover(
+	$("#scrollup a").hover(
 		function() {
-			$('#scrollup i').fadeIn().removeClass("opacity50");
-		 },
+			$('#scrollup a').fadeIn().removeClass("opacity50");
+		},
 		function() {		
-			$('#scrollup i').fadeIn().addClass("opacity50");
+			$('#scrollup a').fadeIn().addClass("opacity50");
 		}
 		
 	);

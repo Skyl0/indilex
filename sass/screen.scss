@@ -198,6 +198,7 @@ html {
   min-height: 300px;
   padding: $margintopbottom 0 ;
   background-color: $lightgrey;
+ //background: url('../images/concrete_seamless.png') repeat; // ZU VIEL
 }
 
 #mainl {
@@ -363,6 +364,7 @@ html {
 #footer {
   height: 90px;
   background-color: $foreground;
+  background: url('../images/concrete_seamless.png') repeat;
    line-height: 90px;
    font-size: 14px;
    font-family: $defaultbold;
@@ -409,11 +411,12 @@ html {
 
 
 #topmenu {
-  width: $sce_colwrap15;
+  width: $sce_colwrap15 + 4px;
   text-align: right;
   padding: 0 ($sce_colspan1 + 30px) 0 $sce_gap;
   height: $topmenuheight;
   line-height: $topmenuheight;
+  background: url('../images/concrete_seamless.png') repeat;
   background-color: $lightgrey;
   font-size: 14px;
   font-family: $defaultfont;
@@ -479,11 +482,12 @@ html {
 
 #scrollup {
   a {
-    opacity: 0.5;
+    opacity: 0.3;
+    color: white !important;
   }
   
   a:hover {
-    opacity: 1.0;
+    opacity: 0.8;
   }
 }
 
