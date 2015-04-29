@@ -1,5 +1,8 @@
-// TODO implement
-
+/* Y7 group 2015
+ * Im Auftrag von Indilex
+ * (c) Alle Rechte vorbehalten
+ * - ME 
+ */
 
 jQuery(document).ready(function($)  {
   
@@ -15,6 +18,18 @@ jQuery(document).ready(function($)  {
 		
 	);
 	
+	// Alle Link Boxen mit Animationen
+	
+	/*$('#mainr a').hover(
+		function() {
+			this.
+		},
+		function() {
+			this.fadeOut();
+		}
+		
+	);*/
+	
 	// Scroll Up TODO Tobi wegen Funktion fragen
 	
 	$(function() {
@@ -25,11 +40,21 @@ jQuery(document).ready(function($)  {
 		      if (target.length) {
 		        $('html,body').animate({
 		          scrollTop: target.offset().top
-		        }, 1000);
+		        }, 800);
 		        return false;
 	      	  }
 	    	}
 	  	});
+	});
+	
+	$('input').iCheck({
+		  // base class added to customized checkboxes
+  checkboxClass: 'icheckbox_flat-aero',
+
+  // base class added to customized radio buttons
+  radioClass: 'iradio_flat-aero',
+  labelHover: false,
+  cursor: true
 	});
 
 

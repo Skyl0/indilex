@@ -4,11 +4,42 @@ page = PAGE
 
 page.10 = TEMPLATE
 page.10.template = FILE
+page.10.template.file = fileadmin/indilex/indexfollow.html
+
+[globalVar = TSFE:page|layout = 1]
 page.10.template.file = fileadmin/indilex/index.html
+[global]
+
+# Title anpassen
+
+# Seitentitel entfernen
+config.noPageTitle = 1
+
+page = PAGE
+page {
+  # Neuen title Tag in headerData setzen
+  headerData {
+    10 = TEXT
+    10 {
+      field = title
+      noTrimWrap = |<title> | &#124; Indilex 2015</title>|
+    }
+  }
+}
+
+# RealURL Config
+
+ config.prefixLocalAnchors = all
+ config.simulateStaticDocuments = 0
+ config.baseURL = http://192.168.2.113/typo3/typo3_indilex_new/
+ config.tx_realurl_enable = 1
 
 ## JQuery
-page.includeJSFooter.jquery.external = 1
-page.includeJSFooter.jquery = https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
+
+page.includeJS.jquery.external = 1
+page.includeJS.jquery = https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
+page.includeJSFooter.localjs = fileadmin/indilex/js/main.js
+page.includeJSFooter.flex = fileadmin/indilex/wfs/jquery.flexslider.js
 
 [browser = msie] && [version =< 9]
 page.includeCSS.file1 = fileadmin/indilex/css/font-awesome.css
@@ -19,7 +50,7 @@ page.includeCSS.file1 = fileadmin/indilex/css/font-awesome.css
 page.includeCSS.file2 = fileadmin/indilex/css/screen.css
 #page.includeCSS.file3 = //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
 [global]
-
+page.includeCSS.file3 = fileadmin/indilex/wfs/flexslider.css
 
 # Navigation
 
@@ -43,18 +74,22 @@ temp.navi {
 
     ACT = 1
     ACT {
-      allWrap = <li id="current">|</li>
+      allWrap = <li id="navicurrent">|</li>
     }
   }
 }
 
 temp.sitemap = COA
 temp.sitemap {
+  #scrollup Link
+  10 = TEXT
+  10.value = <div id="scrollup"><a href="#header"><i class="fa fa-caret-square-o-up fa-3x"></i></a></div>
+
+  20 = TEXT
+  20.value = <h1>Sitemap</h1><div id="sitemap">
+  90 = TEXT
+  90.value = </div>
   
- # 20 = TEXT
- # 20.value = <div>
-#  90 = TEXT
- # 90.value = </div>
   
   30 = HMENU
   30.special = list
@@ -63,14 +98,87 @@ temp.sitemap {
   30.1 {
     NO = 1
     NO {
-      allWrap = |<span class="cyan">&#124;</span>
+      allWrap = ||*|&nbsp;&#124;&nbsp;|*|
+      #allWrap = |&nbsp;&#124;&nbsp; || |&nbsp;&#124;&nbsp; || | <br/>  || &nbsp;&#124;&nbsp; || &nbsp;&#124;&nbsp; |
+    }
+
+ #   ACT = 1
+   # ACT {
+  #    allWrap = <span>|</span><span class="cyan">&#124;</span>
+ #   }
+  }
+}
+
+temp.leistungen = COA
+temp.leistungen {
+  #scrollup Link
+
+
+  20 = TEXT
+  20.value = <h1>Leistungen</h1><div id="leistungen">
+  90 = TEXT
+  90.value = </div>
+  
+  
+  30 = HMENU
+  30.special = directory
+  30.special.value = 4
+  30.1 = TMENU
+  30.1 {
+    NO = 1
+    NO {
+      allWrap = ||*|&nbsp;&#124;&nbsp;|*|
+      #allWrap = |&nbsp;&#124;&nbsp; || |&nbsp;&#124;&nbsp; || | <br/>  || &nbsp;&#124;&nbsp; || &nbsp;&#124;&nbsp; |
+    }
+
+ #   ACT = 1
+   # ACT {
+  #    allWrap = <span>|</span><span class="cyan">&#124;</span>
+ #   }
+  }
+}
+
+
+temp.sidenavi = COA
+temp.sidenavi {
+  
+  20 = TEXT
+  20.value = <ul>
+  90 = TEXT
+  90.value = </ul>
+  
+  30 = HMENU
+  30.expAll=0
+  30.special = list
+  30.special.value = 2,3,4,5,6
+  30.1 = TMENU
+  30.1 {
+    NO = 1
+    NO {
+      allWrap = <li class="hidden">|</li>
     }
 
     ACT = 1
     ACT {
-      allWrap = |><span class="cyan">&#124;</span>
+      allWrap = <li class="hidden">|</li>
     }
   }
+
+  30.2 = TMENU
+  30.2 {
+    NO = 1
+    NO {
+      allWrap = <li>|</li>
+    }
+
+    ACT = 1
+    ACT {
+      allWrap = <li id="sidecurrent">|</li>
+    }
+
+  }
+
+  30.2.wrap = <ul>|</ul>
 }
 
 ######################################################
@@ -91,19 +199,21 @@ page.10.subparts {
  SHORTCODEMIDDLE = CONTENT
  SHORTCODERIGHT = CONTENT
 
- MAIN_LEFT = CONTENT
+# MAIN_LEFT = CONTENT
  MAIN_RIGHT = CONTENT
 
  BOTTOM_TOP = CONTENT
- BOTTOMLEFT = CONTENT
- BOTTOMMIDDLE = CONTENT
+ #BOTTOMLEFT = CONTENT
+ #BOTTOMMIDDLE = CONTENT
  BOTTOMRIGHT < temp.sitemap
 
  MAIN_RIGHT < styles.content.get
  MAIN_RIGHT.select.where = colpos = 1
 
- MAIN_LEFT < styles.content.get
- MAIN_LEFT.select.where = colpos = 2
+ #MAIN_LEFT < temp.naviebene2
+# MAIN_LEFT < styles.content.get
+ #MAIN_LEFT.select.where = colpos = 2
+ MAIN_LEFT < temp.sidenavi
 
  SLIDER < styles.content.get
  SLIDER.select.where = colpos = 10
@@ -119,18 +229,34 @@ page.10.subparts {
 
  BOTTOM_TOP < styles.content.get
  BOTTOM_TOP.select.where = colpos = 30
+ 
 
- BOTTOMLEFT < styles.content.get
- BOTTOMLEFT.select.where = colpos = 40
+ BOTTOMLEFT = TEXT
+ BOTTOMLEFT.value (
+<h1>Kontakt</h1>
+        <p>Indilex Group<br/>
+Wilhelm-Leuschner-Str. 242a<br/>
+64347 Griesheim</p>
+<p>
+Telefon: 06155 / 87 85 405<br/>
+Telefax: 06155 / 87 85 406
+</p><p>
+E-Mail: <a href="mailto:info@indilex.de">info@indilex.de</a>
+</p>
+)
+ #BOTTOMLEFT < styles.content.get
+ #BOTTOMLEFT.select.where = colpos = 40
 
- BOTTOMMIDDLE < styles.content.get
- BOTTOMMIDDLE.select.where = colpos = 41
+ #BOTTOMMIDDLE < styles.content.get
+ #BOTTOMMIDDLE.select.where = colpos = 41
+
+BOTTOMMIDDLE < temp.leistungen
 
  #BOTTOMRIGHT < styles.content.get
  #BOTTOMRIGHT.select.where = colpos = 42
 
  LOGO = TEXT
- LOGO.value = <a href="http://www.google.de"><img src="../../../../fileadmin/indilex/images/logo.jpg" id="img_logo" /></a>
+ LOGO.value = <a href="./"><img src="fileadmin/indilex/images/logo.jpg" id="img_logo" /></a>
 }
  
 ######################################################
@@ -138,8 +264,19 @@ page.10.subparts {
 # Configuration of MARKERS
 #
 ######################################################
- 
+ lib.pagetitle = TEXT
+lib.pagetitle.data = page : title
+lib.pagetitle.stdWrap.dataWrap = <div>|</div>
 # Define the markers inside the subpart DOCUMENT
+
 page.10.marks {
- 
+ TITLEBAR < lib.pagetitle
+
+ PHONE = TEXT
+ PHONE.value = 06155 / 87 85 405
+
+ EMAIL = TEXT
+ EMAIL.value = info@indilex.de
 }
+
+
