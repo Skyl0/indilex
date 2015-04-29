@@ -54,14 +54,19 @@
 #topmenu span { color: #49bab3; margin: 0 5px 0 20px; }
 
 /**  SLIDER LAYOUT */
-#slider { height: 500px; background-color: #f6f6f6; background-image: url("../images/yellowlines.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
+#slider { background-color: #f6f6f6; background-image: url("../images/yellowlines.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
+@media (min-width: 1200px) { #slider { height: 500px; } }
+@media (max-width: 1199px) { #slider { height: 400px; } }
+
+@media (max-width: 1199px) { .flex-control-nav { top: 350px; } }
 
 /** TITLE BAR */
 #titlebar { height: 100px; background-color: #f6f6f6; background-image: url("../images/yellowlines.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
 #titlebar div { line-height: 100px; padding-left: 90px; font-size: 24px; font-family: "RalewaySemiBold", Arial, sans-serif; color: white; }
 
 /**  SHORTCODE LAYOUT */
-#shortcodes { min-height: 200px; margin: 40px 0; text-align: center; }
+#shortcodes { min-height: 200px; text-align: center; }
+@media (min-width: 1200px) { #shortcodes { margin: 40px 0; } }
 
 @media (min-width: 1200px) { #shortcodel { width: 406.66667px; padding-left: 80px; padding-right: 10px; border-right: 2px solid #368b86; margin: 0 0 0 10px; } }
 @media (max-width: 1199px) { #shortcodel { width: 380px; border-right: 2px solid #368b86; margin: 0 0 0 20px; } }
@@ -76,10 +81,12 @@
 #shortcodes a:hover { background: rgba(79, 187, 180, 0.9); color: #f6f6f6; }
 
 /**  MAIN LAYOUT */
-#main { min-height: 300px; padding: 40px 0; background-color: #f6f6f6; }
+#main { min-height: 300px; background-color: #f6f6f6; }
+@media (min-width: 1200px) { #main { padding: 40px 0; } }
+@media (max-width: 1199px) { #main { padding: 0 0 20px 0; } }
 
 @media (min-width: 1200px) { #mainl { width: 426.66667px; padding-left: 60px; margin: 0 10px 0 10px; } }
-@media (max-width: 1199px) { #mainl { width: 780px; padding-left: 12px; } }
+@media (max-width: 1199px) { #mainl { height: auto; width: 780px; padding-left: 12px; } }
 
 #mainl ul { list-style-type: none; font-family: "RalewaySemiBold", Arial, sans-serif; margin: 40px 0 40px 0; }
 @media (min-width: 1200px) { #mainl ul { width: 346.66667px; border-right: 2px solid #368b86; } }
@@ -88,13 +95,14 @@
 
 #mainl li a { text-align: right; color: #144856; }
 @media (min-width: 1200px) { #mainl li a { display: block !important; width: 324.66667px; padding: 5px 20px 5px 10px; height: 50px; line-height: 20px; vertical-align: 20px; border-bottom: 2px solid #245d59; margin-left: 20px; -webkit-transition: all 0.5s; transition: all 0.5s; } }
-@media (max-width: 1199px) { #mainl li a { display: inline-block; float: left; margin: 0 5px; padding: 3px; } }
+@media (max-width: 1199px) { #mainl li a { display: inline-block; float: left; margin: 0 5px; padding: 3px; border-bottom: 2px solid #245d59; } }
 
 #sidecurrent a { background-color: #103944 !important; color: #fff !important; }
 
 #mainl li a:hover { background-color: #144856; color: #fff !important; }
+@media (max-width: 1199px) { #mainl li a:hover { border-bottom: 2px solid #49bab3; } }
 
-#mainl li:last-child a { border-bottom: 0px solid #fff; }
+@media (min-width: 1200px) { #mainl li:last-child a { border-bottom: 0px solid #fff; } }
 
 @media (min-width: 1200px) { #mainr { width: 731.66667px; padding-right: 60px; margin: 0 10px; } }
 @media (max-width: 1199px) { #mainr { width: 100%; margin: 0 20px; } }

@@ -122,12 +122,24 @@
  */
 
 #slider {
-  height: 500px;
+   @include breakpoint(desktop) {
+      height: 500px;
+   }
+    @include breakpoint(tablet) {
+       height: 400px;
+    }
+ 
   background-color: $lightgrey;
   background-image: url('../images/yellowlines.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.flex-control-nav {
+   @include breakpoint(tablet) {
+     top: 400px - 50px;
+   }
 }
 
 /**
@@ -156,7 +168,11 @@
 
 #shortcodes {
   min-height: 200px;
-  margin: $margintopbottom 0;
+   @include breakpoint(desktop) {
+      margin: $margintopbottom 0;
+   }
+   
+ 
   text-align: center;
 }
 
@@ -236,7 +252,13 @@
 
 #main {
   min-height: 300px;
-  padding: $margintopbottom 0 ;
+   @include breakpoint(desktop) {
+     padding: $margintopbottom 0 ;
+   }
+  @include breakpoint(tablet) {
+     padding: 0 0 ($margintopbottom*0.5) 0 ;
+   }
+  
   background-color: $lightgrey;
 }
 
@@ -248,6 +270,7 @@
    }
    
     @include breakpoint(tablet) {
+      height: auto;
       width: $sce_colspan10;
       padding-left: $tabletmargin - 8px;
     }
@@ -294,6 +317,7 @@
       float: left;
       margin: 0 5px;
       padding: 3px;
+       border-bottom: 2px solid ($cyan * 0.5);
     }
   
   //line-height: 40px;
@@ -317,10 +341,13 @@
 #mainl li a:hover {
    background-color: $bottombg;
    color: #fff !important;
+    @include breakpoint(tablet) {
+      border-bottom: 2px solid ($cyan);
+    }
  }
 
 #mainl li:last-child a {
-  border-bottom: 0px solid #fff;
+   @include breakpoint(desktop) { border-bottom: 0px solid #fff; }
 }
 
 #mainr {
