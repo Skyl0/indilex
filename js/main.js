@@ -18,6 +18,19 @@ jQuery(document).ready(function($)  {
 		
 	);
 	
+	$('#burger').click(function(){
+		$('#mm').toggleClass("expanded");
+	});
+	
+
+	/*$('#mainmenu #burger').hover(
+		function() {
+		$('#mainmenu a').addClass("expanded");
+	},
+	function() {
+		$('#mainmenu a').removeClass("expanded");
+	}); */
+	
 	// Alle Link Boxen mit Animationen
 	
 	/*$('#mainr a').hover(

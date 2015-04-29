@@ -1,44 +1,139 @@
 /**
  *   MAIN MENU
  */ 
+ $burgerpadding : 4px;
+ $burgerborder  : 3px;
+ $burgerpatties : 20px;
+ $menutop : $tabletmargin + 17px;
+ @include breakpoint(desktop) {
+   #burger {display:none;}
+ }
+  @include breakpoint(tablet) {
+   #burger {display:none;}
+ }
+ @include breakpoint(phone) {
+   
+   #burger {
+     z-index: 50;
+     position: relative;
+     left: 50%;
+     // border: 1px dashed $cyan;
+     top: $menutop;     
+     display: block;
+     height: ($burgerborder*3 + $burgerpadding * 6);
+     width: ($burgerborder*3 + $burgerpadding * 6);
+     padding: $burgerpadding;
+   }
+   
+   #burger:hover div {
+     background-color: $bottombg;
+   }   
+   #burger div {
+     height: $burgerborder;
+     background-color: $cyan;
+     width: ($burgerborder*3 + $burgerpadding * 6) - $burgerpadding * 2;
+     margin: $burgerpadding 0;
+       -webkit-transition: all 0.5s; /* Safari */
+          transition: all 0.5s;
+  }
+   
+ }
+#mainmenu {
+   @include breakpoint(phone) {
+      position: absolute;
+      left: 0px;
+  
+   }
+ 
+  
+  text-align: right;
+}
 #mainmenu ul {
+  
   list-style-type: none;
   
   
-  li {
-     @include breakpoint(desktop) {
-       padding: 0 30px;
-    position: relative;
-    left: 30px;
-     }
-     
-      @include breakpoint(tablet)  {
-          padding: 0 $tabletmargin;
-    position: relative;
-    left: 10px;
+    li {
+         @include breakpoint(desktop) {
+            padding: 0 30px;
+            left: 30px;
+            border-left: 2px solid $cyan;
+            display: inline;
+         }
+         
+        @include breakpoint(tablet)  {
+              padding: 0 $tabletmargin;
+              left: 10px;
+              border-left: 2px solid $cyan;
+              display: inline;
+        }
+          
+        @include breakpoint(phone) {
+             top: $menutop;
+                     
+        }
+        position: relative;
+        
+        
+         
+    }
+  
+   @include breakpoint(desktoptablet) {
+      li:first-child {
+        border-left: 0px;
+        padding-left: 0px;
       }
-     
-     
-    
-    display: inline;
-    border-left: 2px solid $cyan;
-    
-  }
-  
-  li:first-child {
-    border-left: 0px;
-    padding-left: 0px;
-  }
-  
-  li {
-    a {
-      color: black;
-      font-size: 1.05em;
-    }
-    a:hover {
-      color: $cyan;
       
-   //   font-stretch: expanded;
+      li {
+        a {
+          color: black;
+          font-size: 1.05em;
+          height: 30px;
+          
+        }
+        a:hover {
+          color: $cyan;
+          height: 30px;
+        }
     }
+  
   }
+  /**
+   *   PHONE VERSION OF MAIN MENU
+   */
+   @include breakpoint(phone) {
+      li {
+        z-index:1000;
+        a {
+          color: white;
+         
+          background-color: $bottombg;
+          font-size: 1.05em;
+          -webkit-transition: all 0.5s; /* Safari */
+          transition: all 0.5s;
+          height: 0px;
+          line-height: 0px;
+          // visibility: hidden;
+          opacity: 0;
+          width: 100%;
+           display: block;
+          border-top: 2px solid white;
+          padding-right: $tabletmargin;
+        }
+        a:hover {
+          color: $cyan;
+          background-color: $bottombg * 1.1;     
+        }
+        
+ 
+       }
+   }
+}
+
+.expanded {
+     a {     
+          height: 40px !important;
+          line-height: 40px !important;
+          opacity: 1 !important;
+     }
 }
