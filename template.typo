@@ -24,6 +24,14 @@ page {
       field = title
       noTrimWrap = |<title> | &#124; Indilex 2015</title>|
     }
+    
+# Iphone / Ipads
+    5=TEXT
+    5.value (
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+)
   }
 }
 
@@ -31,23 +39,25 @@ page {
 
  config.prefixLocalAnchors = all
  config.simulateStaticDocuments = 0
- config.baseURL = http://192.168.2.113/typo3/typo3_indilex_new/
- config.tx_realurl_enable = 1
+ config.baseURL = http://192.168.1.62/typo3/typo3_indilex_new/
+ config.tx_realurl_enable = 0
 
 ## JQuery
 
-page.includeJS.jquery.external = 1
-page.includeJS.jquery = https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
+#page.includeJS.jquery.external = 1
+page.includeJS.jqueryinternal =  fileadmin/indilex/js/jquery-1.11.2.min.js
+#page.includeJS.jquery = https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
 page.includeJSFooter.localjs = fileadmin/indilex/js/main.js
+page.includeJSFooter.icheck = fileadmin/indilex/js/icheck.min.js
 page.includeJSFooter.flex = fileadmin/indilex/wfs/jquery.flexslider.js
 
-[browser = msie] && [version =< 9]
-page.includeCSS.file1 = fileadmin/indilex/css/font-awesome.css
-page.includeCSS.file2 = fileadmin/indilex/css/ie.css
+page.includeCSS.fontawesome = fileadmin/indilex/css/font-awesome.css
+page.includeCSS.icheckcss = fileadmin/indilex/css/all.css
 
+[browser = msie] && [version =< 9]
+page.includeCSS.main= fileadmin/indilex/css/ie.css
 [else]
-page.includeCSS.file1 = fileadmin/indilex/css/font-awesome.css
-page.includeCSS.file2 = fileadmin/indilex/css/screen.css
+page.includeCSS.main= fileadmin/indilex/css/screen.css
 #page.includeCSS.file3 = //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
 [global]
 page.includeCSS.file3 = fileadmin/indilex/wfs/flexslider.css
@@ -56,9 +66,14 @@ page.includeCSS.file3 = fileadmin/indilex/wfs/flexslider.css
 
 temp.navi = COA
 temp.navi {
-  
+
+  10 = TEXT
+  10.value (
+    <div id="burger"><div></div><div></div><div></div></div>
+  )
+
   20 = TEXT
-  20.value = <ul>
+  20.value = <ul id="mm">
   90 = TEXT
   90.value = </ul>
   
@@ -82,8 +97,8 @@ temp.navi {
 temp.sitemap = COA
 temp.sitemap {
   #scrollup Link
-  10 = TEXT
-  10.value = <div id="scrollup"><a href="#header"><i class="fa fa-caret-square-o-up fa-3x"></i></a></div>
+  100 = TEXT
+  100.value = <div id="scrollup"><a href="#header"><i class="fa fa-caret-square-o-up fa-3x"></i></a></div>
 
   20 = TEXT
   20.value = <h1>Sitemap</h1><div id="sitemap">
