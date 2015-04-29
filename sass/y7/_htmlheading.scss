@@ -5,16 +5,25 @@
 
 
 #scrollup {
-  position: absolute;
+  position: relative;
+  float:right;
    @include breakpoint(desktop) {
-      top: 220px + (2 * $margintopbottom) - (1.5 * 48px); // containerheight * 1.5
-      left: 258px; // found out by trying  
+      // top: 220px + (2 * $margintopbottom) - (1.5 * 48px); // containerheight * 1.5
+      // left: 258px; // found out by trying  
+      top: 70px;
    }
    
       @include breakpoint(tablet) {
-      top: 250px ; // containerheight * 1.5
-      left: 177px; // found out by trying  
+      // top: 250px ; // containerheight * 1.5
+      // left: 177px; // found out by trying  
+      top: 70px;
    }
+   
+    @include breakpoint(phone) {
+      // top: 95px ; // containerheight * 1.5
+      // left: 20px; // found out by trying  
+      bottom: 14px;
+    }
  
 }
 
@@ -42,6 +51,9 @@
      @include breakpoint(tablet) {
        font-size: 26px;
        }
+      @include breakpoint(phone) {
+       font-size: 20px;
+       }
     
     font-family: $defaultbold;
     text-shadow: 4px 4px 5px #000;
@@ -54,6 +66,11 @@
       @include breakpoint(tablet) {
         
         font-size: 20px;
+      }
+      
+      @include breakpoint(phone) {
+        
+        font-size: 16px;
       }
     
     font-family: $defaultbold;
@@ -70,6 +87,11 @@
      
       @include breakpoint(tablet) {
          top: -270px;
+         padding: 0 $tabletmargin;
+      } 
+      
+      @include breakpoint(phone) {
+         top: -200px;
          padding: 0 $tabletmargin;
       } 
    

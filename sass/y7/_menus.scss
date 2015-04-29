@@ -4,6 +4,8 @@
  $burgerpadding : 4px;
  $burgerborder  : 3px;
  $burgerpatties : 20px;
+ $burgerheight : ($burgerborder*3 + $burgerpadding * 6);
+ 
  $menutop : $tabletmargin + 17px;
  @include breakpoint(desktop) {
    #burger {display:none;}
@@ -14,15 +16,18 @@
  @include breakpoint(phone) {
    
    #burger {
+     float: right;
      z-index: 50;
      position: relative;
-     left: 50%;
+     right: 25px;
      // border: 1px dashed $cyan;
-     top: $menutop;     
+     top: 25px;     
      display: block;
-     height: ($burgerborder*3 + $burgerpadding * 6);
-     width: ($burgerborder*3 + $burgerpadding * 6);
-     padding: $burgerpadding;
+     height: ($burgerborder*3 + $burgerpadding * 6) + 14px;
+     width: ($burgerborder*3 + $burgerpadding * 6) + 14px;
+     padding: $burgerpadding + 5px;
+     border: 2px solid #ccc;
+     border-radius: 3px;
    }
    
    #burger:hover div {
@@ -48,6 +53,14 @@
   
   text-align: right;
 }
+
+#mm {
+  
+   @include breakpoint(phone) {
+     display: block;
+   }  
+}
+
 #mainmenu ul {
   
   list-style-type: none;
@@ -69,8 +82,8 @@
         }
           
         @include breakpoint(phone) {
-             top: $menutop;
-                     
+             top: $menutop + 24px + $burgerheight;
+                     font-family: $defaultbold;
         }
         position: relative;
         
@@ -122,7 +135,8 @@
         }
         a:hover {
           color: $cyan;
-          background-color: $bottombg * 1.1;     
+          background-color: $bottombg * 1.1;  
+          padding-right: $tabletmargin + 5px;   
         }
         
  

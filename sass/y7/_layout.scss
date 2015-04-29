@@ -37,7 +37,7 @@
  } 
  
   @include breakpoint(phone) {
-    height: $headerheight * 0.8;
+    height: ($headerheight - $topmenuheight) *0.8;
   }
   background-color: $foreground;
 }
@@ -153,10 +153,14 @@
 
 #slider {
    @include breakpoint(desktop) {
-      height: 500px;
+     // height: 500px;
    }
     @include breakpoint(tablet) {
-       height: 400px;
+     //  height: 400px;
+    }
+    
+    @include breakpoint(tablet) {
+      height: 400px;
     }
  
   background-color: $lightgrey;
@@ -178,6 +182,7 @@
 
 #titlebar {
   height: 100px;
+  white-space: no-wrap;
   background-color: $lightgrey;
   background-image: url('../images/yellowlines.jpg');
   background-size: cover;
@@ -235,8 +240,8 @@
 
 #shortcodel {
   
-   @include breakpoint(desktop) {
-       width: $sce_colspan5 + ($sce_colwrap1 / 3);
+  @include breakpoint(desktop) {
+  width: $sce_colspan5 + ($sce_colwrap1 / 3);
   padding-left: $sce_colwrap1;
   padding-right: $sce_gap;
   border-right: 2px solid ($cyan*0.75);
@@ -251,6 +256,11 @@
   margin: 0 0 0 $tabletmargin;
   padding-right: $tabletmargin;
    }
+   
+   @include breakpoint(phone) {
+     width: 100%;
+     padding: 0 $tabletmargin;
+   } 
 
 }
 
@@ -263,6 +273,11 @@
      width: ($sce_colspan10 - ($tabletmargin*4) - 4px) / 3 ; //+ 20px;
     margin: 0 $tabletmargin ;
    }
+   
+      @include breakpoint(phone) {
+     width: 100%;
+     padding: 0 $tabletmargin;
+   } 
    
 
   
@@ -284,6 +299,11 @@
    border-left: 2px solid ($cyan*0.75);
    margin: 0 $tabletmargin 0 0;
    }
+   
+      @include breakpoint(phone) {
+     width: 100%;
+     padding: 0 $tabletmargin;
+   } 
 
 }
 
@@ -315,6 +335,13 @@
       height: auto;
       width: $sce_colspan10;
       padding-left: $tabletmargin - 8px;
+    }
+    
+    @include breakpoint(phone) {
+      height: auto;
+      width: 100%;
+      padding-left: $tabletmargin - 8px;
+      padding-right: $tabletmargin - 8px;
     }
   
   
@@ -361,6 +388,20 @@
       padding: 3px;
        border-bottom: 2px solid ($cyan * 0.5);
     }
+    
+     @include breakpoint(phone) {
+      display: inline-block;
+      float: left;
+      margin: 0 5px;
+      padding: 3px;
+       border-bottom: 2px solid ($cyan * 0.5);
+     }
+     
+      @include breakpoint(smaller) {
+        display: block !important;
+        width: 100% !important;
+        padding: 3px $tabletmargin !important;
+      }
   
   //line-height: 40px;
   text-align: right;
@@ -403,7 +444,10 @@
       width: $sce_colspan10 -$tabletmargin;
       margin: 0 $tabletmargin;
     }
-  
+   @include breakpoint(phone) {
+     width: 100%;
+     padding: 0 $tabletmargin;
+   }
   
   
 }
@@ -503,7 +547,10 @@
   margin: 0 0 0 $tabletmargin;
   font-size: 26px * 0.9;
     }
-  
+    @include breakpoint(phone) {
+     width: 100%;
+     padding: 0 $tabletmargin;
+   }
 }
 
 #btopr {
@@ -518,6 +565,10 @@
   //padding-right: $sce_colwrap1;
   margin: 0 $tabletmargin 0 0;
     } 
+     @include breakpoint(phone) {
+     width: 100%;
+     padding: 0 $tabletmargin;
+   }
   
 }
 
@@ -580,6 +631,11 @@
   margin: 0 0 $margintopbottom $tabletmargin;
   font-size: 0.9em;
    }
+   
+    @include breakpoint(phone) {
+     width: 100%;
+     padding: 0 $tabletmargin;
+   }
   
 }
 
@@ -597,6 +653,11 @@
       // padding: 0 10px 0 10px;
       font-size: 0.9em;
     }
+    
+     @include breakpoint(phone) {
+     width: 100%;
+     padding: 0 $tabletmargin;
+   }
 
 
 }
@@ -615,7 +676,8 @@
 
 #bright {
    @include breakpoint(desktop) {
-       width: $sce_colspan5;  
+    // height: auto;
+    width: $sce_colspan5;  
     margin: 0 $sce_gap $margintopbottom $sce_gap;
     padding-right: $sce_colwrap1;
    }
@@ -625,6 +687,12 @@
     margin: 0 $tabletmargin $margintopbottom 0;
     // padding-right: $tabletmargin;
     font-size: 0.9em;
+   }
+   
+    @include breakpoint(phone) {
+     width: 100%;
+     padding: 0 $tabletmargin;
+     // margin-bottom: 80px;
    }
   
   position: relative;
@@ -654,15 +722,20 @@
  */
 #footer {
    @include breakpoint(desktop) {
-     height: 90px;line-height: 90px;
+     // background-image 
+     height: 90px;
+     line-height: 90px;
      font-size: 14px;
    }
    @include breakpoint(tablet) {
      height: 90px * 0.8;line-height: 90px *0.8;
-     font-size: 12px;
+     font-size: 13px;
    }
   background-color: $foreground;
-   
+    @include breakpoint(phone) {
+       height: 90px * 0.8;line-height: 90px *0.8;
+     font-size: 12px;
+    }
    
    font-family: $defaultbold;
 }
@@ -678,7 +751,16 @@
   width: $sce_colspan5;
   margin: 0 0 0 $tabletmargin;
    }
+   
+    @include breakpoint(phone) {
+      width: 50%;
+      padding-left: $tabletmargin;
+    }
   
+   @include breakpoint(smaller) {
+     width: 100% !important;
+     // padding-left: $tabletmargin;
+   } 
 }
 
 #fright {
@@ -695,4 +777,15 @@
   width: $sce_colspan5;
   margin: 0 $tabletmargin 0 0;
    }
+   
+    @include breakpoint(phone) {
+     
+      width: 50%;
+      padding-right: $tabletmargin;
+    }
+    
+     @media (max-width: 530px) {
+        display: none !important;
+        width: 0% !important;
+     }
 }
