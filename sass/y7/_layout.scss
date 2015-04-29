@@ -3,7 +3,14 @@
  */
 
 #site {
-  width: $sce_colwrap15 + 4px;
+  @include breakpoint(desktop) {
+    width: $sce_colwrap15 + 4px;
+  }
+  
+  @include breakpoint(tablet) {
+    width: $sce_colwrap10;
+  }
+  
   margin: 0 auto 0 auto;
   background-color: $foreground;
   //border-position: outside;
@@ -17,45 +24,89 @@
  */
 
 #header {
-  height: $headerheight;
+   @include breakpoint(desktop) {
+      height: $headerheight;
+   }
+ @include breakpoint(tablet) {
+   height: $headerheight * 0.8;
+ } 
   background-color: $foreground;
 }
 
 
 // Header Elemente
 #logo {
-  width: $sce_colspan4;
-  padding-left: $sce_colspan1 + 20px;
+  @include breakpoint(desktop) {
+     padding-left: $sce_colspan1 + 20px;
+    width: $sce_colspan4;
+    line-height: $logo_menu_height;
+    height: $logo_menu_height;
+  }
+  @include breakpoint(tablet) {
+    padding-left: $tabletmargin;
+    width: $sce_colspan3;
+    line-height: $logo_menu_height * 0.8;
+    height: $logo_menu_height * 0.8;
+  }
+  
+ 
   margin: 0 $sce_gap 0 $sce_gap;
   vertical-align: middle;
-  height: $logo_menu_height;
-  line-height: $logo_menu_height;
+
 }
 
 #img_logo {
  // margin: 0;
  vertical-align: middle;
   display: inline-block;
-  height: 44px;
+   @include breakpoint(desktop) {
+     height: 44px;
+    }
+     @include breakpoint(tablet) {
+        height: 34px;
+     }
 }
 
 #mainmenu {
-  width: $sce_colspan11;
+   @include breakpoint(desktop) {
+     width: $sce_colspan11;
+      padding-right: $sce_colwrap1;
+      line-height: $logo_menu_height;
+      height: $logo_menu_height;
+   }
+    @include breakpoint(tablet) 
+   {
+     width: $sce_colspan7;
+     font-size: 0.9em;
+     line-height: $logo_menu_height * 0.8;
+      height: $logo_menu_height *0.8;
+   }
+  
   margin: 0 $sce_gap 0 $sce_gap;
   vertical-align: middle;
-  height: $logo_menu_height;
-  line-height: $logo_menu_height;
+  
+  
   text-align: right;
-  padding-right: $sce_colwrap1;
+ 
 }
 
 
 #topmenu {
-  width: $sce_colwrap15;
+  @include breakpoint(desktop) {
+    width: $sce_colwrap15;
+    height: $topmenuheight;
+      line-height: $topmenuheight;
+    padding: 0 ($sce_colspan1 + 30px) 0 $sce_gap;
+  }
+  @include breakpoint(tablet) {
+    width: $sce_colwrap10;
+    height: $topmenuheight * 0.8;
+      line-height: $topmenuheight *0.8;
+    padding: 0 $tabletmargin 0 0;
+  }
+  
   text-align: right;
-  padding: 0 ($sce_colspan1 + 30px) 0 $sce_gap;
-  height: $topmenuheight;
-  line-height: $topmenuheight;
+
   background-color: $lightgrey;
   font-size: 14px;
   font-family: $defaultfont;
@@ -110,24 +161,53 @@
 }
 
 #shortcodel {
-  width: $sce_colspan5 + ($sce_colwrap1 / 3);
+  
+   @include breakpoint(desktop) {
+       width: $sce_colspan5 + ($sce_colwrap1 / 3);
   padding-left: $sce_colwrap1;
   padding-right: $sce_gap;
   border-right: 2px solid ($cyan*0.75);
   margin: 0 0 0 $sce_gap;
+   }
+   
+   @include breakpoint(tablet) {
+       width: $sce_colspan5 ;
+  // padding-left: $sce_colwrap1;
+  // padding-right: $sce_gap;
+  border-right: 2px solid ($cyan*0.75);
+  margin: 0 0 0 $tabletmargin;
+   }
+
 }
 
 #shortcodem {
-  width: $sce_colspan4 + ($sce_colwrap1 / 3) + 20px;
-  margin: 0 $sce_gap 0 $sce_gap;
+   @include breakpoint(desktop) {
+     width: $sce_colspan4 + ($sce_colwrap1 / 3) + 20px;
+    margin: 0 $sce_gap 0 $sce_gap;
+   }
+     @include breakpoint(tablet) {
+     width: $sce_colspan5;
+    margin: 0 $tabletmargin 0 0;
+   }
+  
 }
 
 #shortcoder {
-  width: $sce_colspan5 + ($sce_colwrap1 / 3);
+   @include breakpoint(desktop) {
+       width: $sce_colspan5 + ($sce_colwrap1 / 3);
   padding-right: $sce_colwrap1;
   padding-left: $sce_gap;
   border-left: 2px solid ($cyan*0.75);
   margin: 0 $sce_gap 0 0;
+   }
+   
+      @include breakpoint(tablet) {
+       width: $sce_colspan10;
+  padding: 0 ($sce_colspan5/2);
+  // border-left: 2px solid ($cyan*0.75);
+  // margin: 0 $sce_gap 0 0;
+   }
+
 }
 
 // Shortcodes Link Buttons
@@ -161,17 +241,31 @@
 }
 
 #mainl {
-  width: $sce_colspan5+ ($sce_colwrap1 / 3) + 20px;
-  padding-left: $sce_colspan1;
-  margin: 0 $sce_gap 0 $sce_gap;
+   @include breakpoint(desktop) {
+     width: $sce_colspan5+ ($sce_colwrap1 / 3) + 20px;
+     padding-left: $sce_colspan1;
+     margin: 0 $sce_gap 0 $sce_gap;
+   }
+   
+    @include breakpoint(tablet) {
+      width: $sce_colspan10;
+      padding-left: $tabletmargin - 8px;
+    }
+  
+  
 }
 
 #mainl ul {
   list-style-type: none;
-  width: $sce_colspan4+ ($sce_colwrap1 / 3) + 20px;
+  
+   @include breakpoint(desktop) {
+     width: $sce_colspan4+ ($sce_colwrap1 / 3) + 20px;
+     border-right: 2px solid ($cyan*0.75);
+   }
+  
   font-family: $defaultbold;
   margin: $margintopbottom 0 $margintopbottom 0; 
-  border-right: 2px solid ($cyan*0.75);
+  
   
 }
 
@@ -181,19 +275,32 @@
 }
 
 #mainl li a {
-  display: block !important;
-  width: $sce_colspan4+ ($sce_colwrap1 / 3) - 2px;
-  padding: 5px 20px 5px 10px;
-  height: 50px;
-  line-height: 20px;
+  
+   @include breakpoint(desktop) {
+         display: block !important;
+      width: $sce_colspan4+ ($sce_colwrap1 / 3) - 2px;
+      padding: 5px 20px 5px 10px;
+      height: 50px;
+      line-height: 20px;
+       vertical-align: 20px;
+         border-bottom: 2px solid ($cyan * 0.5);
+      margin-left: 20px;
+      -webkit-transition: all 0.5s; //Safari
+      transition: all 0.5s;
+   }
+   
+    @include breakpoint(tablet) {
+      display: inline-block;
+      float: left;
+      margin: 0 5px;
+      padding: 3px;
+    }
+  
   //line-height: 40px;
   text-align: right;
-  vertical-align: 20px;
+ 
   color: $bottombg;
-  border-bottom: 2px solid ($cyan * 0.5);
-  margin-left: 20px;
-  -webkit-transition: all 0.5s; //Safari
-  transition: all 0.5s;
+
    
  // padding-left: $sce_colspan1
  
@@ -217,9 +324,19 @@
 }
 
 #mainr {
-  width: $sce_colspan9 + ($sce_colwrap1 / 3) + 5px;
-  padding-right: $sce_colspan1;
-  margin: 0 $sce_gap 0 $sce_gap;
+   @include breakpoint(desktop) {
+     width: $sce_colspan9 + ($sce_colwrap1 / 3) + 5px;
+     padding-right: $sce_colspan1;
+     margin: 0 $sce_gap ;
+   }
+   
+    @include breakpoint(tablet) {
+      width: 100%;
+      margin: 0 $tabletmargin;
+    }
+  
+  
+  
 }
 // Content Main Button
 #mainr{
@@ -240,9 +357,17 @@
   }
   
   img {
-    width: $sce_colspan8 + ($sce_colwrap1 / 3) + 5px;
-    position: relative;
-    right: 7px;
+     @include breakpoint(desktop) {
+       width: $sce_colspan8 + ($sce_colwrap1 / 3) + 5px;
+        right: 7px;
+     }
+      @include breakpoint(tablet) {
+        width: 100%;
+      }
+    
+           position: relative;
+
+   
     padding: 0px !important;
     margin: 0px !important; //TODO Formatierung von Tobi erfragen
   }
@@ -296,26 +421,55 @@
 }
 
 #btopl {
-  width: $sce_colspan8;
+   @include breakpoint(desktop) {
+     width: $sce_colspan8;
   padding-left: $sce_colwrap1;
   margin: 0 $sce_gap 0 $sce_gap;
   font-size: 26px;
+   }
+   
+    @include breakpoint(tablet) {
+      width: $sce_colspan7;
+  //padding-left: $sce_colwrap1;
+  margin: 0 0 0 $tabletmargin;
+  font-size: 26px * 0.9;
+    }
+  
 }
 
 #btopr {
-  width: $sce_colspan7;
+   @include breakpoint(desktop) {
+     width: $sce_colspan7;
   padding-right: $sce_colwrap1;
   margin: 0 $sce_gap 0 $sce_gap;
+   }
+    @include breakpoint(tablet) {
+       width: $sce_colspan3;
+       text-align: right;
+  //padding-right: $sce_colwrap1;
+  margin: 0 $tabletmargin 0 0;
+    } 
+  
 }
 
 #btop_button {
   
  // width: 240px;
+ position: relative;
   text-align: center;
-  position: relative;
+  @include breakpoint(desktop) {
+     
+  
   left: $sce_colspan6 - 240px;
    margin-right: $sce_colwrap1 + 110px;
    top: 12px;
+  }
+  
+   @include breakpoint(tablet) {
+    // left: $sce_colspan3 - 240px;
+     top: 12px;
+   }
+
 }
 
 #btop_button {
@@ -345,16 +499,37 @@
 }
 
 #bleft {
-  width: $sce_colspan5;
+   @include breakpoint(desktop) {
+     width: $sce_colspan5;
   padding-left: $sce_colwrap1;
   margin: 0 $sce_gap $margintopbottom $sce_gap;
+   }
+   
+   @include breakpoint(tablet) {
+     width: ($sce_colspan10 - ($tabletmargin*4))/3 - 10px;  
+  // padding-left: $tabletmargin;
+  margin: 0 0 $margintopbottom $tabletmargin;
+  font-size: 0.9em;
+   }
+  
 }
 
 
 #bmid {
-  width: $sce_colspan5;
-  margin: 0 $sce_gap $margintopbottom $sce_gap;
-  padding: 0 0px 0 47px; // 10 px was 60px
+   @include breakpoint(desktop) {
+      width: $sce_colspan5;
+      margin: 0 $sce_gap $margintopbottom $sce_gap;
+      padding: 0 0px 0 47px;
+   }
+   
+    @include breakpoint(tablet) {
+      width: ($sce_colspan10 - ($tabletmargin*4))/3 + $tabletmargin + 20px;  
+      margin: 0 $tabletmargin $margintopbottom $tabletmargin;
+      // padding: 0 10px 0 10px;
+      font-size: 0.9em;
+    }
+
+
 }
 
 #bmid div {
@@ -370,9 +545,19 @@
 }
 
 #bright {
-  width: $sce_colspan5;  
-  margin: 0 $sce_gap $margintopbottom $sce_gap;
-  padding-right: $sce_colwrap1;
+   @include breakpoint(desktop) {
+       width: $sce_colspan5;  
+    margin: 0 $sce_gap $margintopbottom $sce_gap;
+    padding-right: $sce_colwrap1;
+   }
+    @include breakpoint(tablet) {
+       width: ($sce_colspan10 - ($tabletmargin*4))/3 - 10px;  
+    // margin: 0 $sce_gap $margintopbottom $sce_gap;
+    margin: 0 $tabletmargin $margintopbottom 0;
+    // padding-right: $tabletmargin;
+    font-size: 0.9em;
+   }
+  
   position: relative;
 }
 
@@ -399,22 +584,46 @@
  *   FOOTER LAYOUT
  */
 #footer {
-  height: 90px;
+   @include breakpoint(desktop) {
+     height: 90px;line-height: 90px;
+     font-size: 14px;
+   }
+   @include breakpoint(tablet) {
+     height: 90px * 0.8;line-height: 90px *0.8;
+     font-size: 12px;
+   }
   background-color: $foreground;
-   line-height: 90px;
-   font-size: 14px;
+   
+   
    font-family: $defaultbold;
 }
 
 #fleft {
-  padding-left: $sce_colwrap1;
+   @include breakpoint(desktop) {
+     padding-left: $sce_colwrap1;
   width: $sce_colspan8;
   margin: 0 $sce_gap 0 $sce_gap;
+   }
+     @include breakpoint(tablet) {
+     // padding-left: $sce_colwrap1;
+  width: $sce_colspan5;
+  margin: 0 0 0 $tabletmargin;
+   }
+  
 }
 
 #fright {
-  width: $sce_colspan7;
+   text-align: right;
+ @include breakpoint(desktop) {
+     width: $sce_colspan7;
   padding-right: $sce_colwrap1;
-  text-align: right;
+ 
   margin: 0 $sce_gap 0 $sce_gap;
+ }
+  
+      @include breakpoint(tablet) {
+     // padding-left: $sce_colwrap1;
+  width: $sce_colspan5;
+  margin: 0 $tabletmargin 0 0;
+   }
 }

@@ -6,11 +6,23 @@
   
   
   li {
-    display: inline;
-    border-left: 2px solid $cyan;
-    padding: 0 30px;
+     @include breakpoint(desktop) {
+       padding: 0 30px;
     position: relative;
     left: 30px;
+     }
+     
+      @include breakpoint(tablet)  {
+          padding: 0 $tabletmargin;
+    position: relative;
+    left: 10px;
+      }
+     
+     
+    
+    display: inline;
+    border-left: 2px solid $cyan;
+    
   }
   
   li:first-child {
