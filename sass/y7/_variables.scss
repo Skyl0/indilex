@@ -20,3 +20,10 @@ $topmenuheight : 40px;
 $logo_menu_height : $headerheight - $topmenuheight;
 
 $tabletmargin : 20px;
+
+// MIXIN 
+
+@mixin animateme($time) {
+-webkit-transition: all $time; /* Safari */
+transition: all $time;
+}
