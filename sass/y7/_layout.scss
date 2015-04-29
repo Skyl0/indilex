@@ -96,19 +96,21 @@
     width: $sce_colwrap15;
     height: $topmenuheight;
       line-height: $topmenuheight;
+       font-size: 14px;
     padding: 0 ($sce_colspan1 + 30px) 0 $sce_gap;
   }
   @include breakpoint(tablet) {
     width: $sce_colwrap10;
     height: $topmenuheight * 0.8;
       line-height: $topmenuheight *0.8;
+       font-size: 12px;
     padding: 0 $tabletmargin 0 0;
   }
   
   text-align: right;
 
   background-color: $lightgrey;
-  font-size: 14px;
+ 
   font-family: $defaultfont;
 }
 
@@ -172,65 +174,22 @@
       margin: $margintopbottom 0;
    }
    
+    @include breakpoint(tablet) {
+      h1 {
+        font-size: 22px;
+      }
+      
+      p {
+        min-height: 75px;
+      }
+    }
+    
+
+   
  
   text-align: center;
-}
-
-#shortcodel {
   
-   @include breakpoint(desktop) {
-       width: $sce_colspan5 + ($sce_colwrap1 / 3);
-  padding-left: $sce_colwrap1;
-  padding-right: $sce_gap;
-  border-right: 2px solid ($cyan*0.75);
-  margin: 0 0 0 $sce_gap;
-   }
-   
-   @include breakpoint(tablet) {
-       width: $sce_colspan5 ;
-  // padding-left: $sce_colwrap1;
-  // padding-right: $sce_gap;
-  border-right: 2px solid ($cyan*0.75);
-  margin: 0 0 0 $tabletmargin;
-   }
-
-}
-
-#shortcodem {
-   @include breakpoint(desktop) {
-     width: $sce_colspan4 + ($sce_colwrap1 / 3) + 20px;
-    margin: 0 $sce_gap 0 $sce_gap;
-   }
-     @include breakpoint(tablet) {
-     width: $sce_colspan5;
-    margin: 0 $tabletmargin 0 0;
-   }
-  
-}
-
-#shortcoder {
-   @include breakpoint(desktop) {
-       width: $sce_colspan5 + ($sce_colwrap1 / 3);
-  padding-right: $sce_colwrap1;
-  padding-left: $sce_gap;
-  border-left: 2px solid ($cyan*0.75);
-  margin: 0 $sce_gap 0 0;
-   }
-   
-      @include breakpoint(tablet) {
-       width: $sce_colspan10;
-  padding: 0 ($sce_colspan5/2);
-  // border-left: 2px solid ($cyan*0.75);
-  // margin: 0 $sce_gap 0 0;
-   }
-
-}
-
-// Shortcodes Link Buttons
-
-#shortcodes {
-  
-  a {
+    a {
     border: 2px solid $cyanlight;
     border-radius: 4px;
     padding: 10px 30px;
@@ -245,6 +204,61 @@
     color: $lightgrey;
   }
 }
+
+#shortcodel {
+  
+   @include breakpoint(desktop) {
+       width: $sce_colspan5 + ($sce_colwrap1 / 3);
+  padding-left: $sce_colwrap1;
+  padding-right: $sce_gap;
+  border-right: 2px solid ($cyan*0.75);
+  margin: 0 0 0 $sce_gap;
+   }
+   
+   @include breakpoint(tablet) {
+       width: ($sce_colspan10 - ($tabletmargin*4) - 4px) / 3 + 10px;
+  // padding-left: $sce_colwrap1;
+  // padding-right: $sce_gap;
+  border-right: 2px solid ($cyan*0.75);
+  margin: 0 0 0 $tabletmargin;
+  padding-right: $tabletmargin;
+   }
+
+}
+
+#shortcodem {
+   @include breakpoint(desktop) {
+     width: $sce_colspan4 + ($sce_colwrap1 / 3) + 20px;
+    margin: 0 $sce_gap 0 $sce_gap;
+   }
+     @include breakpoint(tablet) {
+     width: ($sce_colspan10 - ($tabletmargin*4) - 4px) / 3 ; //+ 20px;
+    margin: 0 $tabletmargin ;
+   }
+   
+
+  
+}
+
+#shortcoder {
+   @include breakpoint(desktop) {
+       width: $sce_colspan5 + ($sce_colwrap1 / 3);
+  padding-right: $sce_colwrap1;
+  padding-left: $sce_gap;
+  border-left: 2px solid ($cyan*0.75);
+  margin: 0 $sce_gap 0 0;
+   }
+   
+      @include breakpoint(tablet) {
+       width: ($sce_colspan10 - ($tabletmargin*4) - 4px) / 3 + 10px;
+  // padding: 0 ($sce_colspan5/2);
+  padding-left: $tabletmargin;
+   border-left: 2px solid ($cyan*0.75);
+   margin: 0 $tabletmargin 0 0;
+   }
+
+}
+
 
 /** 
  *   MAIN LAYOUT
@@ -358,7 +372,7 @@
    }
    
     @include breakpoint(tablet) {
-      width: 100%;
+      width: $sce_colspan10 -$tabletmargin;
       margin: 0 $tabletmargin;
     }
   
