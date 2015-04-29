@@ -1,46 +1,28 @@
 /**
  *   LAYOUT
  */
+
 #site {
   width: $sce_colwrap15 + 4px;
   margin: 0 auto 0 auto;
   background-color: $foreground;
+  //border-position: outside;
+  //border-left: 2px solid #aaa;
+  //border-right: 2px solid #aaa;
   box-shadow: 0px 0px 20px rgba(0,0,0,0.333);
 }
+
+/**
+ *   HEADER LAYOUT
+ */
 
 #header {
   height: $headerheight;
   background-color: $foreground;
 }
 
-#slider {
-  height: 500px;
-  background-color: $lightgrey;
-  background-image: url('../images/yellowlines.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
-#titlebar {
-  height: 100px;
-  background-color: $lightgrey;
-  background-image: url('../images/yellowlines.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  div {
-    line-height: 100px;
-    padding-left: $sce_colwrap1 +10px;
-    font-size: 24px;
-    font-family: $defaultbold;
-    color: white;
-  }
-}
-
-/**
- *   HEADER LAYOUT
- */
+// Header Elemente
 #logo {
   width: $sce_colspan4;
   padding-left: $sce_colspan1 + 20px;
@@ -67,6 +49,7 @@
   padding-right: $sce_colwrap1;
 }
 
+
 #topmenu {
   width: $sce_colwrap15;
   text-align: right;
@@ -81,6 +64,39 @@
 #topmenu span {
   color: $cyan;
   margin: 0 5px 0 20px;
+}
+
+/** 
+ *   SLIDER LAYOUT
+ */
+
+#slider {
+  height: 500px;
+  background-color: $lightgrey;
+  background-image: url('../images/yellowlines.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/**
+ *   TITLE BAR
+ */
+
+#titlebar {
+  height: 100px;
+  background-color: $lightgrey;
+  background-image: url('../images/yellowlines.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  div {
+    line-height: 100px;
+    padding-left: $sce_colwrap1 +10px;
+    font-size: 24px;
+    font-family: $defaultbold;
+    color: white;
+  }
 }
 
 /** 
@@ -114,7 +130,6 @@
   margin: 0 $sce_gap 0 0;
 }
 
-
 // Shortcodes Link Buttons
 
 #shortcodes {
@@ -134,9 +149,6 @@
     color: $lightgrey;
   }
 }
-
-
-
 
 /** 
  *   MAIN LAYOUT
@@ -163,6 +175,38 @@
   
 }
 
+#mainl ul ul {
+  padding: 0;
+  margin: 0;  
+}
+
+#mainl li a {
+  display: block !important;
+  width: $sce_colspan4+ ($sce_colwrap1 / 3) - 2px;
+  padding: 5px 20px 5px 10px;
+  height: 50px;
+  line-height: 20px;
+  //line-height: 40px;
+  text-align: right;
+  vertical-align: 20px;
+  color: $bottombg;
+  border-bottom: 2px solid ($cyan * 0.5);
+  margin-left: 20px;
+  -webkit-transition: all 0.5s; //Safari
+  transition: all 0.5s;
+   
+ // padding-left: $sce_colspan1
+ 
+
+}
+
+
+#sidecurrent a {
+   background-color:($bottombg * 0.8) !important;
+   color: #fff !important;
+}
+
+
 #mainl li a:hover {
    background-color: $bottombg;
    color: #fff !important;
@@ -177,12 +221,6 @@
   padding-right: $sce_colspan1;
   margin: 0 $sce_gap 0 $sce_gap;
 }
-
-#sidecurrent a {
-   background-color:($bottombg * 0.8) !important;
-   color: #fff !important;
-}
-
 // Content Main Button
 #mainr{
   
@@ -192,7 +230,7 @@
     padding: 10px 30px;
     width: 240px;
     line-height: 40px; 
-    -webkit-transition: all 0.5s; 
+    -webkit-transition: all 0.5s; /* Safari */
     transition: all 0.5s;
   }
 
@@ -214,7 +252,34 @@
 /**
  *   BOTTOM LAYOUT
  */
+#bottom {
+  //height: 370px;
+  background-color: $bottombg;
+ // margin: 0 0 $margintopbottom 0;
+  color: white;
+  line-height: 120%;
+}
 
+#bottom {
+  
+  h1 {
+    color: $cyan;
+  }
+
+  
+} 
+
+#bmid a {
+
+    display: inline-block;
+  
+}
+
+#bright a {
+
+    display: inline-block;
+  
+}
 // Bottom Elemente
 
 #btop {
@@ -292,6 +357,18 @@
   padding: 0 0px 0 47px; // 10 px was 60px
 }
 
+#bmid div {
+  //font-size: 0.95em;
+}
+
+#bmid {
+  color: $cyan;
+  
+  a {
+    color: white;
+  }
+}
+
 #bright {
   width: $sce_colspan5;  
   margin: 0 $sce_gap $margintopbottom $sce_gap;
@@ -306,41 +383,21 @@
   width: 100%;
 }
 
-//Bottom
 
-#bottom {
-  //height: 370px;
-  background-color: $bottombg;
- // margin: 0 0 $margintopbottom 0;
-  color: white;
-  line-height: 120%;
-}
-
-#bottom {
+#sitemap {
   
-  h1 {
-    color: $cyan;
+  color: $cyan;
+
+  a {
+    display: inline-block;
+    color: white;
   }
-
-  
-} 
-
-#bmid a {
-
-    display: inline-block;
-  
 }
 
-#bright a {
-
-    display: inline-block;
-  
-}
 
 /**
  *   FOOTER LAYOUT
  */
-
 #footer {
   height: 90px;
   background-color: $foreground;
@@ -361,4 +418,3 @@
   text-align: right;
   margin: 0 $sce_gap 0 $sce_gap;
 }
-

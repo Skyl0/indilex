@@ -3,12 +3,17 @@
  */
 @import "y7/grid";
 @import "y7/variables";
-@import "y7/general";
-@import "y7/layout";
-@import "y7/fonts";
-@import "y7/forms";
-@import "y7/classes";
 @import "y7/mediaqueries";
+
+@import "y7/fonts";
+@import "y7/htmlheading";
+
+@import "y7/layout";
+@import "y7/forms";
+@import "y7/menus";
+@import "y7/classes";
+
+
 
 // Compass related
 @import "compass/reset";

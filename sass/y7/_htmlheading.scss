@@ -13,9 +13,43 @@ html {
   box-sizing: inherit;
 }
 
+
+/**
+ *   HEADINGS AND STYLES
+ */
+
+h1 {
+  color: $bottombg;
+  font-family: $defaultfont;
+  font-size: 26px;
+  margin: $margintopbottom 0 $margintopbottom 0;
+}
+
+h6 {
+  color: $cyanlight;
+  font-family: $defaultfont;
+  font-size: 24px;
+  margin: $margintopbottom 0 $margintopbottom 0;
+}
+
+a {
+  text-decoration: none;
+  color: $cyanlight;
+}
+
+a:hover {
+  color: $cyan;
+}
+
+p {
+  margin: 0 0 20px 0;
+  font-family: $defaultfont;
+}
+
 /**
  *   SCROLLUP BUTTON
  */
+
 
 #scrollup {
   position: absolute;
@@ -34,7 +68,6 @@ html {
     opacity: 1.0;
   }
 }
-
 /**
  *   FLEXSLIDER
  */
@@ -61,4 +94,5 @@ html {
   }
 
 }
+
 

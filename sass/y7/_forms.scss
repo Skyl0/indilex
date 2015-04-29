@@ -1,3 +1,10 @@
+/**
+ *   FORMS
+ */
+
+.csc-mailform em {
+  display: none !important;
+}
 
 // Input 
 input {
@@ -13,7 +20,7 @@ input#field-8 {
     width: 200px;
     line-height: 30px; 
     
-    -webkit-transition: all 0.5s; /* Safari */
+    -webkit-transition: all 0.5s; 
     transition: all 0.5s;
 }
 
@@ -66,7 +73,4 @@ input#field-8:hover {
    }
 }
 
-.csc-mailform em {
-  display: none !important;
-}
 

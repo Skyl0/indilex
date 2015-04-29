@@ -1,9 +1,26 @@
 /** (c) Y7 Group e.K. Darmstadt 2015  */
 /** GRID LAYOUT DEFINITIONS */
+/** FONT RELATED */
+@font-face { font-family: Raleway; src: url("../fonts/Raleway-Regular.otf") format("opentype"); }
+@font-face { font-family: RalewaySemiBold; src: url("../fonts/Raleway-SemiBold.otf") format("opentype"); }
+#sitemap, #bmid { color: #49bab3; }
+#sitemap a, #bmid a { display: inline-block; color: white; }
+
 /** GENERAL LAYOUT */
 html { box-sizing: border-box; background-color: #aaa; background: url("../images/concrete_seamless_darker.png") repeat; font-family: "Raleway", Arial, sans-serif; font-size: 16px; }
 
 *, *:before, *:after { box-sizing: inherit; }
+
+/** HEADINGS AND STYLES */
+h1 { color: #144856; font-family: "Raleway", Arial, sans-serif; font-size: 26px; margin: 40px 0 40px 0; }
+
+h6 { color: #4fbbb4; font-family: "Raleway", Arial, sans-serif; font-size: 24px; margin: 40px 0 40px 0; }
+
+a { text-decoration: none; color: #4fbbb4; }
+
+a:hover { color: #49bab3; }
+
+p { margin: 0 0 20px 0; font-family: "Raleway", Arial, sans-serif; }
 
 /** SCROLLUP BUTTON */
 #scrollup { position: absolute; top: 228px; left: 258px; }
@@ -19,14 +36,9 @@ html { box-sizing: border-box; background-color: #aaa; background: url("../image
 /** LAYOUT */
 #site { width: 1204px; margin: 0 auto 0 auto; background-color: #fff; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.333); }
 
+/** HEADER LAYOUT */
 #header { height: 160px; background-color: #fff; }
 
-#slider { height: 500px; background-color: #f6f6f6; background-image: url("../images/yellowlines.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
-
-#titlebar { height: 100px; background-color: #f6f6f6; background-image: url("../images/yellowlines.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
-#titlebar div { line-height: 100px; padding-left: 90px; font-size: 24px; font-family: "RalewaySemiBold", Arial, sans-serif; color: white; }
-
-/** HEADER LAYOUT */
 #logo { width: 300px; padding-left: 80px; margin: 0 10px 0 10px; vertical-align: middle; height: 120px; line-height: 120px; }
 
 #img_logo { vertical-align: middle; display: inline-block; height: 44px; }
@@ -36,6 +48,13 @@ html { box-sizing: border-box; background-color: #aaa; background: url("../image
 #topmenu { width: 1200px; text-align: right; padding: 0 90px 0 10px; height: 40px; line-height: 40px; background-color: #f6f6f6; font-size: 14px; font-family: "Raleway", Arial, sans-serif; }
 
 #topmenu span { color: #49bab3; margin: 0 5px 0 20px; }
+
+/**  SLIDER LAYOUT */
+#slider { height: 500px; background-color: #f6f6f6; background-image: url("../images/yellowlines.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
+
+/** TITLE BAR */
+#titlebar { height: 100px; background-color: #f6f6f6; background-image: url("../images/yellowlines.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
+#titlebar div { line-height: 100px; padding-left: 90px; font-size: 24px; font-family: "RalewaySemiBold", Arial, sans-serif; color: white; }
 
 /**  SHORTCODE LAYOUT */
 #shortcodes { min-height: 200px; margin: 40px 0; text-align: center; }
@@ -56,19 +75,31 @@ html { box-sizing: border-box; background-color: #aaa; background: url("../image
 
 #mainl ul { list-style-type: none; width: 346.66667px; font-family: "RalewaySemiBold", Arial, sans-serif; margin: 40px 0 40px 0; border-right: 2px solid #368b86; }
 
+#mainl ul ul { padding: 0; margin: 0; }
+
+#mainl li a { display: block !important; width: 324.66667px; padding: 5px 20px 5px 10px; height: 50px; line-height: 20px; text-align: right; vertical-align: 20px; color: #144856; border-bottom: 2px solid #245d59; margin-left: 20px; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+#sidecurrent a { background-color: #103944 !important; color: #fff !important; }
+
 #mainl li a:hover { background-color: #144856; color: #fff !important; }
 
 #mainl li:last-child a { border-bottom: 0px solid #fff; }
 
 #mainr { width: 731.66667px; padding-right: 60px; margin: 0 10px 0 10px; }
 
-#sidecurrent a { background-color: #103944 !important; color: #fff !important; }
-
-#mainr a { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; -webkit-transition: all 0.5s; transition: all 0.5s; }
+#mainr a { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; -webkit-transition: all 0.5s; /* Safari */ transition: all 0.5s; }
 #mainr a:hover { background-color: #4fbbb4; color: #f6f6f6; }
 #mainr img { width: 651.66667px; position: relative; right: 7px; padding: 0px !important; margin: 0px !important; }
 
 /** BOTTOM LAYOUT */
+#bottom { background-color: #144856; color: white; line-height: 120%; }
+
+#bottom h1 { color: #49bab3; }
+
+#bmid a { display: inline-block; }
+
+#bright a { display: inline-block; }
+
 #btop { height: 120px; background-color: #f6f6f6; background-image: url("../images/handshake.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; color: white; padding: 40px 0; background-attachment: fixed; line-height: 150%; }
 
 #btopl { width: 620px; padding-left: 80px; margin: 0 10px 0 10px; font-size: 26px; }
@@ -86,17 +117,15 @@ html { box-sizing: border-box; background-color: #aaa; background: url("../image
 
 #bmid { width: 380px; margin: 0 10px 40px 10px; padding: 0 0px 0 47px; }
 
+#bmid { color: #49bab3; }
+#bmid a { color: white; }
+
 #bright { width: 380px; margin: 0 10px 40px 10px; padding-right: 80px; position: relative; }
 
 #cyanbar { line-height: 0px; height: 10px; background-color: #49bab3; width: 100%; }
 
-#bottom { background-color: #144856; color: white; line-height: 120%; }
-
-#bottom h1 { color: #49bab3; }
-
-#bmid a { display: inline-block; }
-
-#bright a { display: inline-block; }
+#sitemap { color: #49bab3; }
+#sitemap a { display: inline-block; color: white; }
 
 /** FOOTER LAYOUT */
 #footer { height: 90px; background-color: #fff; line-height: 90px; font-size: 14px; font-family: "RalewaySemiBold", Arial, sans-serif; }
@@ -105,15 +134,12 @@ html { box-sizing: border-box; background-color: #aaa; background: url("../image
 
 #fright { width: 540px; padding-right: 80px; text-align: right; margin: 0 10px 0 10px; }
 
-/** FONT RELATED */
-@font-face { font-family: Raleway; src: url("../fonts/Raleway-Regular.otf") format("opentype"); }
-@font-face { font-family: RalewaySemiBold; src: url("../fonts/Raleway-SemiBold.otf") format("opentype"); }
-#sitemap, #bmid { color: #49bab3; }
-#sitemap a, #bmid a { display: inline-block; color: white; }
+/** FORMS */
+.csc-mailform em { display: none !important; }
 
 input { font-family: "Raleway", Arial, sans-serif; font-size: 16px; }
 
-input#field-8 { border: 2px solid #4fbbb4; color: #4fbbb4; border-radius: 4px; padding: 5px 15px; width: 200px; line-height: 30px; -webkit-transition: all 0.5s; /* Safari */ transition: all 0.5s; }
+input#field-8 { border: 2px solid #4fbbb4; color: #4fbbb4; border-radius: 4px; padding: 5px 15px; width: 200px; line-height: 30px; -webkit-transition: all 0.5s; transition: all 0.5s; }
 
 input#field-8:hover { background: rgba(79, 187, 180, 0.9); color: #f6f6f6; }
 
@@ -123,12 +149,19 @@ input#field-8:hover { background: rgba(79, 187, 180, 0.9); color: #f6f6f6; }
 
 .csc-form-confirmation input { border: 2px solid #4fbbb4; color: #4fbbb4; border-radius: 4px; padding: 5px 15px; width: 200px; line-height: 30px; -webkit-transition: all 0.5s; /* Safari */ transition: all 0.5s; }
 
-.csc-mailform em { display: none !important; }
+/** MAIN MENU */
+#mainmenu ul { list-style-type: none; }
+#mainmenu ul li { display: inline; border-left: 2px solid #49bab3; padding: 0 30px; position: relative; left: 30px; }
+#mainmenu ul li:first-child { border-left: 0px; padding-left: 0px; }
+#mainmenu ul li a { color: black; font-size: 1.05em; }
+#mainmenu ul li a:hover { color: #49bab3; }
 
 /** CLASSES */
 .hidden { display: none; }
 
 .floatl { float: left; }
+
+.more:after { content: ' >>'; }
 
 .roundbutton { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; }
 
