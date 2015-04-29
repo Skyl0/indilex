@@ -78,145 +78,145 @@ html { box-sizing: border-box; background-color: #aaa; background: url("../image
 /* line 197, ../sass/screen.scss */
 #main { min-height: 300px; padding: 40px 0; background-color: #f6f6f6; }
 
-/* line 204, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 #mainl { width: 426.66667px; padding-left: 60px; margin: 0 10px 0 10px; }
 
-/* line 210, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 #mainl ul { list-style-type: none; width: 346.66667px; font-family: "RalewaySemiBold", Arial, sans-serif; margin: 40px 0 40px 0; border-right: 2px solid #368b86; }
 
-/* line 218, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 #mainl li a { display: block; width: 324.66667px; padding: 5px 20px 5px 10px; height: 50px; line-height: 20px; text-align: right; vertical-align: 20px; color: #144856; border-bottom: 2px solid #245d59; margin-left: 20px; }
 
-/* line 232, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 #mainl li a:hover { background-color: #144856; color: #fff !important; }
 
-/* line 237, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 #mainl li:last-child a { border-bottom: 0px solid #fff; }
 
-/* line 241, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 #mainr { width: 731.66667px; padding-right: 60px; margin: 0 10px 0 10px; }
 
-/* line 249, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 #bottom { background-color: #144856; color: white; line-height: 120%; }
 
-/* line 259, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 #bottom h1 { color: #49bab3; }
-/* line 263, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 #bottom span { word-wrap: break-word; word-break: break-all; }
-/* line 266, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 #bottom span a { color: white; padding: 0 5px; }
 
-/* line 276, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 #btop { height: 120px; background-color: #f6f6f6; background-image: url("../images/handshake.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; color: white; padding: 40px 0; background-attachment: fixed; line-height: 150%; }
 
-/* line 289, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 #btopl { width: 620px; padding-left: 80px; margin: 0 10px 0 10px; font-size: 26px; }
 
-/* line 296, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 #btopr { width: 540px; padding-right: 80px; margin: 0 10px 0 10px; }
 
-/* line 302, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 #btop_button { text-align: center; position: relative; left: 220px; margin-right: 190px; top: 12px; }
 
-/* line 313, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 #btop_button a { color: white; width: 240px; border-radius: 4px; border: 2px solid white; padding: 12px 30px; }
-/* line 322, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 #btop_button a:hover { background: rgba(255, 255, 255, 0.5) !important; color: #144856 !important; border-radius: 4px; border: 2px solid #144856; }
 
-/* line 331, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 #btop_button span { position: relative; top: -2px; }
 
-/* line 336, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 #bleft { width: 380px; padding-left: 80px; margin: 0 10px 40px 10px; }
 
-/* line 342, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 #bmid { width: 380px; margin: 0 10px 40px 10px; padding: 0 60px 0 47px; }
 
-/* line 348, ../sass/screen.scss */
+/* line 347, ../sass/screen.scss */
 #bright { width: 380px; margin: 0 10px 40px 10px; padding-right: 80px; position: relative; }
 
-/* line 355, ../sass/screen.scss */
+/* line 354, ../sass/screen.scss */
 #cyanbar { line-height: 0px; height: 10px; background-color: #49bab3; width: 100%; }
 
-/* line 364, ../sass/screen.scss */
-#footer { height: 90px; background-color: #fff; background: url("../images/concrete_seamless.png") repeat; line-height: 90px; font-size: 14px; font-family: "RalewaySemiBold", Arial, sans-serif; }
+/* line 363, ../sass/screen.scss */
+#footer { height: 90px; background-color: #fff; line-height: 90px; font-size: 14px; font-family: "RalewaySemiBold", Arial, sans-serif; }
 
-/* line 373, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 #fleft { padding-left: 80px; width: 620px; margin: 0 10px 0 10px; }
 
-/* line 379, ../sass/screen.scss */
+/* line 377, ../sass/screen.scss */
 #fright { width: 540px; padding-right: 80px; text-align: right; margin: 0 10px 0 10px; }
 
-/* line 386, ../sass/screen.scss */
+/* line 384, ../sass/screen.scss */
 #logo { width: 300px; padding-left: 80px; margin: 0 10px 0 10px; vertical-align: middle; height: 120px; line-height: 120px; }
 
-/* line 395, ../sass/screen.scss */
+/* line 393, ../sass/screen.scss */
 #img_logo { vertical-align: middle; display: inline-block; height: 44px; }
 
-/* line 402, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 #mainmenu { width: 860px; margin: 0 10px 0 10px; vertical-align: middle; height: 120px; line-height: 120px; text-align: right; padding-right: 80px; }
 
-/* line 413, ../sass/screen.scss */
-#topmenu { width: 1204px; text-align: right; padding: 0 90px 0 10px; height: 40px; line-height: 40px; background: url("../images/concrete_seamless.png") repeat; background-color: #f6f6f6; font-size: 14px; font-family: "Raleway", Arial, sans-serif; }
+/* line 411, ../sass/screen.scss */
+#topmenu { width: 1200px; text-align: right; padding: 0 90px 0 10px; height: 40px; line-height: 40px; background-color: #f6f6f6; font-size: 14px; font-family: "Raleway", Arial, sans-serif; }
 
-/* line 425, ../sass/screen.scss */
+/* line 422, ../sass/screen.scss */
 #topmenu span { color: #49bab3; margin: 0 5px 0 20px; }
 
-/* line 433, ../sass/screen.scss */
+/* line 430, ../sass/screen.scss */
 #mainr a { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; }
-/* line 441, ../sass/screen.scss */
+/* line 438, ../sass/screen.scss */
 #mainr a:hover { background-color: #4fbbb4; color: #f6f6f6; }
-/* line 446, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 #mainr img { width: 651.66667px; position: relative; right: 7px; padding: 0px !important; margin: 0px !important; }
 
-/* line 459, ../sass/screen.scss */
+/* line 456, ../sass/screen.scss */
 #shortcodes a { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; }
-/* line 467, ../sass/screen.scss */
+/* line 464, ../sass/screen.scss */
 #shortcodes a:hover { background: rgba(79, 187, 180, 0.9); color: #f6f6f6; }
 
-/* line 477, ../sass/screen.scss */
+/* line 474, ../sass/screen.scss */
 #scrollup { position: absolute; top: 228px; left: 258px; }
 
-/* line 484, ../sass/screen.scss */
-#scrollup a { opacity: 0.3; color: white !important; }
-/* line 489, ../sass/screen.scss */
-#scrollup a:hover { opacity: 0.8; }
+/* line 481, ../sass/screen.scss */
+#scrollup a { opacity: 0.5; }
+/* line 485, ../sass/screen.scss */
+#scrollup a:hover { opacity: 1.0; }
 
-/* line 496, ../sass/screen.scss */
+/* line 492, ../sass/screen.scss */
 .floatl { float: left; }
 
-/* line 500, ../sass/screen.scss */
+/* line 496, ../sass/screen.scss */
 .more:after { content: ' >>'; }
 
-/* line 504, ../sass/screen.scss */
+/* line 500, ../sass/screen.scss */
 .roundbutton { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; }
 
-/* line 513, ../sass/screen.scss */
+/* line 509, ../sass/screen.scss */
 .roundbutton:hover { background: rgba(79, 187, 180, 0.75); color: #f6f6f6; }
 
-/* line 522, ../sass/screen.scss */
+/* line 518, ../sass/screen.scss */
 .clearfix:after { visibility: hidden; display: block; content: ""; clear: both; height: 0; }
 
-/* line 530, ../sass/screen.scss */
+/* line 526, ../sass/screen.scss */
 .cyan { color: #49bab3; }
 
-/* line 535, ../sass/screen.scss */
+/* line 531, ../sass/screen.scss */
 .opacity50 { opacity: 0.5; }
 
-/* line 541, ../sass/screen.scss */
+/* line 537, ../sass/screen.scss */
 #mainmenu ul { list-style-type: none; }
-/* line 544, ../sass/screen.scss */
+/* line 540, ../sass/screen.scss */
 #mainmenu ul li { display: inline; border-right: 2px solid #49bab3; padding: 0 30px; }
-/* line 550, ../sass/screen.scss */
+/* line 546, ../sass/screen.scss */
 #mainmenu ul li:last-child { border-right: 0px; padding-right: 0px; }
-/* line 556, ../sass/screen.scss */
+/* line 552, ../sass/screen.scss */
 #mainmenu ul li a { color: black; font-size: 1.05em; }
-/* line 560, ../sass/screen.scss */
+/* line 556, ../sass/screen.scss */
 #mainmenu ul li a:hover { color: #49bab3; }
 
-/* line 572, ../sass/screen.scss */
+/* line 568, ../sass/screen.scss */
 .flexslider strong { font-size: 36px; font-family: "RalewaySemiBold", Arial, sans-serif; text-shadow: 4px 4px 5px #000; }
-/* line 577, ../sass/screen.scss */
+/* line 573, ../sass/screen.scss */
 .flexslider span { font-size: 24px; font-family: "RalewaySemiBold", Arial, sans-serif; text-shadow: 2px 2px 3px #000; }
-/* line 584, ../sass/screen.scss */
+/* line 580, ../sass/screen.scss */
 .flexslider p { position: relative; top: -400px; padding: 0 90px; color: white; }
