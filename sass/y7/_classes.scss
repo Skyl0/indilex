@@ -1,0 +1,41 @@
+/**
+ *   CLASSES
+ */
+
+.hidden {
+  display: none;
+  
+}
+
+.floatl {
+  float: left;
+}
+
+.roundbutton {
+  border: 2px solid $cyanlight;
+  border-radius: 4px;
+  padding: 10px 30px;
+  width: 240px;
+  line-height: 40px;  
+}
+
+.roundbutton:hover {
+    background: rgba(79,187,180,0.75);
+    color: $lightgrey;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+.cyan {
+  color: $cyan;
+}
+
+.opacity50 {
+  opacity: 0.5;
+}

@@ -1,0 +1,72 @@
+
+// Input 
+input {
+  font-family: $defaultfont;
+  font-size: 16px;
+}
+
+input#field-8 {
+    border: 2px solid $cyanlight;
+    color: $cyanlight;
+    border-radius: 4px;
+    padding: 5px 15px;
+    width: 200px;
+    line-height: 30px; 
+    
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+}
+
+input#field-8:hover {
+    background: rgba(79,187,180,0.9);
+    color: $lightgrey;
+}
+
+.csc-mailform {
+  
+
+  .csc-form-element-textline input {
+      border: 2px solid $cyanlight;
+      color: $cyanlight;
+      border-radius: 2px;
+      padding: 2px ;
+      width: 300px;
+      line-height: 20px; 
+
+  }
+  
+  .csc-form-element-textarea textarea {
+      border: 2px solid $cyanlight;
+      color: $cyanlight;
+      border-radius: 2px;
+      padding: 2px ;
+      width: 300px;
+      line-height: 20px; 
+      font-family: $defaultfont;
+  }
+ 
+
+  .csc-form-element {
+    margin: 5px 0 !important;
+  }
+}
+
+.csc-form-confirmation {
+  
+   input {
+         border: 2px solid $cyanlight;
+    color: $cyanlight;
+    border-radius: 4px;
+    padding: 5px 15px;
+    width: 200px;
+    line-height: 30px; 
+    
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+   }
+}
+
+.csc-mailform em {
+  display: none !important;
+}
+

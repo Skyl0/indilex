@@ -1,0 +1,364 @@
+/**
+ *   LAYOUT
+ */
+#site {
+  width: $sce_colwrap15 + 4px;
+  margin: 0 auto 0 auto;
+  background-color: $foreground;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.333);
+}
+
+#header {
+  height: $headerheight;
+  background-color: $foreground;
+}
+
+#slider {
+  height: 500px;
+  background-color: $lightgrey;
+  background-image: url('../images/yellowlines.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#titlebar {
+  height: 100px;
+  background-color: $lightgrey;
+  background-image: url('../images/yellowlines.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  div {
+    line-height: 100px;
+    padding-left: $sce_colwrap1 +10px;
+    font-size: 24px;
+    font-family: $defaultbold;
+    color: white;
+  }
+}
+
+/**
+ *   HEADER LAYOUT
+ */
+#logo {
+  width: $sce_colspan4;
+  padding-left: $sce_colspan1 + 20px;
+  margin: 0 $sce_gap 0 $sce_gap;
+  vertical-align: middle;
+  height: $logo_menu_height;
+  line-height: $logo_menu_height;
+}
+
+#img_logo {
+ // margin: 0;
+ vertical-align: middle;
+  display: inline-block;
+  height: 44px;
+}
+
+#mainmenu {
+  width: $sce_colspan11;
+  margin: 0 $sce_gap 0 $sce_gap;
+  vertical-align: middle;
+  height: $logo_menu_height;
+  line-height: $logo_menu_height;
+  text-align: right;
+  padding-right: $sce_colwrap1;
+}
+
+#topmenu {
+  width: $sce_colwrap15;
+  text-align: right;
+  padding: 0 ($sce_colspan1 + 30px) 0 $sce_gap;
+  height: $topmenuheight;
+  line-height: $topmenuheight;
+  background-color: $lightgrey;
+  font-size: 14px;
+  font-family: $defaultfont;
+}
+
+#topmenu span {
+  color: $cyan;
+  margin: 0 5px 0 20px;
+}
+
+/** 
+ *   SHORTCODE LAYOUT
+ */
+
+#shortcodes {
+  min-height: 200px;
+  margin: $margintopbottom 0;
+  text-align: center;
+}
+
+#shortcodel {
+  width: $sce_colspan5 + ($sce_colwrap1 / 3);
+  padding-left: $sce_colwrap1;
+  padding-right: $sce_gap;
+  border-right: 2px solid ($cyan*0.75);
+  margin: 0 0 0 $sce_gap;
+}
+
+#shortcodem {
+  width: $sce_colspan4 + ($sce_colwrap1 / 3) + 20px;
+  margin: 0 $sce_gap 0 $sce_gap;
+}
+
+#shortcoder {
+  width: $sce_colspan5 + ($sce_colwrap1 / 3);
+  padding-right: $sce_colwrap1;
+  padding-left: $sce_gap;
+  border-left: 2px solid ($cyan*0.75);
+  margin: 0 $sce_gap 0 0;
+}
+
+
+// Shortcodes Link Buttons
+
+#shortcodes {
+  
+  a {
+    border: 2px solid $cyanlight;
+    border-radius: 4px;
+    padding: 10px 30px;
+    width: 240px;
+    line-height: 40px; 
+     -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+  }
+
+  a:hover {
+    background: rgba(79,187,180,0.9);
+    color: $lightgrey;
+  }
+}
+
+
+
+
+/** 
+ *   MAIN LAYOUT
+ */
+
+#main {
+  min-height: 300px;
+  padding: $margintopbottom 0 ;
+  background-color: $lightgrey;
+}
+
+#mainl {
+  width: $sce_colspan5+ ($sce_colwrap1 / 3) + 20px;
+  padding-left: $sce_colspan1;
+  margin: 0 $sce_gap 0 $sce_gap;
+}
+
+#mainl ul {
+  list-style-type: none;
+  width: $sce_colspan4+ ($sce_colwrap1 / 3) + 20px;
+  font-family: $defaultbold;
+  margin: $margintopbottom 0 $margintopbottom 0; 
+  border-right: 2px solid ($cyan*0.75);
+  
+}
+
+#mainl li a:hover {
+   background-color: $bottombg;
+   color: #fff !important;
+ }
+
+#mainl li:last-child a {
+  border-bottom: 0px solid #fff;
+}
+
+#mainr {
+  width: $sce_colspan9 + ($sce_colwrap1 / 3) + 5px;
+  padding-right: $sce_colspan1;
+  margin: 0 $sce_gap 0 $sce_gap;
+}
+
+#sidecurrent a {
+   background-color:($bottombg * 0.8) !important;
+   color: #fff !important;
+}
+
+// Content Main Button
+#mainr{
+  
+  a {
+    border: 2px solid $cyanlight;
+    border-radius: 4px;
+    padding: 10px 30px;
+    width: 240px;
+    line-height: 40px; 
+    -webkit-transition: all 0.5s; 
+    transition: all 0.5s;
+  }
+
+  a:hover {
+    background-color: $cyanlight;
+    color: $lightgrey;
+  }
+  
+  img {
+    width: $sce_colspan8 + ($sce_colwrap1 / 3) + 5px;
+    position: relative;
+    right: 7px;
+    padding: 0px !important;
+    margin: 0px !important; //TODO Formatierung von Tobi erfragen
+  }
+}
+
+
+/**
+ *   BOTTOM LAYOUT
+ */
+
+// Bottom Elemente
+
+#btop {
+  height: 120px;
+  background-color: $lightgrey;
+  background-image: url('../images/handshake.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: $margintopbottom 0;
+  background-attachment: fixed;
+  line-height: 150%;
+}
+
+#btopl {
+  width: $sce_colspan8;
+  padding-left: $sce_colwrap1;
+  margin: 0 $sce_gap 0 $sce_gap;
+  font-size: 26px;
+}
+
+#btopr {
+  width: $sce_colspan7;
+  padding-right: $sce_colwrap1;
+  margin: 0 $sce_gap 0 $sce_gap;
+}
+
+#btop_button {
+  
+ // width: 240px;
+  text-align: center;
+  position: relative;
+  left: $sce_colspan6 - 240px;
+   margin-right: $sce_colwrap1 + 110px;
+   top: 12px;
+}
+
+#btop_button {
+  a {
+
+    color: white;
+    width: 240px;  
+    border-radius: 4px;
+    border: 2px solid white;
+    padding: 12px 30px;
+    -webkit-transition: all 0.5s; //Safari
+    transition: all 0.5s;
+   
+  }
+  a:hover {
+    background: rgba(255,255,255,0.5) !important; 
+    color: $bottombg !important;
+    border-radius: 4px;
+    border: 2px solid $bottombg;
+
+  }
+}
+
+#btop_button span {
+  position: relative;
+  top: -2px;
+}
+
+#bleft {
+  width: $sce_colspan5;
+  padding-left: $sce_colwrap1;
+  margin: 0 $sce_gap $margintopbottom $sce_gap;
+}
+
+
+#bmid {
+  width: $sce_colspan5;
+  margin: 0 $sce_gap $margintopbottom $sce_gap;
+  padding: 0 0px 0 47px; // 10 px was 60px
+}
+
+#bright {
+  width: $sce_colspan5;  
+  margin: 0 $sce_gap $margintopbottom $sce_gap;
+  padding-right: $sce_colwrap1;
+  position: relative;
+}
+
+#cyanbar {
+  line-height: 0px;
+  height: 10px;
+  background-color: $cyan;
+  width: 100%;
+}
+
+//Bottom
+
+#bottom {
+  //height: 370px;
+  background-color: $bottombg;
+ // margin: 0 0 $margintopbottom 0;
+  color: white;
+  line-height: 120%;
+}
+
+#bottom {
+  
+  h1 {
+    color: $cyan;
+  }
+
+  
+} 
+
+#bmid a {
+
+    display: inline-block;
+  
+}
+
+#bright a {
+
+    display: inline-block;
+  
+}
+
+/**
+ *   FOOTER LAYOUT
+ */
+
+#footer {
+  height: 90px;
+  background-color: $foreground;
+   line-height: 90px;
+   font-size: 14px;
+   font-family: $defaultbold;
+}
+
+#fleft {
+  padding-left: $sce_colwrap1;
+  width: $sce_colspan8;
+  margin: 0 $sce_gap 0 $sce_gap;
+}
+
+#fright {
+  width: $sce_colspan7;
+  padding-right: $sce_colwrap1;
+  text-align: right;
+  margin: 0 $sce_gap 0 $sce_gap;
+}
+

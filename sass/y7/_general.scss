@@ -1,0 +1,64 @@
+/**
+ *   GENERAL LAYOUT
+ */
+html {
+  box-sizing: border-box;
+  background-color: $background;
+  background: url('../images/concrete_seamless_darker.png') repeat;
+  font-family: $defaultfont;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/**
+ *   SCROLLUP BUTTON
+ */
+
+#scrollup {
+  position: absolute;
+  top: 220px + (2 * $margintopbottom) - (1.5 * 48px); // containerheight * 1.5
+  left: 258px; // found out by trying  
+}
+
+#scrollup {
+  a {
+    opacity: 0.5;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+  }
+  
+  a:hover {
+    opacity: 1.0;
+  }
+}
+
+/**
+ *   FLEXSLIDER
+ */
+
+.flexslider { 
+  
+  strong {
+    font-size: 36px;
+    font-family: $defaultbold;
+    text-shadow: 4px 4px 5px #000;
+  }
+  span {
+    font-size: 24px;
+    font-family: $defaultbold;
+    text-shadow: 2px 2px 3px #000;
+    
+  }
+
+  p {
+    position: relative;
+    top: -400px;
+    padding: 0 ($sce_colspan1 + 30px);
+    color: white;
+  }
+
+}
+

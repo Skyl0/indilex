@@ -1,0 +1,32 @@
+
+// MAIN MENU
+
+#mainmenu ul {
+  list-style-type: none;
+  
+  
+  li {
+    display: inline;
+    border-left: 2px solid $cyan;
+    padding: 0 30px;
+    position: relative;
+    left: 30px;
+  }
+  
+  li:first-child {
+    border-left: 0px;
+    padding-left: 0px;
+  }
+  
+  li {
+    a {
+      color: black;
+      font-size: 1.05em;
+    }
+    a:hover {
+      color: $cyan;
+      
+   //   font-stretch: expanded;
+    }
+  }
+}

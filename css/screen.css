@@ -1,41 +1,22 @@
-/* Y7 group 2015 Im Auftrag von Indilex (c) Alle Rechte vorbehalten - ME  */
-@font-face { font-family: Raleway; src: url("../fonts/Raleway-Regular.otf") format("opentype"); }
-@font-face { font-family: RalewaySemiBold; src: url("../fonts/Raleway-SemiBold.otf") format("opentype"); }
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
-
-html { line-height: 1; }
-
-ol, ul { list-style: none; }
-
-table { border-collapse: collapse; border-spacing: 0; }
-
-caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
-
-q, blockquote { quotes: none; }
-q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
-
-a img { border: none; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
-
-h1 { color: #144856; font-size: 26px; margin: 40px 0 40px 0; }
-
-h6 { color: #4fbbb4; font-size: 24px; margin: 40px 0 40px 0; }
-
-a { text-decoration: none; color: #4fbbb4; }
-
-a:hover { color: #49bab3; }
-
-p { margin: 0 0 20px 0; }
-
-/* apply a natural box layout model to all elements, but allowing components to change */
+/** (c) Y7 Group e.K. Darmstadt 2015  */
+/** GRID LAYOUT DEFINITIONS */
+/** GENERAL LAYOUT */
 html { box-sizing: border-box; background-color: #aaa; background: url("../images/concrete_seamless_darker.png") repeat; font-family: "Raleway", Arial, sans-serif; font-size: 16px; }
 
 *, *:before, *:after { box-sizing: inherit; }
 
-#sitemap { color: #49bab3; }
-#sitemap a { display: inline-block; color: white; }
+/** SCROLLUP BUTTON */
+#scrollup { position: absolute; top: 228px; left: 258px; }
 
+#scrollup a { opacity: 0.5; -webkit-transition: all 0.5s; /* Safari */ transition: all 0.5s; }
+#scrollup a:hover { opacity: 1.0; }
+
+/** FLEXSLIDER */
+.flexslider strong { font-size: 36px; font-family: "RalewaySemiBold", Arial, sans-serif; text-shadow: 4px 4px 5px #000; }
+.flexslider span { font-size: 24px; font-family: "RalewaySemiBold", Arial, sans-serif; text-shadow: 2px 2px 3px #000; }
+.flexslider p { position: relative; top: -400px; padding: 0 90px; color: white; }
+
+/** LAYOUT */
 #site { width: 1204px; margin: 0 auto 0 auto; background-color: #fff; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.333); }
 
 #header { height: 160px; background-color: #fff; }
@@ -45,6 +26,18 @@ html { box-sizing: border-box; background-color: #aaa; background: url("../image
 #titlebar { height: 100px; background-color: #f6f6f6; background-image: url("../images/yellowlines.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
 #titlebar div { line-height: 100px; padding-left: 90px; font-size: 24px; font-family: "RalewaySemiBold", Arial, sans-serif; color: white; }
 
+/** HEADER LAYOUT */
+#logo { width: 300px; padding-left: 80px; margin: 0 10px 0 10px; vertical-align: middle; height: 120px; line-height: 120px; }
+
+#img_logo { vertical-align: middle; display: inline-block; height: 44px; }
+
+#mainmenu { width: 860px; margin: 0 10px 0 10px; vertical-align: middle; height: 120px; line-height: 120px; text-align: right; padding-right: 80px; }
+
+#topmenu { width: 1200px; text-align: right; padding: 0 90px 0 10px; height: 40px; line-height: 40px; background-color: #f6f6f6; font-size: 14px; font-family: "Raleway", Arial, sans-serif; }
+
+#topmenu span { color: #49bab3; margin: 0 5px 0 20px; }
+
+/**  SHORTCODE LAYOUT */
 #shortcodes { min-height: 200px; margin: 40px 0; text-align: center; }
 
 #shortcodel { width: 406.66667px; padding-left: 80px; padding-right: 10px; border-right: 2px solid #368b86; margin: 0 0 0 10px; }
@@ -53,19 +46,15 @@ html { box-sizing: border-box; background-color: #aaa; background: url("../image
 
 #shortcoder { width: 406.66667px; padding-right: 80px; padding-left: 10px; border-left: 2px solid #368b86; margin: 0 10px 0 0; }
 
+#shortcodes a { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; -webkit-transition: all 0.5s; /* Safari */ transition: all 0.5s; }
+#shortcodes a:hover { background: rgba(79, 187, 180, 0.9); color: #f6f6f6; }
+
+/**  MAIN LAYOUT */
 #main { min-height: 300px; padding: 40px 0; background-color: #f6f6f6; }
 
 #mainl { width: 426.66667px; padding-left: 60px; margin: 0 10px 0 10px; }
 
 #mainl ul { list-style-type: none; width: 346.66667px; font-family: "RalewaySemiBold", Arial, sans-serif; margin: 40px 0 40px 0; border-right: 2px solid #368b86; }
-
-.hidden { display: none; }
-
-#mainl ul ul { padding: 0; margin: 0; }
-
-#mainl li a { display: block !important; width: 324.66667px; padding: 5px 20px 5px 10px; height: 50px; line-height: 20px; text-align: right; vertical-align: 20px; color: #144856; border-bottom: 2px solid #245d59; margin-left: 20px; -webkit-transition: all 0.5s; transition: all 0.5s; }
-
-#sidecurrent a { background-color: #103944 !important; color: #fff !important; }
 
 #mainl li a:hover { background-color: #144856; color: #fff !important; }
 
@@ -73,14 +62,13 @@ html { box-sizing: border-box; background-color: #aaa; background: url("../image
 
 #mainr { width: 731.66667px; padding-right: 60px; margin: 0 10px 0 10px; }
 
-#bottom { background-color: #144856; color: white; line-height: 120%; }
+#sidecurrent a { background-color: #103944 !important; color: #fff !important; }
 
-#bottom h1 { color: #49bab3; }
+#mainr a { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; -webkit-transition: all 0.5s; transition: all 0.5s; }
+#mainr a:hover { background-color: #4fbbb4; color: #f6f6f6; }
+#mainr img { width: 651.66667px; position: relative; right: 7px; padding: 0px !important; margin: 0px !important; }
 
-#bmid a { display: inline-block; }
-
-#bright a { display: inline-block; }
-
+/** BOTTOM LAYOUT */
 #btop { height: 120px; background-color: #f6f6f6; background-image: url("../images/handshake.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; color: white; padding: 40px 0; background-attachment: fixed; line-height: 150%; }
 
 #btopl { width: 620px; padding-left: 80px; margin: 0 10px 0 10px; font-size: 26px; }
@@ -98,66 +86,30 @@ html { box-sizing: border-box; background-color: #aaa; background: url("../image
 
 #bmid { width: 380px; margin: 0 10px 40px 10px; padding: 0 0px 0 47px; }
 
-#bmid { color: #49bab3; }
-#bmid a { color: white; }
-
 #bright { width: 380px; margin: 0 10px 40px 10px; padding-right: 80px; position: relative; }
 
 #cyanbar { line-height: 0px; height: 10px; background-color: #49bab3; width: 100%; }
 
+#bottom { background-color: #144856; color: white; line-height: 120%; }
+
+#bottom h1 { color: #49bab3; }
+
+#bmid a { display: inline-block; }
+
+#bright a { display: inline-block; }
+
+/** FOOTER LAYOUT */
 #footer { height: 90px; background-color: #fff; line-height: 90px; font-size: 14px; font-family: "RalewaySemiBold", Arial, sans-serif; }
 
 #fleft { padding-left: 80px; width: 620px; margin: 0 10px 0 10px; }
 
 #fright { width: 540px; padding-right: 80px; text-align: right; margin: 0 10px 0 10px; }
 
-#logo { width: 300px; padding-left: 80px; margin: 0 10px 0 10px; vertical-align: middle; height: 120px; line-height: 120px; }
-
-#img_logo { vertical-align: middle; display: inline-block; height: 44px; }
-
-#mainmenu { width: 860px; margin: 0 10px 0 10px; vertical-align: middle; height: 120px; line-height: 120px; text-align: right; padding-right: 80px; }
-
-#topmenu { width: 1200px; text-align: right; padding: 0 90px 0 10px; height: 40px; line-height: 40px; background-color: #f6f6f6; font-size: 14px; font-family: "Raleway", Arial, sans-serif; }
-
-#topmenu span { color: #49bab3; margin: 0 5px 0 20px; }
-
-#mainr a { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; -webkit-transition: all 0.5s; /* Safari */ transition: all 0.5s; }
-#mainr a:hover { background-color: #4fbbb4; color: #f6f6f6; }
-#mainr img { width: 651.66667px; position: relative; right: 7px; padding: 0px !important; margin: 0px !important; }
-
-#shortcodes a { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; -webkit-transition: all 0.5s; /* Safari */ transition: all 0.5s; }
-#shortcodes a:hover { background: rgba(79, 187, 180, 0.9); color: #f6f6f6; }
-
-#scrollup { position: absolute; top: 228px; left: 258px; }
-
-#scrollup a { opacity: 0.5; -webkit-transition: all 0.5s; /* Safari */ transition: all 0.5s; }
-#scrollup a:hover { opacity: 1.0; }
-
-.floatl { float: left; }
-
-.more:after { content: ' >>'; }
-
-.roundbutton { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; }
-
-.roundbutton:hover { background: rgba(79, 187, 180, 0.75); color: #f6f6f6; }
-
-.clearfix:after { visibility: hidden; display: block; content: ""; clear: both; height: 0; }
-
-.cyan { color: #49bab3; }
-
-.opacity50 { opacity: 0.5; }
-
-#mainmenu ul { list-style-type: none; }
-#mainmenu ul li { display: inline; border-left: 2px solid #49bab3; padding: 0 30px; position: relative; left: 30px; }
-#mainmenu ul li:first-child { border-left: 0px; padding-left: 0px; }
-#mainmenu ul li a { color: black; font-size: 1.05em; }
-#mainmenu ul li a:hover { color: #49bab3; }
-
-.flexslider strong { font-size: 36px; font-family: "RalewaySemiBold", Arial, sans-serif; text-shadow: 4px 4px 5px #000; }
-.flexslider span { font-size: 24px; font-family: "RalewaySemiBold", Arial, sans-serif; text-shadow: 2px 2px 3px #000; }
-.flexslider p { position: relative; top: -400px; padding: 0 90px; color: white; }
-
-.csc-mailform em { display: none !important; }
+/** FONT RELATED */
+@font-face { font-family: Raleway; src: url("../fonts/Raleway-Regular.otf") format("opentype"); }
+@font-face { font-family: RalewaySemiBold; src: url("../fonts/Raleway-SemiBold.otf") format("opentype"); }
+#sitemap, #bmid { color: #49bab3; }
+#sitemap a, #bmid a { display: inline-block; color: white; }
 
 input { font-family: "Raleway", Arial, sans-serif; font-size: 16px; }
 
@@ -170,3 +122,37 @@ input#field-8:hover { background: rgba(79, 187, 180, 0.9); color: #f6f6f6; }
 .csc-mailform .csc-form-element { margin: 5px 0 !important; }
 
 .csc-form-confirmation input { border: 2px solid #4fbbb4; color: #4fbbb4; border-radius: 4px; padding: 5px 15px; width: 200px; line-height: 30px; -webkit-transition: all 0.5s; /* Safari */ transition: all 0.5s; }
+
+.csc-mailform em { display: none !important; }
+
+/** CLASSES */
+.hidden { display: none; }
+
+.floatl { float: left; }
+
+.roundbutton { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; }
+
+.roundbutton:hover { background: rgba(79, 187, 180, 0.75); color: #f6f6f6; }
+
+.clearfix:after { visibility: hidden; display: block; content: ""; clear: both; height: 0; }
+
+.cyan { color: #49bab3; }
+
+.opacity50 { opacity: 0.5; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
