@@ -17,7 +17,7 @@
       @include breakpoint(tablet) {
       // top: 250px ; // containerheight * 1.5
       // left: 177px; // found out by trying  
-      bottom: 0px;
+      bottom: 20px;
       right: 20px;
    }
    
@@ -47,20 +47,36 @@
 
 .flex-viewport {
   position: relative;
-  height: 500px !important;
+   @include breakpoint(desktop) {
+     height: 500px !important;
+   }
+   
+    @include breakpoint(tablet) {
+      height: 334px !important;
+    }
+  
 }
 
 .flex-control-nav {
-   @include breakpoint(desktop) {
+   @include breakpoint(tablet) {
+     // top: 400px - 50px;
+   }
+}
+
+
+.flex-control-nav {
+   
      position: relative;
      bottom: 20px !important;
-   }
+   
   
 }
 
 .flexslider { 
   
   strong {
+    display: block;
+    white-space: wrap;
      @include breakpoint(desktop) {
        font-size: 36px;
      }
@@ -68,6 +84,7 @@
        font-size: 26px;
        }
       @include breakpoint(phone) {
+       width: 90vw;
        font-size: 20px;
        }
     
@@ -75,6 +92,8 @@
     text-shadow: 4px 4px 5px #000;
   }
   span {
+    display: block;
+    white-space: wrap;
      @include breakpoint(desktop) {
        font-size: 24px;
         }
@@ -85,8 +104,11 @@
       }
       
       @include breakpoint(phone) {
-        
+        //padding: 0 20px 0 0;
+        width: 90vw;
+        height: 50px;
         font-size: 16px;
+        
       }
     
     font-family: $defaultbold;
@@ -109,7 +131,7 @@
       
       @include breakpoint(phone) {
         position: absolute !important;
-         top: 70px;
+         top: 20px;
          padding: 0 $tabletmargin;
       } 
    
