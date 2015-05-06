@@ -10,39 +10,17 @@ jQuery(document).ready(function($)  {
 	// Opacity Effekt
 	$("#scrollup i").hover(
 		function() {
-			$('#scrollup i').fadeIn().removeClass("opacity50");
+			$('#scrollup i').fadeIn().toggleClass("opacity50");
 		 },
 		function() {		
-			$('#scrollup i').fadeIn().addClass("opacity50");
+			$('#scrollup i').fadeIn().toggleClass("opacity50");
 		}
-		
 	);
 	
 	$('#burger').click(function(){
 		$('#mm').toggleClass("expanded");
 	});
-	
-
-	/*$('#mainmenu #burger').hover(
-		function() {
-		$('#mainmenu a').addClass("expanded");
-	},
-	function() {
-		$('#mainmenu a').removeClass("expanded");
-	}); */
-	
-	// Alle Link Boxen mit Animationen
-	
-	/*$('#mainr a').hover(
-		function() {
-			this.
-		},
-		function() {
-			this.fadeOut();
-		}
 		
-	);*/
-	
 	// Scroll Up TODO Tobi wegen Funktion fragen
 	
 	$(function() {
@@ -70,5 +48,8 @@ jQuery(document).ready(function($)  {
   cursor: true
 	});
 
+
+
+	
 
 });

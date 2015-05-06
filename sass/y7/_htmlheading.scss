@@ -5,24 +5,27 @@
 
 
 #scrollup {
-  position: relative;
+  position: relative ;
   float:right;
    @include breakpoint(desktop) {
       // top: 220px + (2 * $margintopbottom) - (1.5 * 48px); // containerheight * 1.5
       // left: 258px; // found out by trying  
-      top: 70px;
+      bottom: 20px;
+      right: $sce_colwrap1 + 15px;
    }
    
       @include breakpoint(tablet) {
       // top: 250px ; // containerheight * 1.5
       // left: 177px; // found out by trying  
-      top: 70px;
+      bottom: 0px;
+      right: 20px;
    }
    
     @include breakpoint(phone) {
       // top: 95px ; // containerheight * 1.5
       // left: 20px; // found out by trying  
-      bottom: 14px;
+      bottom: 20px;
+      right: 20px;
     }
  
 }
@@ -41,6 +44,19 @@
 /**
  *   FLEXSLIDER
  */
+
+.flex-viewport {
+  position: relative;
+  height: 500px !important;
+}
+
+.flex-control-nav {
+   @include breakpoint(desktop) {
+     position: relative;
+     bottom: 20px !important;
+   }
+  
+}
 
 .flexslider { 
   
@@ -80,6 +96,7 @@
 
   p {
     position: relative;
+    // white-space: pre;
      @include breakpoint(desktop) {
         top: -400px;
         padding: 0 ($sce_colspan1 + 30px);
@@ -91,7 +108,8 @@
       } 
       
       @include breakpoint(phone) {
-         top: -200px;
+        position: absolute !important;
+         top: 70px;
          padding: 0 $tabletmargin;
       } 
    

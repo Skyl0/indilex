@@ -47,7 +47,8 @@
    @include breakpoint(phone) {
       position: absolute;
       left: 0px;
-  
+      display: block;
+      height: 96px;
    }
  
   
@@ -59,6 +60,10 @@
    @include breakpoint(phone) {
      display: block;
    }  
+}
+
+#mainmenu ul.expanded {
+  height: 96px;
 }
 
 #mainmenu ul {
@@ -83,7 +88,7 @@
           
         @include breakpoint(phone) {
              top: $menutop + 24px + $burgerheight;
-                     font-family: $defaultbold;
+             font-family: $defaultbold;
         }
         position: relative;
         
@@ -122,8 +127,8 @@
          
           background-color: $bottombg;
           font-size: 1.05em;
-          -webkit-transition: all 0.5s; /* Safari */
-          transition: all 0.5s;
+          -webkit-transition: height 0.5s; /* Safari */
+          transition: height 0.5s;
           height: 0px;
           line-height: 0px;
           // visibility: hidden;
@@ -136,7 +141,7 @@
         a:hover {
           color: $cyan;
           background-color: $bottombg * 1.1;  
-          padding-right: $tabletmargin + 5px;   
+          // padding-right: $tabletmargin + 5px;   
         }
         
  
