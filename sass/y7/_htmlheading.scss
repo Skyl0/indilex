@@ -76,6 +76,7 @@
   
   strong {
     display: block;
+     z-index: 500 !important;
     white-space: wrap;
      @include breakpoint(desktop) {
        font-size: 36px;
@@ -92,6 +93,7 @@
     text-shadow: 4px 4px 5px #000;
   }
   span {
+    z-index: 500 !important;
     display: block;
     white-space: wrap;
      @include breakpoint(desktop) {
@@ -118,6 +120,7 @@
 
   p {
     position: relative;
+    z-index: 500 !important;
     // white-space: pre;
      @include breakpoint(desktop) {
         top: -400px;
@@ -142,9 +145,26 @@
 }
 
  @include breakpoint(phone) {
-   .flex-direction-nav a {
+   .flex-direction-nav li a {
      
+     z-index: 1 !important;
+     top: 130px !important;
+     font-size: 14px;
    }
+   
+  /* .flex-control-nav li {
+     z-index: 1 !important;
+   }*/
  }
+
+  @include breakpoint(smaller) {
+   .flex-direction-nav a {
+     opacity: 0 !important;
+   }
+   
+   .flex-control-nav a {
+     opacity: 0 !important;
+   }
+  } 
 
 

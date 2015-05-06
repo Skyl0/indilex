@@ -18,7 +18,7 @@
    #burger {
      float: right;
      z-index: 50;
-     position: relative;
+     position: absolute;
      right: 25px;
      // border: 1px dashed $cyan;
      top: 25px;     
@@ -150,7 +150,10 @@
 }
 
 .expanded {
-     a {     
+  
+     
+     a {   
+         
           height: 40px !important;
           line-height: 40px !important;
           opacity: 1 !important;
