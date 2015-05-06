@@ -339,6 +339,7 @@
    
     @include breakpoint(phone) {
       margin-top: 0px;
+      
     }
   
   background-color: $lightgrey;
@@ -500,8 +501,8 @@
   
   img {
      @include breakpoint(desktop) {
-       width: $sce_colspan8 + ($sce_colwrap1 / 3) + 5px;
-        right: 7px;
+       // width: $sce_colspan8 + ($sce_colwrap1 / 3) + 5px;
+        right: 10px;
      }
       @include breakpoint(tablet) {
         width: 100%;
