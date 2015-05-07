@@ -97,7 +97,7 @@
     @include breakpoint(tablet) 
    {
      width: $sce_colspan7;
-     font-size: 0.9em;
+    // font-size: 1.0em;
      line-height: $logo_menu_height * 0.8;
       height: $logo_menu_height *0.8;
       margin: 0 $sce_gap 0 $sce_gap;
@@ -429,7 +429,8 @@
       @media (max-width: 600px) {
         display: block !important;
         width: 100% !important;
-        padding: 3px $tabletmargin !important;
+        padding: 3px 8px 3px 3px !important;
+        margin: 0 25px 0 0 !important;
       }
   
   //line-height: 40px;

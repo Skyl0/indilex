@@ -137,6 +137,15 @@ p {
 }
 
 .specialmargin {
-  padding-left: $sce_colwrap1 ;
+  
+   @include breakpoint(desktop) {
+      padding-left: $sce_colwrap1 ;
   width: auto !important;
+   }
+   
+     @include breakpoint(tablet) {
+        padding-left: 0px ;
+ 
+     }
+ 
 }
