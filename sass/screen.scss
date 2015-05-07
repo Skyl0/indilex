@@ -69,15 +69,34 @@ h1 {
      font-size: 26px;
    }
    @include breakpoint(tablet) {
-     font-size: 24px ;
+     font-size: 22px ;
    }
    @include breakpoint(desktoptablet){
-     margin: $margintopbottom 0 $margintopbottom 0;
+     margin: ($margintopbottom*0.75) 0 ($margintopbottom*0.75) 0;
    } 
    
     @include breakpoint(phone) {
        font-size: 20px;
        margin: ($margintopbottom/2) 0 ;
+    }
+}
+
+h2 {
+  color: $bottombg;
+  font-family: $defaultfont;
+  @include breakpoint(desktop) {
+     font-size: 24px;
+   }
+   @include breakpoint(tablet) {
+     font-size: 20px ;
+   }
+   @include breakpoint(desktoptablet){
+     margin: ($margintopbottom/2) 0 ($margintopbottom/2) 0;
+   } 
+   
+    @include breakpoint(phone) {
+       font-size: 18px;
+       margin: ($margintopbottom/4) 0 ;
     }
 }
 
@@ -109,4 +128,15 @@ p {
   font-family: $defaultfont;
 }
 
+/*
+ * OTHER FIXES AND STUFF
+ */
 
+.hidemenu {
+  display: none;
+}
+
+.specialmargin {
+  padding-left: $sce_colwrap1 ;
+  width: auto !important;
+}

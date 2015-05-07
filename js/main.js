@@ -48,7 +48,15 @@ jQuery(document).ready(function($)  {
   cursor: true
 	});
 
-
+// MENU EMPTY Fix
+   $('#mainl').addClass('hidemenu');
+   
+	if ($("#mainl ul ul").length) {
+		
+		$('#mainl').removeClass('hidemenu');		
+	} else {
+		$('#mainr').addClass('specialmargin');	
+	}
 
 	
 

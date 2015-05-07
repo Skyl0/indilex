@@ -210,6 +210,8 @@
  */
 
 #shortcodes {
+  
+  
   min-height: 200px;
    @include breakpoint(desktop) {
       margin: $margintopbottom 0;
@@ -222,7 +224,7 @@
       }
       
       p {
-        min-height: 75px;
+        min-height: 55px;
       }
     }
     
@@ -253,6 +255,10 @@
   }
 }
 
+#shortcodes h1 {
+  margin: 10px 0 !important;  
+}
+
 #shortcodel {
   
   @include breakpoint(desktop) {
@@ -274,7 +280,7 @@
    
    @include breakpoint(phone) {
      width: 100%;
-     
+     margin-top: 20px;
      padding: 0 $tabletmargin 0 $tabletmargin;
    } 
 
@@ -353,6 +359,7 @@
    }
    
     @include breakpoint(tablet) {
+      margin-top: -20px;
       height: auto;
       width: $sce_colspan10;
       padding-left: $tabletmargin; // - 8px;
@@ -796,7 +803,7 @@
    }
    @include breakpoint(tablet) {
      height: 90px * 0.8;line-height: 90px *0.8;
-     font-size: 13px;
+     font-size: 12px;
    }
   background-color: $foreground;
     @include breakpoint(phone) {

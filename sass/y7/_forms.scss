@@ -37,7 +37,11 @@ input#field-8:hover {
       color: $cyanlight;
       border-radius: 2px;
       padding: 2px ;
-      width: 300px;
+       @include breakpoint(phone) {
+         width: 90% !important;
+         margin: 5px 0;
+       } 
+       width: 300px;
       line-height: 20px; 
 
   }
@@ -48,6 +52,10 @@ input#field-8:hover {
       border-radius: 2px;
       padding: 2px ;
       width: 300px;
+       @include breakpoint(phone) {
+         width: 90% !important;
+         margin: 5px 0;
+       }
       line-height: 20px; 
       font-family: $defaultfont;
   }
