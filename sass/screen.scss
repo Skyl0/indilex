@@ -81,6 +81,12 @@ h1 {
     }
 }
 
+#mainr {
+  h1 {
+    padding-top: 8px; // Fix 
+  }
+}
+
 h2 {
   color: $bottombg;
   font-family: $defaultfont;

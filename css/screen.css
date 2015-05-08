@@ -1573,60 +1573,65 @@ h1 {
   }
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
+#mainr h1 {
+  padding-top: 8px;
+}
+
+/* line 90, ../sass/screen.scss */
 h2 {
   color: #144856;
   font-family: "Raleway", Arial, sans-serif;
 }
 @media (min-width: 1220px) {
-  /* line 84, ../sass/screen.scss */
+  /* line 90, ../sass/screen.scss */
   h2 {
     font-size: 24px;
   }
 }
 @media (min-width: 820px) and (max-width: 1219px) {
-  /* line 84, ../sass/screen.scss */
+  /* line 90, ../sass/screen.scss */
   h2 {
     font-size: 20px;
   }
 }
 @media (min-width: 820px) {
-  /* line 84, ../sass/screen.scss */
+  /* line 90, ../sass/screen.scss */
   h2 {
     margin: 20px 0 20px 0;
   }
 }
 @media (max-width: 819px) {
-  /* line 84, ../sass/screen.scss */
+  /* line 90, ../sass/screen.scss */
   h2 {
     font-size: 18px;
     margin: 10px 0;
   }
 }
 
-/* line 110, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 a {
   text-decoration: none;
   color: #4fbbb4;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 a:hover {
   color: #49bab3;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 p {
   font-family: "Raleway", Arial, sans-serif;
 }
 @media (min-width: 820px) {
-  /* line 119, ../sass/screen.scss */
+  /* line 125, ../sass/screen.scss */
   p {
     margin: 0 0 20px 0;
   }
 }
 @media (max-width: 819px) {
-  /* line 119, ../sass/screen.scss */
+  /* line 125, ../sass/screen.scss */
   p {
     margin: 0 0 10px 0;
   }
@@ -1635,20 +1640,20 @@ p {
 /*
  * OTHER FIXES AND STUFF
  */
-/* line 135, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .hidemenu {
   display: none;
 }
 
 @media (min-width: 1220px) {
-  /* line 139, ../sass/screen.scss */
+  /* line 145, ../sass/screen.scss */
   .specialmargin {
     padding-left: 80px;
     width: auto !important;
   }
 }
 @media (min-width: 820px) and (max-width: 1219px) {
-  /* line 139, ../sass/screen.scss */
+  /* line 145, ../sass/screen.scss */
   .specialmargin {
     padding-left: 0px;
   }
