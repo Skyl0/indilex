@@ -45,6 +45,7 @@
 
 // Header Elemente
 #logo {
+ 
   @include breakpoint(desktop) {
      padding-left: $sce_colspan1 + 20px;
     width: $sce_colspan4;
@@ -67,12 +68,19 @@
  
   margin: 0 $sce_gap 0 $sce_gap;
   vertical-align: middle;
-
+ a {
+   display: block !important;
+    z-index: 5550 !important;
+    img {
+      /* more*/
+    }
+ }
 }
 
 #img_logo {
  // margin: 0;
  vertical-align: middle;
+ z-index: 5000;
   display: inline-block;
    @include breakpoint(desktop) {
      height: 44px;
@@ -87,6 +95,7 @@
 }
 
 #mainmenu {
+  z-index: 1;
    @include breakpoint(desktop) {
      width: $sce_colspan11;
       padding-right: $sce_colwrap1;
@@ -211,6 +220,9 @@
 
 #shortcodes {
   
+  p.bodytext {
+    line-height: 1.3em;
+  }
   
   min-height: 200px;
    @include breakpoint(desktop) {
@@ -467,6 +479,7 @@
   
   .bodytext {
     text-align: justify;
+    line-height: 1.4em; 
   }
    @include breakpoint(desktop) {
      width: $sce_colspan9 + ($sce_colwrap1 / 3) + 10px;
@@ -514,6 +527,12 @@
      }
       @include breakpoint(tablet) {
         width: 100%;
+        height: auto;
+      }
+      
+      @include breakpoint(phone) {
+        width: 100%;
+        height: auto;
       }
     
            position: relative;
@@ -545,17 +564,21 @@
   
 } 
 
-#bmid a {
+#bmid a, #bright a {
 
     display: inline-block;
-  
+    
 }
 
-#bright a {
-
-    display: inline-block;
-  
+#bmid a:hover {
+  text-decoration: underline !important;
 }
+
+#bright a:hover {
+    text-decoration: underline !important;
+}
+
+
 // Bottom Elemente
 
 #btop {
@@ -684,6 +707,7 @@
 }
 
 #bleft {
+    
    @include breakpoint(desktop) {
      width: $sce_colspan5;
   padding-left: $sce_colwrap1;
@@ -702,10 +726,14 @@
      padding: 0 $tabletmargin;
    }
   
+  p {
+    line-height: 1.3em;
+  }
 }
 
 
 #bmid {
+ 
    @include breakpoint(desktop) {
       width: $sce_colspan5;
       margin: 0 $sce_gap $margintopbottom $sce_gap;
@@ -727,6 +755,10 @@
 
 }
 
+#leistungen {
+   line-height: 1.3em;
+}
+
 #bmid div {
   //font-size: 0.95em;
 }
@@ -740,6 +772,7 @@
 }
 
 #bright {
+    
    @include breakpoint(desktop) {
     // height: auto;
     width: $sce_colspan5;  
@@ -772,7 +805,7 @@
 
 
 #sitemap {
-  
+  line-height: 1.3em;
   color: $cyan;
   @include breakpoint(desktop) {
    height: 150px;
