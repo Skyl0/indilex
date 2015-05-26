@@ -129,8 +129,7 @@
   //@include animateme(0.5s);
   
   @include breakpoint(desktop) {
-    width: $sce_colwrap15;
-    height: $topmenuheight;
+    height: $topmenuheight; 
       line-height: $topmenuheight;
        font-size: 14px;
     padding: 0 ($sce_colspan1 + 30px) 0 $sce_gap;
@@ -543,6 +542,9 @@
   }
 }
 
+#mainr.specialmargin img {
+  right: 0px !important;
+}
 
 /**
  *   BOTTOM LAYOUT
@@ -727,7 +729,7 @@
    }
   
   p {
-    line-height: 1.3em;
+    line-height: $lineheight;
   }
 }
 
@@ -755,9 +757,7 @@
 
 }
 
-#leistungen {
-   line-height: 1.3em;
-}
+
 
 #bmid div {
   //font-size: 0.95em;
@@ -804,8 +804,12 @@
 }
 
 
+#leistungen {
+   line-height: $lineheight;
+}
+
 #sitemap {
-  line-height: 1.3em;
+  line-height: $lineheight;
   color: $cyan;
   @include breakpoint(desktop) {
    height: 150px;

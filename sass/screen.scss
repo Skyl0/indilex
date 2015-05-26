@@ -18,7 +18,16 @@
 
 @font-face {
 font-family: Raleway;
-src: url('../fonts/Raleway-Regular.otf') format("opentype");
+src: url('../fonts/Raleway-Regular.otf');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: Raleway;
+src: url('../fonts/Raleway-SemiBold.otf');
+font-weight: bold;
+font-style: normal;
 }
 
 @font-face {
@@ -132,6 +141,10 @@ p {
     }
   
   font-family: $defaultfont;
+}
+
+b {
+  font-family: $defaultbold;
 }
 
 /*
