@@ -47,6 +47,16 @@ src: url('../fonts/Raleway-SemiBold.otf') format("opentype");
   }
 }
 
+.zert {
+  margin: 5px 0 0 0 ;
+  color: white;
+  font-size: 16px !important; 
+}
+
+.follow {
+  background-color: white !important;
+  
+}
 // Compass related
 @import "compass/reset";
 
@@ -56,7 +66,7 @@ src: url('../fonts/Raleway-SemiBold.otf') format("opentype");
 html {
   box-sizing: border-box;
   background-color: $background;
-  background: url('../images/concrete_seamless_darker.png') repeat;
+  // background: url('../images/concrete_seamless_darker.png') repeat;
   font-family: $defaultfont;
   font-size: 16px;
 }

@@ -34,10 +34,11 @@
 @media (max-width: 400px) { .flex-direction-nav a { opacity: 0 !important; }
   .flex-control-nav a { opacity: 0 !important; } }
 /** LAYOUT */
-#site { background-color: #fff; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.333); }
-@media (min-width: 1220px) { #site { width: 1204px; margin: 0 auto 0 auto; } }
-@media (min-width: 820px) and (max-width: 1219px) { #site { width: 800px; margin: 0 auto 0 auto; } }
-@media (max-width: 819px) { #site { width: 100%; } }
+#site { background-color: #fff; }
+
+@media (min-width: 1220px) { .container { width: 1204px; margin: 0 auto 0 auto; } }
+@media (min-width: 820px) and (max-width: 1219px) { .container { width: 800px; margin: 0 auto 0 auto; } }
+@media (max-width: 819px) { .container { width: 100%; } }
 
 /** HEADER LAYOUT */
 #header { background-color: #fff; }
@@ -70,15 +71,17 @@
 #topmenu span { color: #49bab3; margin: 0 5px 0 20px; }
 
 /**  SLIDER LAYOUT */
-#slider { background-color: #f6f6f6; background-image: url("../images/yellowlines.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
+#slider { background-color: #f6f6f6; background-size: cover; background-repeat: no-repeat; background-position: center; }
+@media (min-width: 1220px) { #slider { height: 100%; } }
 @media (min-width: 820px) and (max-width: 1219px) { #slider { height: 334px; } }
 
 /** TITLE BAR */
 #titlebar { height: 100px; display: block; background-color: #f6f6f6; background-image: url("../images/yellowlines.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
-#titlebar div { line-height: 100px; white-space: nowrap; font-size: 24px; font-family: "RalewaySemiBold", Arial, sans-serif; color: white; }
-@media (min-width: 1220px) { #titlebar div { padding-left: 90px; } }
-@media (min-width: 820px) and (max-width: 1219px) { #titlebar div { padding-left: 20px; } }
-@media (max-width: 819px) { #titlebar div { padding-left: 20px; } }
+
+#titleinner { height: 100px; display: block; line-height: 100px; white-space: nowrap; font-size: 24px; font-family: "RalewaySemiBold", Arial, sans-serif; color: white; }
+@media (min-width: 1220px) { #titleinner { padding-left: 90px; } }
+@media (min-width: 820px) and (max-width: 1219px) { #titleinner { padding-left: 20px; } }
+@media (max-width: 819px) { #titleinner { padding-left: 20px; } }
 
 /**  SHORTCODE LAYOUT */
 #shortcodes { min-height: 200px; text-align: center; }
@@ -121,19 +124,19 @@
 #mainl ul ul { padding: 0; margin: 0; }
 
 #mainl li a { text-align: right; color: #144856; }
-@media (min-width: 1220px) { #mainl li a { display: block !important; width: 324.66667px; padding: 5px 20px 5px 10px; height: 50px; line-height: 20px; vertical-align: 20px; border-bottom: 2px solid #255d5a; margin-left: 20px; -webkit-transition: all 0.5s; transition: all 0.5s; } }
-@media (min-width: 820px) and (max-width: 1219px) { #mainl li a { display: inline-block; float: left; margin: 2px 5px 2px 0; padding: 3px; border-bottom: 2px solid #255d5a; } }
-@media (max-width: 819px) { #mainl li a { display: inline-block; float: left; margin: 0 5px; padding: 3px; border-bottom: 2px solid #255d5a; } }
+@media (min-width: 1220px) { #mainl li a { display: block !important; width: 324.66667px; padding: 5px 20px 5px 10px; height: 50px; line-height: 20px; vertical-align: 20px; border-bottom: 1px solid #255d5a; margin-left: 20px; -webkit-transition: all 0.5s; transition: all 0.5s; } }
+@media (min-width: 820px) and (max-width: 1219px) { #mainl li a { display: inline-block; float: left; margin: 2px 5px 2px 0; padding: 3px; border-bottom: 1px solid #255d5a; } }
+@media (max-width: 819px) { #mainl li a { display: inline-block; float: left; margin: 0 5px; padding: 3px; border-bottom: 1px solid #255d5a; } }
 @media (max-width: 600px) { #mainl li a { display: block !important; width: 100% !important; padding: 3px 8px 3px 3px !important; margin: 0 25px 0 0 !important; } }
 
 #sidecurrent a { background-color: #103a45 !important; color: #fff !important; }
 
 #mainl li a:hover { background-color: #144856; color: #fff !important; }
-@media (min-width: 820px) and (max-width: 1219px) { #mainl li a:hover { border-bottom: 2px solid #49bab3; } }
+@media (min-width: 820px) and (max-width: 1219px) { #mainl li a:hover { border-bottom: 1px solid #49bab3; } }
 
 @media (min-width: 1220px) { #mainl li:last-child a { border-bottom: 0px solid #fff; } }
 
-#mainr .bodytext { text-align: justify; line-height: 1.4em; }
+#mainr .bodytext { line-height: 1.4em; }
 @media (min-width: 1220px) { #mainr { width: 736.66667px; padding-right: 65px; margin: 0 10px; }
   #mainr .bodytext { padding-right: 15px; } }
 @media (min-width: 820px) and (max-width: 1219px) { #mainr { width: 760px; margin: 0 20px; } }
@@ -186,8 +189,8 @@
 @media (max-width: 819px) { #bleft { width: 100%; padding: 0 20px; } }
 #bleft p { line-height: 1.6em; }
 
-@media (min-width: 1220px) { #bmid { width: 380px; margin: 0 10px 40px 10px; padding: 0 0px 0 47px; } }
-@media (min-width: 820px) and (max-width: 1219px) { #bmid { width: 273.33333px; margin: 0 20px 40px 20px; font-size: 0.9em; } }
+@media (min-width: 1220px) { #bmid { width: 380px; margin: 0 10px 40px 10px; padding: 0 0px 0 47px; font-size: 13px; } }
+@media (min-width: 820px) and (max-width: 1219px) { #bmid { width: 273.33333px; margin: 0 20px 40px 20px; font-size: 11px; } }
 @media (max-width: 819px) { #bmid { width: 100%; padding: 0 20px; } }
 
 #bmid { color: #49bab3; }
@@ -290,6 +293,10 @@ input { font-family: "Raleway", Arial, sans-serif; font-size: 16px; }
 #sitemap, #bmid { color: #49bab3; }
 #sitemap a, #bmid a { display: inline-block; color: white; }
 
+.zert { margin: 5px 0 0 0; color: white; font-size: 16px !important; }
+
+.follow { background-color: white !important; }
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -308,7 +315,7 @@ a img { border: none; }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
 /** GENERAL LAYOUT */
-html { box-sizing: border-box; background-color: #aaa; background: url("../images/concrete_seamless_darker.png") repeat; font-family: "Raleway", Arial, sans-serif; font-size: 16px; }
+html { box-sizing: border-box; background-color: #aaa; font-family: "Raleway", Arial, sans-serif; font-size: 16px; }
 
 *, *:before, *:after { box-sizing: inherit; }
 

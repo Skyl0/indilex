@@ -4,24 +4,43 @@
 
 #site {
   @include breakpoint(desktop) {
+   // width: $sce_colwrap15 + 4px;
+    // margin: 0 auto 0 auto;
+  }
+  
+  @include breakpoint(tablet) {
+  //  width: $sce_colwrap10;
+    // margin: 0 auto 0 auto;
+  }
+  
+   @include breakpoint(phone) {
+     // width: 100%;
+   }
+ 
+   background-color: $foreground;
+  //border-position: outside;
+  //border-left: 2px solid #aaa;
+  //border-right: 2px solid #aaa;
+  // box-shadow: 0px 0px 20px rgba(0,0,0,0.333);
+}
+
+.container {
+  
+    @include breakpoint(desktop) {
     width: $sce_colwrap15 + 4px;
-    margin: 0 auto 0 auto;
+     margin: 0 auto 0 auto;
+   
   }
   
   @include breakpoint(tablet) {
     width: $sce_colwrap10;
-    margin: 0 auto 0 auto;
+     margin: 0 auto 0 auto;
+   
   }
   
    @include breakpoint(phone) {
      width: 100%;
    }
- 
-  background-color: $foreground;
-  //border-position: outside;
-  //border-left: 2px solid #aaa;
-  //border-right: 2px solid #aaa;
-  box-shadow: 0px 0px 20px rgba(0,0,0,0.333);
 }
 
 /**
@@ -163,7 +182,7 @@
 
 #slider {
    @include breakpoint(desktop) {
-     // height: 500px;
+      height: 100%;
    }
 
     
@@ -172,7 +191,7 @@
     }
  
   background-color: $lightgrey;
-  background-image: url('../images/yellowlines.jpg');
+  // background-image: url('../images/yellowlines.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -192,7 +211,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  div {
+
+}
+
+#titleinner {
+    height: 100px;
+  display: block;
     line-height: 100px;
     white-space: nowrap;
      @include breakpoint(desktop) {
@@ -211,7 +235,6 @@
     font-family: $defaultbold;
     color: white;
   }
-}
 
 /** 
  *   SHORTCODE LAYOUT
@@ -415,7 +438,7 @@
       height: 50px;
       line-height: 20px;
        vertical-align: 20px;
-         border-bottom: 2px solid ($cyan * 0.5);
+         border-bottom: 1px solid ($cyan * 0.5);
       margin-left: 20px;
       -webkit-transition: all 0.5s; //Safari
       transition: all 0.5s;
@@ -426,7 +449,7 @@
       float: left;
       margin: 2px 5px 2px 0;
       padding: 3px;
-       border-bottom: 2px solid ($cyan * 0.5);
+       border-bottom: 1px solid ($cyan * 0.5);
     }
     
      @include breakpoint(phone) {
@@ -434,7 +457,7 @@
       float: left;
       margin: 0 5px;
       padding: 3px;
-       border-bottom: 2px solid ($cyan * 0.5);
+       border-bottom: 1px solid ($cyan * 0.5);
      }
      
       @media (max-width: 600px) {
@@ -466,7 +489,7 @@
    background-color: $bottombg;
    color: #fff !important;
     @include breakpoint(tablet) {
-      border-bottom: 2px solid ($cyan);
+      border-bottom: 1px solid ($cyan);
     }
  }
 
@@ -477,7 +500,7 @@
 #mainr {
   
   .bodytext {
-    text-align: justify;
+   // text-align: justify;
     line-height: 1.4em; 
   }
    @include breakpoint(desktop) {
@@ -740,13 +763,14 @@
       width: $sce_colspan5;
       margin: 0 $sce_gap $margintopbottom $sce_gap;
       padding: 0 0px 0 47px;
+      font-size: 13px;
    }
    
     @include breakpoint(tablet) {
       width: ($sce_colspan10 - ($tabletmargin*4))/3 + $tabletmargin + 20px;  
       margin: 0 $tabletmargin $margintopbottom $tabletmargin;
       // padding: 0 10px 0 10px;
-      font-size: 0.9em;
+      font-size: 11px;
     }
     
      @include breakpoint(phone) {

@@ -145,10 +145,10 @@ html[xmlns] .flexslider .slides {
   content: '\f054';
 }
 .flex-direction-nav .flex-prev {
-  left: -5px;
+  left: 2px; // was -5
 }
 .flex-direction-nav .flex-next {
-  right: -5px;
+  right: 2px; // was -5
   text-align: right;
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
