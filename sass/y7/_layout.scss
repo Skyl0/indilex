@@ -143,7 +143,14 @@
  
 }
 
-
+.top {
+  @include breakpoint(desktop) {
+    padding: 0 ($sce_colspan1 + 33px) 0 $sce_gap;
+  }
+  @include breakpoint(tablet) {
+    padding: 0 $tabletmargin 0 0;
+  }
+}
 #topmenu {
   //@include animateme(0.5s);
   
@@ -151,14 +158,14 @@
     height: $topmenuheight; 
       line-height: $topmenuheight;
        font-size: 14px;
-    padding: 0 ($sce_colspan1 + 30px) 0 $sce_gap;
+    
   }
   @include breakpoint(tablet) {
-    width: $sce_colwrap10;
+    // width: $sce_colwrap10;
     height: $topmenuheight * 0.8;
       line-height: $topmenuheight *0.8;
        font-size: 12px;
-    padding: 0 $tabletmargin 0 0;
+   
   }
   
    @include breakpoint(phone) {
@@ -830,6 +837,9 @@
 
 #leistungen {
    line-height: $lineheight;
+   padding: 2px 0 0 0;
+   display: block;
+   width: auto;
 }
 
 #sitemap {
