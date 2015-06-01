@@ -44,7 +44,7 @@ src: url('../fonts/Raleway-SemiBold.otf') format("opentype");
   }
 }
 
-#mainr ul {
+#mainr p.bodytext  ul {
   //list-style-type: circle !important;
   padding: 10px;
   background: #eee;
@@ -64,14 +64,14 @@ src: url('../fonts/Raleway-SemiBold.otf') format("opentype");
   line-height: 20px;
 }
 
-#mainr ul li {
+#mainr .csc-textpic ul li {
   position: relative;
   left: 20px;
   line-height: 20px;
   // list-style-type: circle !important;  
 }
 
-#mainr ul li:before {
+#mainr .csc-textpic ul li:before {
   content: '\f0c8'; /* FontAwesome char code inside the '' */
   font-family: "FontAwesome"; /* FontAwesome or whatever */
   display: inline-block;
@@ -95,6 +95,11 @@ src: url('../fonts/Raleway-SemiBold.otf') format("opentype");
 
 .follow {
   background-color: white !important;
+  
+}
+
+.ui-tabs-panel {
+  // background: white !important;
   
 }
 // Compass related
@@ -218,3 +223,19 @@ b {
      }
  
 }
+/*
+ * VERTTICAL TABS
+ */
+
+  .ui-tabs-vertical { width: auto; }
+  .ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: auto; }
+  .ui-tabs-vertical .ui-tabs-nav li { 
+    clear: left; width: auto;
+     // border-bottom-width: 1px !important;
+// border-right-width: 0 !important; 
+margin: 0 -1px .2em 0; }
+  .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+  .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; 
+  // border-right-width: 1px; 
+  }
+  .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}

@@ -6,7 +6,9 @@
 
 jQuery(document).ready(function($)  {
   
- 
+  	// Vertical Tabs
+     $( ".tx-jfmulticontent-pi1" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+     $( ".tx-jfmulticontent-pi1 li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
 	// Opacity Effekt
 	$("#scrollup i").hover(
 		function() {

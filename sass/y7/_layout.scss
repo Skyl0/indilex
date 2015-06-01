@@ -280,7 +280,7 @@
  
   text-align: center;
   
-    a {
+   a {
     border: 2px solid $cyanlight;
     border-radius: 4px;
     padding: 10px 30px;
@@ -290,7 +290,7 @@
     transition: all 0.5s;
   }
 
-  a:hover {
+   a:hover {
     background: rgba(79,187,180,0.9);
     color: $lightgrey;
   }
@@ -417,9 +417,9 @@
   
 }
 
-#mainl ul {
+.ui-tabs-nav  {
   list-style-type: none;
-  
+  background-color: $lightgrey;
    @include breakpoint(desktop) {
      width: $sce_colspan4+ ($sce_colwrap1 / 3) + 20px;
      border-right: 2px solid ($cyan*0.75);
@@ -431,15 +431,21 @@
   
 }
 
-#mainl ul ul {
+.ui-tabs-nav ul {
   padding: 0;
   margin: 0;  
 }
 
-#mainl li a {
-  
+.ui-tabs-panel {
+  // position: relative;
+  // left: 100px;
+  // top: -50px;
+}
+
+.ui-tabs-nav li a {
+  background-color: $lightgrey !important;
    @include breakpoint(desktop) {
-         display: block !important;
+      display: block !important;
       width: $sce_colspan4+ ($sce_colwrap1 / 3) - 2px;
       padding: 5px 20px 5px 10px;
       height: 50px;
@@ -534,7 +540,7 @@
 // Content Main Button
 #mainr{
   
-  a {
+  .bodytext a {
     border: 2px solid $cyanlight;
     border-radius: 4px;
     padding: 10px 30px;
@@ -544,7 +550,7 @@
     transition: background-color 0.5s;
   }
 
-  a:hover {
+  .bodytext a:hover {
     background-color: $cyanlight;
     color: $lightgrey;
   }
