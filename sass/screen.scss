@@ -145,6 +145,10 @@ h1 {
     }
 }
 
+.ui-tabs h1 {
+  margin: 0;
+}
+
 #mainr {
   h1 {
     padding-top: 8px; // Fix 
@@ -227,15 +231,23 @@ b {
  * VERTTICAL TABS
  */
 
-  .ui-tabs-vertical { width: auto; }
-  .ui-tabs-vertical .ui-tabs-nav { margin-left:-40px; float: left; width: auto; }
+  .ui-tabs-vertical { 
+    width: auto; }
+  .ui-tabs-vertical .ui-tabs-nav {
+     margin-left:-40px;
+     float: left;
+     width: auto; 
+ }
   .ui-tabs-vertical .ui-tabs-nav li { 
-    clear: left; width: auto;
+    clear: left;
+     width: auto;
      // border-bottom-width: 1px !important;
 // border-right-width: 0 !important; 
-margin: 0 ; }
-  .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
-  .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding: 0;  
+  margin: 0 ;
+   }
+   // .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+  .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+     padding: 0;  
   // border-right-width: 1px; 
   }
   .ui-tabs-vertical .ui-tabs-panel { padding-left: 20px ; float: right; width: 538.66px;}

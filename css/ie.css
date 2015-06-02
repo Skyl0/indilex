@@ -121,17 +121,20 @@
 @media (min-width: 820px) and (max-width: 1219px) { #mainl { margin-top: -20px; height: auto; width: 780px; padding-left: 20px; } }
 @media (max-width: 819px) { #mainl { margin-top: -20px; width: 100%; padding-left: 12px; padding-right: 12px; } }
 
-.ui-tabs-nav { list-style-type: none; background-color: #f6f6f6; font-family: "RalewaySemiBold", Arial, sans-serif; margin: 40px 0 40px 0; }
-@media (min-width: 1220px) { .ui-tabs-nav { width: 346.66667px; border-right: 2px solid #378c86; } }
+/*
+.ui-tabs-nav  { list-style-type: none; background-color: $lightgrey; @include breakpoint(desktop) { width: $sce_colspan4+ ($sce_colwrap1 / 3) + 20px; border-right: 2px solid ($cyan*0.75); }  font-family: $defaultbold; margin: $margintopbottom 0 $margintopbottom 0;   
+}
 
-.ui-tabs-nav ul { padding: 0; margin: 0; }
+.ui-tabs-nav ul { padding: 0; margin: 0;  
+}
 
-.ui-tabs-nav li a { background-color: #f6f6f6 !important; text-align: right; color: #144856; }
-@media (min-width: 1220px) { .ui-tabs-nav li a { display: block !important; width: 324.66667px; padding: 5px 20px 5px 10px; height: 50px; line-height: 20px; vertical-align: 20px; border-bottom: 1px solid #255d5a; margin-left: 20px; -webkit-transition: all 0.5s; transition: all 0.5s; } }
-@media (min-width: 820px) and (max-width: 1219px) { .ui-tabs-nav li a { display: inline-block; float: left; margin: 2px 5px 2px 0; padding: 3px; border-bottom: 1px solid #255d5a; } }
-@media (max-width: 819px) { .ui-tabs-nav li a { display: inline-block; float: left; margin: 0 5px; padding: 3px; border-bottom: 1px solid #255d5a; } }
-@media (max-width: 600px) { .ui-tabs-nav li a { display: block !important; width: 100% !important; padding: 3px 8px 3px 3px !important; margin: 0 25px 0 0 !important; } }
+.ui-tabs-panel { // position: relative; // left: 100px; // top: -50px;
+}
 
+.ui-tabs-nav li a { background-color: $lightgrey !important; @include breakpoint(desktop) { display: block !important; width: $sce_colspan4+ ($sce_colwrap1 / 3) - 2px; padding: 5px 20px 5px 10px; height: 50px; line-height: 20px; vertical-align: 20px; border-bottom: 1px solid ($cyan * 0.5); margin-left: 20px; -webkit-transition: all 0.5s; //Safari transition: all 0.5s; }  @include breakpoint(tablet) { display: inline-block; float: left; margin: 2px 5px 2px 0; padding: 3px; border-bottom: 1px solid ($cyan * 0.5); }  @include breakpoint(phone) { display: inline-block; float: left; margin: 0 5px; padding: 3px; border-bottom: 1px solid ($cyan * 0.5); }  @media (max-width: 600px) { display: block !important; width: 100% !important; padding: 3px 8px 3px 3px !important; margin: 0 25px 0 0 !important; }  //line-height: 40px; text-align: right; color: $bottombg; // padding-left: $sce_colspan1 
+
+}
+*/
 #sidecurrent a { background-color: #103a45 !important; color: #fff !important; }
 
 #mainl li a:hover { background-color: #144856; color: #fff !important; }

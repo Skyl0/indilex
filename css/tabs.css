@@ -1,0 +1,76 @@
+/*
+Error: Undefined variable: "$sce_colspan4".
+        on line 31 of c:/_projects/indilex/sass/tabs.scss
+
+26:      margin: 1px;
+27:      color: white;
+28:       height: 50px;
+29:       line-height: 20px;
+30:       vertical-align: 20px;
+31:       width: $sce_colspan4+ ($sce_colwrap1 / 3) - 2px;
+32:   // border-right-width: 1px; 
+33:  
+34:   }
+35:   .ui-tabs-vertical .ui-tabs-panel { padding-left: 20px ; float: right; width: 538.66px;}
+36:   
+
+Backtrace:
+c:/_projects/indilex/sass/tabs.scss:31
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/script/tree/operation.rb:64:in `_perform'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/script/tree/operation.rb:64:in `_perform'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `map'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/engine.rb:268:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:328:in `block in watch'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/vendor/listen/lib/listen/listener.rb:252:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.14/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$sce_colspan4\".\A         on line 31 of c:/_projects/indilex/sass/tabs.scss\A \A 26:      margin: 1px;\A 27:      color: white;\A 28:       height: 50px;\A 29:       line-height: 20px;\A 30:       vertical-align: 20px;\A 31:       width: $sce_colspan4+ ($sce_colwrap1 / 3) - 2px;\A 32:   // border-right-width: 1px; \A 33:  \A 34:   }\A 35:   .ui-tabs-vertical .ui-tabs-panel { padding-left: 20px ; float: right; width: 538.66px;}\A 36:   "; }
