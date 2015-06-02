@@ -6,16 +6,18 @@
 .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: auto; margin: 0; }
 
 .ui-tabs-vertical .ui-tabs-nav li a { color: #144856; text-align: right; }
-@media (min-width: 1220px) { .ui-tabs-vertical .ui-tabs-nav li a { padding: 5px 20px 5px 10px; font-family: "RalewaySemiBold", Arial, sans-serif; white-space: normal !important; border-bottom: 1px solid #255d5a; margin-left: 20px; height: 50px; line-height: 20px; vertical-align: 20px; width: 324.66667px; -webkit-transition: all 0.5s; transition: all 0.5s; } }
+@media (min-width: 1220px) { .ui-tabs-vertical .ui-tabs-nav li a { padding: 5px 20px 5px 10px; font-family: "RalewaySemiBold", Arial, sans-serif; white-space: normal !important; border-bottom: 1px solid #255d5a; margin-left: 20px; height: 50px; line-height: 20px; vertical-align: 20px; width: 324.66667px; -webkit-transition: background-color border 0.3s; transition: background-color 0.3s; } }
 @media (min-width: 820px) and (max-width: 1219px) { .ui-tabs-vertical .ui-tabs-nav li a { display: inline-block; float: left; margin: 2px 5px 2px 0; padding: 3px; border-bottom: 1px solid #255d5a; } }
 @media (max-width: 819px) { .ui-tabs-vertical .ui-tabs-nav li a { display: inline-block; float: left; margin: 0 5px; padding: 3px; border-bottom: 1px solid #255d5a; } }
 @media (max-width: 600px) { .ui-tabs-vertical .ui-tabs-nav li a { display: block !important; width: 100% !important; padding: 3px 8px 3px 3px !important; margin: 0 25px 0 0 !important; } }
 
 .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active a { background-color: #144856; color: white; }
 
-.ui-tabs-vertical .ui-tabs-nav li a:hover { background-color: #185667; color: white; }
+.ui-tabs-vertical .ui-tabs-nav li a:hover { background-color: #185667; border-bottom: 1px solid #49bab3; color: white; }
 
-.ui-tabs-vertical .ui-tabs-panel { float: right; width: 683.66667px; padding: 20px 65px 0 27px; margin: 0 10px; }
+@media (min-width: 1220px) { .ui-tabs-vertical .ui-tabs-panel { float: right; width: 683.66667px; padding: 20px 65px 0 27px; margin: 0 10px; } }
+@media (min-width: 820px) and (max-width: 1219px) { .ui-tabs-vertical .ui-tabs-panel { float: none; width: 760px; margin: 0 20px; } }
+@media (max-width: 819px) { .ui-tabs-vertical .ui-tabs-panel { float: none; width: 100%; padding: 0 20px 20px 20px; } }
 
 ul.ui-tabs-nav { padding: 0 !important; }
 @media (min-width: 1220px) { ul.ui-tabs-nav { margin: 27px 0 0 -25px !important; border-right: 2px solid #378c86; } }

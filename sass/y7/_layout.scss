@@ -416,10 +416,10 @@
   
   
 }
-/*
-.ui-tabs-nav  {
+
+#mainl ul {
   list-style-type: none;
-  background-color: $lightgrey;
+  
    @include breakpoint(desktop) {
      width: $sce_colspan4+ ($sce_colwrap1 / 3) + 20px;
      border-right: 2px solid ($cyan*0.75);
@@ -431,27 +431,21 @@
   
 }
 
-.ui-tabs-nav ul {
+#mainl ul ul {
   padding: 0;
   margin: 0;  
 }
 
-.ui-tabs-panel {
-  // position: relative;
-  // left: 100px;
-  // top: -50px;
-}
-
-.ui-tabs-nav li a {
-  background-color: $lightgrey !important;
+#mainl li a {
+  
    @include breakpoint(desktop) {
-      display: block !important;
+         display: block !important;
       width: $sce_colspan4+ ($sce_colwrap1 / 3) - 2px;
       padding: 5px 20px 5px 10px;
       height: 50px;
       line-height: 20px;
-      vertical-align: 20px;
-      border-bottom: 1px solid ($cyan * 0.5);
+       vertical-align: 20px;
+         border-bottom: 1px solid ($cyan * 0.5);
       margin-left: 20px;
       -webkit-transition: all 0.5s; //Safari
       transition: all 0.5s;
@@ -482,12 +476,14 @@
   
   //line-height: 40px;
   text-align: right;
+ 
   color: $bottombg;
+
+   
  // padding-left: $sce_colspan1
  
 
 }
-*/
 
 #sidecurrent a {
    background-color:($bottombg * 0.8) !important;
