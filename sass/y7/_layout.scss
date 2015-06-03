@@ -836,9 +836,17 @@
 
 #leistungen {
    line-height: $lineheight;
+  // word-spacing: -0.05em ;
+   white-space: normal;
    padding: 2px 0 0 0;
    display: block;
    width: auto;
+}
+
+#leistungen a {
+  
+  white-space: normal !important;
+  display: inline !important;
 }
 
 #sitemap {

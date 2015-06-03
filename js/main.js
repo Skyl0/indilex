@@ -9,6 +9,16 @@ jQuery(document).ready(function($)  {
   	// Vertical Tabs
      $( ".tx-jfmulticontent-pi1" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
      $( ".tx-jfmulticontent-pi1 > li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+     
+     
+     // Footer Fix
+     
+     $('#leistungen a').each(function () {
+     	
+     	$(this).text(" " + $(this).text() + " "); 
+     });
+     
+     
 	// Opacity Effekt
 	$("#scrollup i").hover(
 		function() {

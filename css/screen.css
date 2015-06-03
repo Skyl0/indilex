@@ -3,7 +3,7 @@
 /** FONT RELATED */
 /** SCROLLUP BUTTON */
 #scrollup { position: relative; float: right; }
-@media (min-width: 1220px) { #scrollup { bottom: 20px; right: 95px; } }
+@media (min-width: 1220px) { #scrollup { bottom: -25px; right: 95px; } }
 @media (min-width: 820px) and (max-width: 1219px) { #scrollup { bottom: 20px; right: 20px; } }
 @media (max-width: 819px) { #scrollup { bottom: 20px; right: 20px; } }
 
@@ -207,7 +207,9 @@
 
 #cyanbar { line-height: 0px; height: 10px; background-color: #49bab3; width: 100%; }
 
-#leistungen { line-height: 1.6em; padding: 2px 0 0 0; display: block; width: auto; }
+#leistungen { line-height: 1.6em; white-space: normal; padding: 2px 0 0 0; display: block; width: auto; }
+
+#leistungen a { white-space: normal !important; display: inline !important; }
 
 #sitemap { line-height: 1.6em; color: #49bab3; }
 @media (min-width: 1220px) { #sitemap { height: 150px; } }
@@ -309,7 +311,7 @@ input { font-family: "Raleway", Arial, sans-serif; font-size: 16px; }
 
 ÔÇï #bmid a { display: inline-block; }
 
-.zert { margin: 5px 0 0 0; color: white; font-size: 16px !important; }
+.zert { margin: 5px 0 0 0; padding-top: 5px; color: white; font-size: 16px !important; }
 
 .follow { background-color: white !important; }
 

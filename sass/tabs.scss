@@ -8,18 +8,43 @@
   .ui-tabs-vertical { 
     width: auto; }
   .ui-tabs-vertical .ui-tabs-nav {
-     margin-left:-40px;
+     @include breakpoint(desktop) {
+       margin-left:-40px;
      float: left;
      width: auto; 
+     }  
+     
+       @include breakpoint(tablet) {
+         // margin-left:-40px;
+     float: none;
+     width: auto; 
+       }
  }
   .ui-tabs-vertical .ui-tabs-nav li { 
-    clear: left;
+     @include breakpoint(desktop)
+     { clear: left; }
+      @media (max-width: 600px) {
+       clear:left;
+      }
      width: auto;
      // border-bottom-width: 1px !important;
 // border-right-width: 0 !important; 
   margin: 0 ;
    }
    // .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+   
+     .ui-tabs-vertical ul.ui-tabs-nav  {
+        @include breakpoint(tablet) { 
+  width: $sce_colspan10 -$tabletmargin !important;
+  clear:both;
+  // margin-left: 0px;
+  } 
+}
+
+.ui-tabs-vertical ul.ui-tabs-nav li {
+  //display: inline-block !important;
+}
+
   .ui-tabs-vertical .ui-tabs-nav li a {
      @include breakpoint(desktop) {
         padding: 5px 20px 5px 10px;
@@ -38,7 +63,7 @@
      } 
      
          @include breakpoint(tablet) {
-      display: inline-block;
+      display: inline !important;
       float: left;
       margin: 2px 5px 2px 0;
       padding: 3px;
@@ -46,21 +71,23 @@
     }
     
      @include breakpoint(phone) {
-      display: inline-block;
+      display: block;
       float: left;
-      margin: 0 5px;
-      padding: 3px;
+     
+       margin: 2px 5px;
+       padding: 3px 3px 3px 5px;
        border-bottom: 1px solid ($cyan * 0.5);
      }
      
       @media (max-width: 600px) {
         display: block !important;
         width: 100% !important;
-        padding: 3px 8px 3px 3px !important;
-        margin: 0 25px 0 0 !important;
+         padding: 3px 8px 3px 3px !important;
+         margin: 0 !important;
+        // margin: 0 25px 0 0 !important;
       }
       color: $bottombg;
-      text-align: right;
+      text-align: right !important;
   // border-right-width: 1px; 
  
   }
@@ -87,14 +114,17 @@
      margin: 0 $sce_gap ;
      }
      @include breakpoint(tablet) {
+       clear: left;
        float: none;
       width: $sce_colspan10 -$tabletmargin;
-      margin: 0 $tabletmargin;
+      margin: 20px 0 0 0;
+      padding: 0;
     }
    @include breakpoint(phone) {
      float: none;
      width: 100%;
-     padding: 0 $tabletmargin 20px $tabletmargin;
+     padding: 0 ; margin: 20px 0 0 0;
+     // padding: 0 $tabletmargin 20px $tabletmargin;
    }
    
       }
