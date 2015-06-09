@@ -20,12 +20,12 @@
 
 .ui-tabs-vertical .ui-tabs-nav li a:hover { background-color: #185667; border-bottom: 1px solid #49bab3; color: white; }
 
-@media (min-width: 1220px) { .ui-tabs-vertical .ui-tabs-panel { float: right; width: 683.66667px; padding: 20px 65px 0 27px; margin: 0 10px; } }
+@media (min-width: 1220px) { .ui-tabs-vertical .ui-tabs-panel { float: right; width: 683.66667px; padding: 20px 65px 30px; margin: 0 10px; } }
 @media (min-width: 820px) and (max-width: 1219px) { .ui-tabs-vertical .ui-tabs-panel { clear: left; float: none; width: 760px; margin: 20px 0 0 0; padding: 0; } }
 @media (max-width: 819px) { .ui-tabs-vertical .ui-tabs-panel { float: none; width: 100%; padding: 0; margin: 20px 0 0 0; } }
 
 ul.ui-tabs-nav { padding: 0 !important; }
-@media (min-width: 1220px) { ul.ui-tabs-nav { margin: 27px 0 0 -25px !important; border-right: 2px solid #378c86; } }
+@media (min-width: 1220px) { ul.ui-tabs-nav { margin: 27px 0 0 -20px !important; border-right: 2px solid #378c86; } }
 
 /*! jQuery UI - v1.11.4 - 2015-06-01
 * http://jqueryui.com
