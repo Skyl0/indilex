@@ -47,13 +47,13 @@ src: url('../fonts/Raleway-SemiBold.otf') format("opentype");
 #mainr .csc-textpic-text  ul {
   //list-style-type: circle !important;
   padding: 10px;
-  background: #ddd;
+  background: $lightgrey;
   // border: 1px #ccc solid;
 }
 
 #mainr .csc-textpic-text ol {
   padding: 10px;
-  background: #ddd;
+  background: $lightgrey;
   // border: 1px #ccc solid;
 }
 
