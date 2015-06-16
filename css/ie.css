@@ -1,8 +1,9 @@
+@charset "UTF-8";
 /** -------------------------------- (c) Y7 Group e.K. Darmstadt 2015 --------------------------------  */
 /** FONT RELATED */
 /** SCROLLUP BUTTON */
 #scrollup { position: relative; float: right; }
-@media (min-width: 1220px) { #scrollup { bottom: -25px; right: 95px; } }
+@media (min-width: 1220px) { #scrollup { top: 138px; right: 95px; } }
 @media (min-width: 820px) and (max-width: 1219px) { #scrollup { bottom: 20px; right: 20px; } }
 @media (max-width: 819px) { #scrollup { bottom: 20px; right: 20px; } }
 
@@ -291,10 +292,29 @@ input { font-family: "Raleway", Arial, sans-serif; font-size: 16px; }
 
 .opacity50 { opacity: 0.5; }
 
-@font-face { font-family: Raleway; src: url("../fonts/Raleway-Regular.otf") format("opentype"); }
+@font-face { font-family: Raleway; src: url("../fonts/Raleway-Regular.otf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: Raleway; src: url("../fonts/Raleway-SemiBold.otf"); font-weight: bold; font-style: normal; }
 @font-face { font-family: RalewaySemiBold; src: url("../fonts/Raleway-SemiBold.otf") format("opentype"); }
 #sitemap, #bmid { color: #4fbbb4; }
-#sitemap a, #bmid a { display: inline-block; color: white; }
+#sitemap a, #bmid a { color: white; }
+
+#mainr .csc-textpic-text ul { padding: 10px; background: #f6f6f6; }
+
+#mainr .csc-textpic-text ol { padding: 10px; background: #f6f6f6; }
+
+#mainr .csc-textpic-text ol li { list-style-type: decimal; position: relative; left: 20px; line-height: 20px; }
+
+#mainr .csc-textpic-text ul li { position: relative; left: 20px; line-height: 20px; }
+
+#mainr .csc-textpic-text ul li:before { content: '\f0c8'; /* FontAwesome char code inside the '' */ font-family: "FontAwesome"; /* FontAwesome or whatever */ display: inline-block; color: #4fbbb4; font-size: 12px; position: relative; bottom: 1px; width: 1.5em; /* same as padding-left set on li */ margin-left: -1.5em; /* same as padding-left set on li */ }
+
+ÔÇï #bmid a { display: inline-block; }
+
+@media (max-width: 819px) { .removemobile { display: none !important; } }
+
+.zert { margin: 5px 0 0 0; padding-top: 5px; color: white; font-size: 16px !important; }
+
+.follow { background-color: white !important; }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
@@ -314,7 +334,7 @@ a img { border: none; }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
 /** GENERAL LAYOUT */
-html { box-sizing: border-box; background-color: #f6f6f6; background: url("../images/concrete_seamless_darker.png") repeat; font-family: "Raleway", Arial, sans-serif; font-size: 16px; }
+html { box-sizing: border-box; background-color: #f6f6f6; font-family: "Raleway", Arial, sans-serif; font-size: 16px; }
 
 *, *:before, *:after { box-sizing: inherit; }
 
@@ -324,6 +344,10 @@ h1 { color: #144856; font-family: "Raleway", Arial, sans-serif; }
 @media (min-width: 820px) and (max-width: 1219px) { h1 { font-size: 22px; } }
 @media (min-width: 820px) { h1 { margin: 30px 0 30px 0; } }
 @media (max-width: 819px) { h1 { font-size: 20px; margin: 20px 0; } }
+
+.ui-tabs h1 { margin-top: 0; }
+
+#mainr h1 { padding-top: 8px; }
 
 h2 { color: #144856; font-family: "Raleway", Arial, sans-serif; }
 @media (min-width: 1220px) { h2 { font-size: 24px; } }
@@ -338,6 +362,8 @@ a:hover { color: #4fbbb4; }
 p { font-family: "Raleway", Arial, sans-serif; }
 @media (min-width: 820px) { p { margin: 0 0 20px 0; } }
 @media (max-width: 819px) { p { margin: 0 0 10px 0; } }
+
+b { font-family: "RalewaySemiBold", Arial, sans-serif; }
 
 /* OTHER FIXES AND STUFF */
 .hidemenu { display: none; }

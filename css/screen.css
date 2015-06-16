@@ -3,7 +3,7 @@
 /** FONT RELATED */
 /** SCROLLUP BUTTON */
 #scrollup { position: relative; float: right; }
-@media (min-width: 1220px) { #scrollup { bottom: -25px; right: 95px; } }
+@media (min-width: 1220px) { #scrollup { top: 138px; right: 95px; } }
 @media (min-width: 820px) and (max-width: 1219px) { #scrollup { bottom: 20px; right: 20px; } }
 @media (max-width: 819px) { #scrollup { bottom: 20px; right: 20px; } }
 
@@ -298,15 +298,15 @@ input { font-family: "Raleway", Arial, sans-serif; font-size: 16px; }
 #sitemap, #bmid { color: #4fbbb4; }
 #sitemap a, #bmid a { color: white; }
 
-#mainr .csc-textpic-text ul { padding: 10px; background: #f6f6f6; }
+#mainr .csc-textpic-text ul, #mainr .csc-default ul { padding: 10px; background: #f6f6f6; }
 
 #mainr .csc-textpic-text ol { padding: 10px; background: #f6f6f6; }
 
 #mainr .csc-textpic-text ol li { list-style-type: decimal; position: relative; left: 20px; line-height: 20px; }
 
-#mainr .csc-textpic-text ul li { position: relative; left: 20px; line-height: 20px; }
+#mainr .csc-textpic-text ul li, #mainr .csc-default ul li { position: relative; left: 20px; line-height: 20px; }
 
-#mainr .csc-textpic-text ul li:before { content: '\f0c8'; /* FontAwesome char code inside the '' */ font-family: "FontAwesome"; /* FontAwesome or whatever */ display: inline-block; color: #4fbbb4; font-size: 12px; position: relative; bottom: 1px; width: 1.5em; /* same as padding-left set on li */ margin-left: -1.5em; /* same as padding-left set on li */ }
+#mainr .csc-textpic-text ul li:before, #mainr .csc-default ul li:before { content: '\f0c8'; /* FontAwesome char code inside the '' */ font-family: "FontAwesome"; /* FontAwesome or whatever */ display: inline-block; color: #4fbbb4; font-size: 12px; position: relative; bottom: 1px; width: 1.5em; /* same as padding-left set on li */ margin-left: -1.5em; /* same as padding-left set on li */ }
 
 ÔÇï #bmid a { display: inline-block; }
 

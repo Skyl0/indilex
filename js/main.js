@@ -22,10 +22,10 @@ jQuery(document).ready(function($)  {
 	// Opacity Effekt
 	$("#scrollup i").hover(
 		function() {
-			$('#scrollup i').fadeIn().toggleClass("opacity50");
+			$('#scrollup i').fadeIn().addClass("opacity50");
 		 },
 		function() {		
-			$('#scrollup i').fadeIn().toggleClass("opacity50");
+			$('#scrollup i').fadeIn().removeClass("opacity50");
 		}
 	);
 	

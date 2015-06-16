@@ -18,7 +18,16 @@
 
 @font-face {
 font-family: Raleway;
-src: url('../fonts/Raleway-Regular.otf') format("opentype");
+src: url('../fonts/Raleway-Regular.otf');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: Raleway;
+src: url('../fonts/Raleway-SemiBold.otf');
+font-weight: bold;
+font-style: normal;
 }
 
 @font-face {
@@ -29,15 +38,76 @@ src: url('../fonts/Raleway-SemiBold.otf') format("opentype");
 
 // Formatting of the Sitemap 
 #sitemap, #bmid {
-  
-  color: $cyan;
-
+   color: $cyan;
   a {
-    display: inline-block;
-    color: white;
+   color: white;    
   }
 }
 
+#mainr .csc-textpic-text  ul {
+  //list-style-type: circle !important;
+  padding: 10px;
+  background: $lightgrey;
+  // border: 1px #ccc solid;
+}
+
+#mainr .csc-textpic-text ol {
+  padding: 10px;
+  background: $lightgrey;
+  // border: 1px #ccc solid;
+}
+
+#mainr .csc-textpic-text ol li {
+  list-style-type: decimal;
+  position: relative;
+  left: 20px;
+  line-height: 20px;
+}
+
+#mainr .csc-textpic-text ul li {
+  position: relative;
+  left: 20px;
+  line-height: 20px;
+  // list-style-type: circle !important;  
+}
+
+#mainr .csc-textpic-text ul li:before {
+  content: '\f0c8'; /* FontAwesome char code inside the '' */
+  font-family: "FontAwesome"; /* FontAwesome or whatever */
+  display: inline-block;
+  color: $cyan;
+  font-size: 12px;
+  position:relative;
+  bottom: 1px;
+  width: 1.5em; /* same as padding-left set on li */
+  margin-left: -1.5em; /* same as padding-left set on li */
+}​
+
+#bmid a {
+  display: inline-block;
+}
+
+.removemobile {
+   @include breakpoint(phone) {  display: none !important;}
+
+}
+
+.zert {
+  margin: 5px 0 0 0 ;
+  padding-top: 5px;
+  color: white;
+  font-size: 16px !important; 
+}
+
+.follow {
+  background-color: white !important;
+  
+}
+
+.ui-tabs-panel {
+  // background: white !important;
+  
+}
 // Compass related
 @import "compass/reset";
 
@@ -47,7 +117,7 @@ src: url('../fonts/Raleway-SemiBold.otf') format("opentype");
 html {
   box-sizing: border-box;
   background-color: $background;
-  background: url('../images/concrete_seamless_darker.png') repeat;
+  // background: url('../images/concrete_seamless_darker.png') repeat;
   font-family: $defaultfont;
   font-size: 16px;
 }
@@ -79,6 +149,16 @@ h1 {
        font-size: 20px;
        margin: ($margintopbottom/2) 0 ;
     }
+}
+
+.ui-tabs h1 {
+  margin-top: 0;
+}
+
+#mainr {
+  h1 {
+    padding-top: 8px; // Fix 
+  }
 }
 
 h2 {
@@ -126,6 +206,10 @@ p {
     }
   
   font-family: $defaultfont;
+}
+
+b {
+  font-family: $defaultbold;
 }
 
 /*

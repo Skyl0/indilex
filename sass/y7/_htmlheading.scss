@@ -10,7 +10,7 @@
    @include breakpoint(desktop) {
       // top: 220px + (2 * $margintopbottom) - (1.5 * 48px); // containerheight * 1.5
       // left: 258px; // found out by trying  
-      bottom: -25px;
+      top: 138px;
       right: $sce_colwrap1 + 15px;
    }
    
