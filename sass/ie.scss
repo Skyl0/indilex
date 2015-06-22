@@ -44,7 +44,7 @@ src: url('../fonts/Raleway-SemiBold.otf') format("opentype");
   }
 }
 
-#mainr .csc-textpic-text  ul {
+#mainr .csc-textpic-text  ul, div#c19 ul {
   //list-style-type: circle !important;
   padding: 10px;
   background: $lightgrey;
@@ -64,14 +64,14 @@ src: url('../fonts/Raleway-SemiBold.otf') format("opentype");
   line-height: 20px;
 }
 
-#mainr .csc-textpic-text ul li {
+#mainr .csc-textpic-text ul li, div#c19 ul  {
   position: relative;
   left: 20px;
   line-height: 20px;
   // list-style-type: circle !important;  
 }
 
-#mainr .csc-textpic-text ul li:before {
+#mainr .csc-textpic-text ul li:before,  div#c19 ul li:before {
   content: '\f0c8'; /* FontAwesome char code inside the '' */
   font-family: "FontAwesome"; /* FontAwesome or whatever */
   display: inline-block;

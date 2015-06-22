@@ -82,10 +82,10 @@
 /** TITLE BAR */
 #titlebar { height: 100px; display: block; background-color: #f6f6f6; background-image: url("../images/yellowlines.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
 
-#titleinner { height: 100px; display: block; line-height: 100px; white-space: nowrap; font-size: 24px; font-family: "RalewaySemiBold", Arial, sans-serif; color: white; }
-@media (min-width: 1220px) { #titleinner { padding-left: 90px; } }
-@media (min-width: 820px) and (max-width: 1219px) { #titleinner { padding-left: 20px; } }
-@media (max-width: 819px) { #titleinner { padding-left: 20px; } }
+#titleinner { position: relative; height: 100px; display: block; font-size: 24px; font-family: "RalewaySemiBold", Arial, sans-serif; color: white; }
+@media (min-width: 1220px) { #titleinner { padding-left: 90px; line-height: 100px; white-space: nowrap; } }
+@media (min-width: 820px) and (max-width: 1219px) { #titleinner { padding-left: 20px; line-height: 100px; white-space: nowrap; } }
+@media (max-width: 819px) { #titleinner { padding: 20px 0 20px 20px !important; line-height: 30px; } }
 
 /**  SHORTCODE LAYOUT */
 #shortcodes { min-height: 200px; text-align: center; }
@@ -147,7 +147,6 @@
 #mainr .bodytext a { border: 2px solid #4fbbb4; border-radius: 4px; padding: 10px 30px; width: 240px; line-height: 40px; -webkit-transition: background-color 0.5s; /* Safari */ transition: background-color 0.5s; }
 #mainr .bodytext a:hover { background-color: #4fbbb4; color: #f6f6f6; }
 #mainr img { position: relative; padding: 0px !important; margin: 0px !important; }
-@media (min-width: 1220px) { #mainr img { right: 10px; } }
 @media (min-width: 820px) and (max-width: 1219px) { #mainr img { width: 100%; height: auto; } }
 @media (max-width: 819px) { #mainr img { width: 100%; height: auto; } }
 
@@ -298,15 +297,15 @@ input { font-family: "Raleway", Arial, sans-serif; font-size: 16px; }
 #sitemap, #bmid { color: #4fbbb4; }
 #sitemap a, #bmid a { color: white; }
 
-#mainr .csc-textpic-text ul { padding: 10px; background: #f6f6f6; }
+#mainr .csc-textpic-text ul, div#c19 ul { padding: 10px; background: #f6f6f6; }
 
 #mainr .csc-textpic-text ol { padding: 10px; background: #f6f6f6; }
 
 #mainr .csc-textpic-text ol li { list-style-type: decimal; position: relative; left: 20px; line-height: 20px; }
 
-#mainr .csc-textpic-text ul li { position: relative; left: 20px; line-height: 20px; }
+#mainr .csc-textpic-text ul li, div#c19 ul { position: relative; left: 20px; line-height: 20px; }
 
-#mainr .csc-textpic-text ul li:before { content: '\f0c8'; /* FontAwesome char code inside the '' */ font-family: "FontAwesome"; /* FontAwesome or whatever */ display: inline-block; color: #4fbbb4; font-size: 12px; position: relative; bottom: 1px; width: 1.5em; /* same as padding-left set on li */ margin-left: -1.5em; /* same as padding-left set on li */ }
+#mainr .csc-textpic-text ul li:before, div#c19 ul li:before { content: '\f0c8'; /* FontAwesome char code inside the '' */ font-family: "FontAwesome"; /* FontAwesome or whatever */ display: inline-block; color: #4fbbb4; font-size: 12px; position: relative; bottom: 1px; width: 1.5em; /* same as padding-left set on li */ margin-left: -1.5em; /* same as padding-left set on li */ }
 
 ÔÇï #bmid a { display: inline-block; }
 

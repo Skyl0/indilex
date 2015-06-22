@@ -11,6 +11,22 @@ jQuery(document).ready(function($)  {
      $( ".tx-jfmulticontent-pi1 > li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
      
      
+     // Fix für lange Überschriften
+     function fixHeader() {
+     	if ($(window).width() < 831) {
+     		$('div#titleinner').addClass("headerfix");
+     	} else {
+     		$('div#titleinner').removeClass("headerfix");
+     	}
+     }
+     
+     fixHeader();
+     
+     $(window).resize(function(){
+     	fixHeader();
+     });
+     
+     
      // Footer Fix
      
      $('#leistungen a').each(function () {
